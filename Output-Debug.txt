@@ -1,0 +1,151 @@
+﻿'DonnaGabriela.exe' (Win32): Loaded 'C:\Users\guilh\Desktop\Vanessa\TCC\DonnaGabriela\bin\Debug\DonnaGabriela.exe'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\mscoree.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. 
+The thread 0x157c has exited with code 0 (0x0).
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\version.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\user32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\win32u.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140_clr0400.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbase_clr0400.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32full.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp_win.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbase.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. 
+'DonnaGabriela.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\combase.dll'
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\NativeImages\mscorlib.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\guilh\Desktop\Vanessa\TCC\DonnaGabriela\bin\Debug\DonnaGabriela.exe'. Symbols loaded.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleaut32.dll'. 
+CLR:(C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll) Rejecting native image because native image dependency C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll had a different identity than expected
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System\282b437d2c92e5bcf2df26c0d20adb59\System.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\d3a043ee585956eff120862527cd7caa\System.Drawing.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\bc79e11b72d60006b1a74b845940bfdd\System.Windows.Forms.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+CLR:(C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll) Rejecting native image because native image dependency C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll had a different identity than expected
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Core\a653a6f6524968017523b6d08a0713cf\System.Core.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Data\50f15c20166e191afa7f9fe7a3a257cf\System.Data.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ws2_32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\crypt32.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\1b2cf2e1834226cf15f0dd842ed6779b\System.Configuration.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\5abb66aca2c3761a29d6c589f2747b32\System.Xml.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shell32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\windows.storage.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\WinTypes.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SHCore.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\profapi.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcrypt.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptsp.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rsaenh.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.22000.1_none_6ec7c6847ea94424\comctl32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.22000.675_none_1631a6712776d946\GdiPlus.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\DWrite.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\TextShaping.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\WindowsCodecs.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22000.120_none_e541a94fcce8ed6d\comctl32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\TextInputFramework.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\CoreMessaging.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\CoreUIComponents.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleacc.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\Accessibility\d4d6537e6afff318acefad4eaf7c23b1\Accessibility.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\clbcatq.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Transactions\15c608150a9c5f25b7e17e0ca9ddec27\System.Transactions.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Ente96d83b35#\22814668b60f70ef937f0074c0709810\System.EnterpriseServices.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'. 
+'DonnaGabriela.exe' (Win32): Unloaded 'C:\Windows\Microsoft.NET\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Ente96d83b35#\22814668b60f70ef937f0074c0709810\System.EnterpriseServices.Wrapper.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\security.dll'. 
+'DonnaGabriela.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\security.dll'
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\security.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\secur32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\schannel.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kerberos.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msasn1.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\userenv.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msv1_0.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\NtlmShared.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdsapi.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dsparse.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\netapi32.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\logoncli.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\netutils.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\mswsock.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dnsapi.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\IPHLPAPI.DLL'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nsi.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rasadhlp.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\FWPUCLNT.DLL'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\mskeyprotect.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntasn1.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ncrypt.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ncryptsslp.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runt19c51595#\27f1020f527c50c6dab32b749e0bae19\System.Runtime.Caching.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+CLR:(C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll) Rejecting native image because native image dependency C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll had a different identity than expected
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Numerics\9caef6e1c12824947db554460f0403ef\System.Numerics.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Users\guilh\Desktop\Vanessa\TCC\DonnaGabriela\bin\Debug\FontAwesome.Sharp.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Users\guilh\Desktop\Vanessa\TCC\DonnaGabriela\bin\Debug\FontAwesome.Sharp.dll'. 
+'DonnaGabriela.exe' (Win32): Unloaded 'C:\Users\guilh\Desktop\Vanessa\TCC\DonnaGabriela\bin\Debug\FontAwesome.Sharp.dll'
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\Users\guilh\Desktop\Vanessa\TCC\DonnaGabriela\bin\Debug\FontAwesome.Sharp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\WindowsBase\b80c321f83dd61dbc05528d8d9a5f4f3\WindowsBase.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\PresentationCore\d449de413fe6667104acb9e10c7b86ff\PresentationCore.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\x86\Microsoft.VisualStudio.DesignTools.WpfTapBootstrap.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 0x34a4 has exited with code 2045050880 (0x79e50000).
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\wpfgfx_v0400.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140_clr0400.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\PresentationNative_v0400.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\Presentatio5ae0f00f#\db54be31e7dd86b14a2e072038818465\PresentationFramework.ni.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86\Microsoft.VisualStudio.DesignTools.WpfTap.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86\Microsoft.VisualStudio.DesignTools.WpfTap.dll'. 
+'DonnaGabriela.exe' (Win32): Unloaded 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86\Microsoft.VisualStudio.DesignTools.WpfTap.dll'
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'c:\program files (x86)\microsoft visual studio\2019\community\common7\ide\commonextensions\microsoft\xamldiagnostics\Framework\x86\Microsoft.VisualStudio.DesignTools.WpfTap.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xaml\c767a71b4f08de96940124cc23b08533\System.Xaml.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\urlmon.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\iertutil.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\SysWOW64\srvcli.dll'. 
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Runteb92aa12#\cf6cd8b67ddaaf9dee26f3e6efe8ad15\System.Runtime.Serialization.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\SMDiagnostics\4df47f51fbec2799cbe1bd633259618a\SMDiagnostics.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\SMDiagnostics\v4.0_4.0.0.0__b77a5c561934e089\SMDiagnostics.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'DonnaGabriela.exe' (Win32): Loaded 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Servd1dec626#\b68dc4b783c5e410b464d33ea57f7f9e\System.ServiceModel.Internals.ni.dll'. 
+'DonnaGabriela.exe' (CLR v4.0.30319: DonnaGabriela.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Internals\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Internals.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 0x3414 has exited with code 0 (0x0).
+The program '[9916] DonnaGabriela.exe' has exited with code 0 (0x0).
