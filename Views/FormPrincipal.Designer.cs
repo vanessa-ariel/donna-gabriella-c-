@@ -46,7 +46,6 @@ namespace DonnaGabriela
             this.iconeMinimizar = new System.Windows.Forms.PictureBox();
             this.iconeMaximizar = new System.Windows.Forms.PictureBox();
             this.iconeFechar = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,14 +71,14 @@ namespace DonnaGabriela
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(221, 817);
+            this.panelMenu.Size = new System.Drawing.Size(221, 509);
             this.panelMenu.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(150)))), ((int)(((byte)(228)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 717);
+            this.panel4.Location = new System.Drawing.Point(0, 409);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(221, 100);
             this.panel4.TabIndex = 6;
@@ -230,19 +229,20 @@ namespace DonnaGabriela
             this.panelFormularios.AutoSize = true;
             this.panelFormularios.Controls.Add(this.panel3);
             this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFormularios.Location = new System.Drawing.Point(221, 109);
+            this.panelFormularios.Location = new System.Drawing.Point(221, 100);
             this.panelFormularios.Name = "panelFormularios";
-            this.panelFormularios.Size = new System.Drawing.Size(1464, 708);
+            this.panelFormularios.Size = new System.Drawing.Size(709, 409);
             this.panelFormularios.TabIndex = 3;
+            this.panelFormularios.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelFormularios_Paint);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(150)))), ((int)(((byte)(228)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 608);
+            this.panel3.Location = new System.Drawing.Point(0, 309);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1464, 100);
+            this.panel3.Size = new System.Drawing.Size(709, 100);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -251,7 +251,7 @@ namespace DonnaGabriela
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(543, 40);
+            this.label1.Location = new System.Drawing.Point(198, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 21);
             this.label1.TabIndex = 0;
@@ -267,7 +267,7 @@ namespace DonnaGabriela
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(221, 0);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(1464, 100);
+            this.panelTitulo.Size = new System.Drawing.Size(709, 100);
             this.panelTitulo.TabIndex = 1;
             // 
             // iconeRestaurar
@@ -275,7 +275,7 @@ namespace DonnaGabriela
             this.iconeRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconeRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconeRestaurar.Image = global::DonnaGabriela.Properties.Resources.restaurar;
-            this.iconeRestaurar.Location = new System.Drawing.Point(1380, 25);
+            this.iconeRestaurar.Location = new System.Drawing.Point(625, 25);
             this.iconeRestaurar.Name = "iconeRestaurar";
             this.iconeRestaurar.Size = new System.Drawing.Size(25, 25);
             this.iconeRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,7 +289,7 @@ namespace DonnaGabriela
             this.iconeMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconeMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconeMinimizar.Image = global::DonnaGabriela.Properties.Resources.minimizar;
-            this.iconeMinimizar.Location = new System.Drawing.Point(1349, 25);
+            this.iconeMinimizar.Location = new System.Drawing.Point(594, 25);
             this.iconeMinimizar.Name = "iconeMinimizar";
             this.iconeMinimizar.Size = new System.Drawing.Size(25, 25);
             this.iconeMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,7 +302,7 @@ namespace DonnaGabriela
             this.iconeMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconeMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconeMaximizar.Image = global::DonnaGabriela.Properties.Resources.maximizar1;
-            this.iconeMaximizar.Location = new System.Drawing.Point(1380, 25);
+            this.iconeMaximizar.Location = new System.Drawing.Point(625, 25);
             this.iconeMaximizar.Name = "iconeMaximizar";
             this.iconeMaximizar.Size = new System.Drawing.Size(25, 25);
             this.iconeMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -315,7 +315,7 @@ namespace DonnaGabriela
             this.iconeFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconeFechar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconeFechar.Image = global::DonnaGabriela.Properties.Resources.fechar;
-            this.iconeFechar.Location = new System.Drawing.Point(1411, 25);
+            this.iconeFechar.Location = new System.Drawing.Point(656, 25);
             this.iconeFechar.Name = "iconeFechar";
             this.iconeFechar.Size = new System.Drawing.Size(25, 25);
             this.iconeFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -323,22 +323,12 @@ namespace DonnaGabriela
             this.iconeFechar.TabStop = false;
             this.iconeFechar.Click += new System.EventHandler(this.iconeFechar_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(221, 100);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1464, 9);
-            this.panel2.TabIndex = 2;
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1685, 817);
+            this.ClientSize = new System.Drawing.Size(930, 509);
             this.Controls.Add(this.panelFormularios);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -374,7 +364,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelTitulo;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox iconeFechar;
         private System.Windows.Forms.PictureBox iconeMinimizar;

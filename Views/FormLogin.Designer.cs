@@ -31,13 +31,13 @@ namespace DonnaGabriela
         {
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLoginSistema = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +55,7 @@ namespace DonnaGabriela
             this.txtEmail.Text = "Insira seu e-mail";
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
+            this.txtEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // panel1
@@ -72,6 +73,17 @@ namespace DonnaGabriela
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(405, 450);
             this.panel1.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label3.Location = new System.Drawing.Point(40, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(306, 30);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Bem vindo à Donna Gabriella";
             // 
             // label2
             // 
@@ -144,17 +156,6 @@ namespace DonnaGabriela
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.label3.Location = new System.Drawing.Point(40, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 30);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Bem vindo à Donna Gabriella";
             // 
             // FormLogin
             // 

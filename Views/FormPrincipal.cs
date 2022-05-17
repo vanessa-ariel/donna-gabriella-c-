@@ -129,7 +129,7 @@ namespace DonnaGabriela
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormCadastroUsuario());
+            OpenChildForm(new FormConfiguracoes());
 
         }
 
@@ -157,5 +157,9 @@ namespace DonnaGabriela
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void PanelFormularios_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

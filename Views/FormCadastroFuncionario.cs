@@ -17,7 +17,17 @@ namespace DonnaGabriela.Views
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void FormCadastroFuncionario_Load(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            panelContainer.AutoScroll = false;
+            panelContainer.VerticalScroll.Enabled = true;
+            panelContainer.VerticalScroll.Visible = true;
+
+            panelContainer.AutoScroll = true;
+        }
+
+        private void TxtNomeFunc_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -33,8 +33,8 @@ namespace DonnaGabriela
                 dp.Fill(dt);
 
                 //REMOVER DEPOOOOOOOOOIS
-                txtEmail.Text = "v@admin.com";
-                txtSenha.Text = "321";
+                txtEmail.Text = "admin@admin.com";
+                txtSenha.Text = "123";
 
                 if (dt.Rows.Count == 1)
                 {
@@ -109,6 +109,11 @@ namespace DonnaGabriela
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

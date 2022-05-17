@@ -12,9 +12,23 @@ namespace DonnaGabriela
 {
     public partial class FormConfiguracoes : Form
     {
+
         public FormConfiguracoes()
         {
             InitializeComponent();
+        }
+
+        private void FormConfiguracoes_Load(object sender, EventArgs e)
+        {
+            //panelContainer.AutoScroll = false;
+            //panelContainer.VerticalScroll.Enabled = true;
+            //panelContainer.VerticalScroll.Visible = true;
+            //panelContainer.AutoScroll = true;
+        }
+
+        private void PnlInner_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

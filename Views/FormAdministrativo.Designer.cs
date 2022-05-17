@@ -33,12 +33,12 @@ namespace DonnaGabriela
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnCadastrarVoluntario = new FontAwesome.Sharp.IconButton();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.btnExcluirCadastro = new FontAwesome.Sharp.IconButton();
+            this.btnCadastrarVoluntario = new FontAwesome.Sharp.IconButton();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
-            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
@@ -79,38 +79,6 @@ namespace DonnaGabriela
             this.panel4.Size = new System.Drawing.Size(758, 100);
             this.panel4.TabIndex = 3;
             // 
-            // btnCadastrarVoluntario
-            // 
-            this.btnCadastrarVoluntario.BackColor = System.Drawing.Color.White;
-            this.btnCadastrarVoluntario.FlatAppearance.BorderSize = 0;
-            this.btnCadastrarVoluntario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrarVoluntario.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarVoluntario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.btnCadastrarVoluntario.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCadastrarVoluntario.IconColor = System.Drawing.Color.Black;
-            this.btnCadastrarVoluntario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCadastrarVoluntario.Location = new System.Drawing.Point(616, 13);
-            this.btnCadastrarVoluntario.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCadastrarVoluntario.Name = "btnCadastrarVoluntario";
-            this.btnCadastrarVoluntario.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCadastrarVoluntario.Size = new System.Drawing.Size(142, 37);
-            this.btnCadastrarVoluntario.TabIndex = 1;
-            this.btnCadastrarVoluntario.Text = "Novo Cadastro";
-            this.btnCadastrarVoluntario.UseVisualStyleBackColor = false;
-            this.btnCadastrarVoluntario.Click += new System.EventHandler(this.btnCadastrarVoluntario_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.dataGridVoluntarias);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(141, 77);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(758, 457);
-            this.panel5.TabIndex = 4;
-            // 
             // btnExcluirCadastro
             // 
             this.btnExcluirCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -131,6 +99,26 @@ namespace DonnaGabriela
             this.btnExcluirCadastro.UseVisualStyleBackColor = false;
             this.btnExcluirCadastro.Click += new System.EventHandler(this.btnExcluirCadastro_Click);
             // 
+            // btnCadastrarVoluntario
+            // 
+            this.btnCadastrarVoluntario.BackColor = System.Drawing.Color.White;
+            this.btnCadastrarVoluntario.FlatAppearance.BorderSize = 0;
+            this.btnCadastrarVoluntario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrarVoluntario.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarVoluntario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.btnCadastrarVoluntario.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCadastrarVoluntario.IconColor = System.Drawing.Color.Black;
+            this.btnCadastrarVoluntario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCadastrarVoluntario.Location = new System.Drawing.Point(616, 13);
+            this.btnCadastrarVoluntario.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCadastrarVoluntario.Name = "btnCadastrarVoluntario";
+            this.btnCadastrarVoluntario.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnCadastrarVoluntario.Size = new System.Drawing.Size(142, 37);
+            this.btnCadastrarVoluntario.TabIndex = 1;
+            this.btnCadastrarVoluntario.Text = "Novo Cadastro";
+            this.btnCadastrarVoluntario.UseVisualStyleBackColor = false;
+            this.btnCadastrarVoluntario.Click += new System.EventHandler(this.btnCadastrarVoluntario_Click);
+            // 
             // btnEditar
             // 
             this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -150,6 +138,29 @@ namespace DonnaGabriela
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.UseVisualStyleBackColor = false;
             // 
+            // panel5
+            // 
+            this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.dataGridVoluntarias);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(141, 77);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(758, 457);
+            this.panel5.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(288, 30);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Lista de usuárias cadastradas";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            // 
             // dataGridVoluntarias
             // 
             this.dataGridVoluntarias.BackgroundColor = System.Drawing.Color.White;
@@ -160,16 +171,6 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.Size = new System.Drawing.Size(758, 457);
             this.dataGridVoluntarias.TabIndex = 0;
             this.dataGridVoluntarias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVoluntarias_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(314, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Lista de voluntárias cadastradas";
             // 
             // FormAdministrativo
             // 
