@@ -47,14 +47,14 @@ namespace DonnaGabriela
                 //Button
                 DeactivateButton();
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.Gainsboro;
-                currentBtn.ForeColor = color;
-                currentBtn.IconColor = color;
+                currentBtn.BackColor = Color.FromArgb(171, 112, 224);
+                currentBtn.ForeColor = Color.White;
+                currentBtn.IconColor = Color.White;
                 //Left border button
-                leftBorderBtn.BackColor = color;
+                /* leftBorderBtn.BackColor = color;
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                leftBorderBtn.BringToFront();*/
             }
         }
 
@@ -110,7 +110,7 @@ namespace DonnaGabriela
         private void btnAdminstrativo_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormCadastroUsuario());
+            OpenChildForm(new FormAdministrativo());
         }
 
         private void btnPendencias_Click(object sender, EventArgs e)

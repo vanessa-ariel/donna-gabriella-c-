@@ -84,12 +84,6 @@
     <Compile Include="Views\FormAgendamentos.Designer.cs">
       <DependentUpon>FormAgendamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormConfiguracoes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FormConfiguracoes.Designer.cs">
-      <DependentUpon>FormConfiguracoes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +113,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormAgendamentos.resx">
+      <DependentUpon>FormAgendamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormConfiguracoesFuncionario.resx">
       <DependentUpon>FormConfiguracoesFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,9 +124,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormCadastroUsuario.resx">
       <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormConfiguracoes.resx">
-      <DependentUpon>FormConfiguracoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>

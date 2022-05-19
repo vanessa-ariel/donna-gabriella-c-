@@ -14,7 +14,7 @@ namespace DonnaGabriela
     public partial class FormAdministrativo : Form
     {
         //SqlConnection conexao = new SqlConnection(@"Data Source=DESKTOP-29936OV\SQLEXPRESS;Initial Catalog=DonnaGabriela;User ID=adm;Password=123");
-        string conexao = "Data Source =DESKTOP-QUDLRLA;Initial Catalog = DonnaGabriela; Trusted_Connection=True";
+        string conexao = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
         public FormAdministrativo()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace DonnaGabriela
 
         private void load_data()
         {
-            dataGridVoluntarias.Columns.Clear();
+            /* dataGridVoluntarias.Columns.Clear();
             using (SqlConnection con1 = new SqlConnection(conexao))
             {
                 using (SqlCommand cmd = new SqlCommand("Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario", con1))
@@ -53,7 +53,7 @@ namespace DonnaGabriela
             buttoncolumn.HeaderText = "Deletar linha";
             buttoncolumn.Width = 50;
             buttoncolumn.Text = "Deletar";
-            buttoncolumn.UseColumnTextForButtonValue = true;
+            buttoncolumn.UseColumnTextForButtonValue = true;*/
         }
 
 
@@ -91,13 +91,13 @@ namespace DonnaGabriela
             load_data();
         }
 
-        private void dataGridVoluntarias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        /*private void dataGridVoluntarias_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
 
             if (e.ColumnIndex == 2)
             {
-                DataGridViewRow row = dataGridVoluntarias.Rows[e.ColumnIndex];
+                 DataGridViewRow row = dataGridVoluntarias.Rows[e.ColumnIndex];
                 if (MessageBox.Show(String.Format("Tem Certeza?", row.Cells["ID_Voluntario"].Value), "Deletar", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     using (SqlConnection con1 = new SqlConnection(conexao))
@@ -113,9 +113,19 @@ namespace DonnaGabriela
                     load_data();
                 }
             }
-        }
+        }*/
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
         {
 
         }

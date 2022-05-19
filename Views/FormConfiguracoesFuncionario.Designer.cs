@@ -118,7 +118,7 @@ namespace DonnaGabriela
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(65, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(321, 30);

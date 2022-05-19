@@ -16,5 +16,10 @@ namespace DonnaGabriela
         {
             InitializeComponent();
         }
+
+        private void FormAgendamentos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
