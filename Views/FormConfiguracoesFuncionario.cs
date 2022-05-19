@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace DonnaGabriela
 {
-    public partial class FormPendencias : Form
+    public partial class FormConfiguracoesFuncionario : Form
     {
-        public FormPendencias()
+        public FormConfiguracoesFuncionario()
         {
             InitializeComponent();
         }
 
-        private void btnReprovar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAprovar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormPendencias_Load(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

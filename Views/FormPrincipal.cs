@@ -101,16 +101,16 @@ namespace DonnaGabriela
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnDashBoard_Click(object sender, EventArgs e)
+        /* private void btnDashBoard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormDashboard());
-        }
+        }*/
 
         private void btnAdminstrativo_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormAdministrativo());
+            OpenChildForm(new FormCadastroUsuario());
         }
 
         private void btnPendencias_Click(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace DonnaGabriela
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormConfiguracoes());
+            OpenChildForm(new FormConfiguracoesFuncionario());
 
         }
 
@@ -160,6 +160,16 @@ namespace DonnaGabriela
         }
 
         private void PanelFormularios_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

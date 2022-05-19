@@ -59,11 +59,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormCadastroFuncionario.cs">
+    <Compile Include="Views\FormConfiguracoesFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormCadastroFuncionario.Designer.cs">
-      <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
+    <Compile Include="Views\FormConfiguracoesFuncionario.Designer.cs">
+      <DependentUpon>FormConfiguracoesFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormCadastroUsuario.cs">
       <SubType>Form</SubType>
@@ -119,11 +119,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormConfiguracoesFuncionario.resx">
+      <DependentUpon>FormConfiguracoesFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormAdministrativo.resx">
       <DependentUpon>FormAdministrativo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormCadastroFuncionario.resx">
-      <DependentUpon>FormCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormCadastroUsuario.resx">
       <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
@@ -147,6 +147,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\FormPendencias.resx">
+      <DependentUpon>FormPendencias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
