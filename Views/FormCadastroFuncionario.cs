@@ -31,5 +31,10 @@ namespace DonnaGabriela.Views
         {
 
         }
+
+        private void TxtTelefoneFunc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

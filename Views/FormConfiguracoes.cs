@@ -17,16 +17,29 @@ namespace DonnaGabriela
         {
             InitializeComponent();
         }
+        ScrollBar vScrollBar1 = new VScrollBar();
 
         private void FormConfiguracoes_Load(object sender, EventArgs e)
         {
-            //panelContainer.AutoScroll = false;
-            //panelContainer.VerticalScroll.Enabled = true;
-            //panelContainer.VerticalScroll.Visible = true;
-            //panelContainer.AutoScroll = true;
+            panelContainer.AutoScroll = false;
+            panelContainer.VerticalScroll.Enabled = true;
+            panelContainer.VerticalScroll.Visible = true;
+            panelContainer.AutoScroll = true;
+            panelContainer.AutoScrollMinSize = new System.Drawing.Size(250, 1900);
+            panelContainer.Width = 1024;
         }
 
         private void PnlInner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
         {
 
         }

@@ -77,7 +77,6 @@ namespace DonnaGabriela
             {
                 currentChildForm.Close();
             }
-            //DisableButton();
             currentChildForm = childForm;
             //End
             childForm.TopLevel = false;
@@ -143,6 +142,8 @@ namespace DonnaGabriela
             this.WindowState = FormWindowState.Maximized;
             iconeRestaurar.Visible = true;
             iconeMaximizar.Visible = false;
+            lblFooter.AutoSize = false;
+            lblFooter.Left = 300;
         }
 
         private void iconeRestaurar_Click(object sender, EventArgs e)
@@ -150,6 +151,7 @@ namespace DonnaGabriela
             this.WindowState = FormWindowState.Normal;
             iconeRestaurar.Visible = false;
             iconeMaximizar.Visible = true;
+            lblFooter.Left = 0;
         }
 
         private void iconeMinimizar_Click(object sender, EventArgs e)
