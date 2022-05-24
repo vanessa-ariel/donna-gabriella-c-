@@ -30,17 +30,20 @@ namespace DonnaGabriela
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnExcluirCadastro = new FontAwesome.Sharp.IconButton();
             this.btnCadastrarVoluntario = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.dataGridVoluntarias);
             this.panel5.Controls.Add(this.btnEditar);
             this.panel5.Controls.Add(this.btnExcluirCadastro);
             this.panel5.Controls.Add(this.btnCadastrarVoluntario);
@@ -51,17 +54,13 @@ namespace DonnaGabriela
             this.panel5.TabIndex = 4;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // label1
+            // dataGridVoluntarias
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(-33, -86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 30);
-            this.label1.TabIndex = 218;
-            this.label1.Text = "Lista de voluntárias cadastradas";
+            this.dataGridVoluntarias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVoluntarias.Location = new System.Drawing.Point(36, 19);
+            this.dataGridVoluntarias.Name = "dataGridVoluntarias";
+            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 305);
+            this.dataGridVoluntarias.TabIndex = 222;
             // 
             // btnEditar
             // 
@@ -126,6 +125,19 @@ namespace DonnaGabriela
             this.btnCadastrarVoluntario.TabIndex = 221;
             this.btnCadastrarVoluntario.Text = "Novo Cadastro";
             this.btnCadastrarVoluntario.UseVisualStyleBackColor = false;
+            this.btnCadastrarVoluntario.Click += new System.EventHandler(this.BtnCadastrarVoluntario_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(-33, -86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(331, 30);
+            this.label1.TabIndex = 218;
+            this.label1.Text = "Lista de voluntárias cadastradas";
             // 
             // FormAdministrativo
             // 
@@ -136,11 +148,12 @@ namespace DonnaGabriela
             this.ClientSize = new System.Drawing.Size(909, 365);
             this.Controls.Add(this.panel5);
             this.Name = "FormAdministrativo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Formulário Administrativo";
             this.Load += new System.EventHandler(this.FormAdministrativo_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,5 +164,6 @@ namespace DonnaGabriela
         private FontAwesome.Sharp.IconButton btnEditar;
         private FontAwesome.Sharp.IconButton btnExcluirCadastro;
         private FontAwesome.Sharp.IconButton btnCadastrarVoluntario;
+        private System.Windows.Forms.DataGridView dataGridVoluntarias;
     }
 }

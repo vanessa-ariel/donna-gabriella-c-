@@ -13,25 +13,61 @@ namespace DonnaGabriela
 {
     public partial class FormAdministrativo : Form
     {
-        //SqlConnection conexao = new SqlConnection(@"Data Source=DESKTOP-29936OV\SQLEXPRESS;Initial Catalog=DonnaGabriela;User ID=adm;Password=123");
-        string conexao = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
+        //string conexao = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
+
         public FormAdministrativo()
         {
             InitializeComponent();
+            //showData();
 
-            /*  SqlCommand comando = new SqlCommand("Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario", conexao);
+            /*SqlCommand comando = new SqlCommand("Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario", conexao);
               SqlDataAdapter dataAdapter = new SqlDataAdapter(comando);
               DataTable dataTable = new DataTable();
               dataAdapter.Fill(dataTable);
               dataGridVoluntarias.DataSource = dataTable;
 
               dataGridVoluntarias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-              dataGridVoluntarias.MultiSelect = false;
-            */
+              dataGridVoluntarias.MultiSelect = false;*/
         }
+
+        // your data table
+        private DataTable dataTable = new DataTable();
+
+
+        // your method to pull data from database to datatable   
+        public void PullData()
+        {
+            string connString = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
+            //string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 0";
+            string query = "select * from Voluntario";
+
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            try{
+                conn.Open();
+                //MessageBox.Show("Conexão realizada ! ");
+            // create data adapter
+                // this will query your database and return the result to your datatable
+                adapter.Fill(dt);
+                dataGridVoluntarias.DataSource = dt;
+                conn.Close();
+                //showData();
+                //da.Dispose();
+            }
+                catch (Exception){
+            MessageBox.Show("Não foi possível conectar ao servidor ! ");
+            }
+
+        }
+
+ 
 
         private void load_data()
         {
+            PullData();
             /* dataGridVoluntarias.Columns.Clear();
             using (SqlConnection con1 = new SqlConnection(conexao))
             {
@@ -115,19 +151,18 @@ namespace DonnaGabriela
             }
         }*/
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void BtnCadastrarVoluntario_Click_1(object sender, EventArgs e)
         {
-
+            FormCadastroUsuario frm = new FormCadastroUsuario();
+            frm.Height = 600;
+            frm.Width = 1024;
+            frm.Show();
         }
     }
 }

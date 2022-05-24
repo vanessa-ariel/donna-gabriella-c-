@@ -55,9 +55,7 @@ C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\bin\Debug\DonnaGabriela.pdb
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.csprojAssemblyReference.cache
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.Form1.resources
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormAdministrativo.resources
-C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.Views.FormCadastroFuncionario.resources
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormCadastroUsuario.resources
-C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormConfiguracoes.resources
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormDashboard.resources
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormLogin.resources
 C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.Properties.Resources.resources
@@ -86,3 +84,6 @@ C:\Users\55119\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.pdb
 C:\Users\55119\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormConfiguracoesFuncionario.resources
 C:\Users\55119\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormPendencias.resources
 C:\Users\55119\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormAgendamentos.resources
+C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormAgendamentos.resources
+C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormConfiguracoesFuncionario.resources
+C:\Users\Lab_ETESP\Desktop\donna-gabriella-c-\obj\Debug\DonnaGabriela.FormPendencias.resources
