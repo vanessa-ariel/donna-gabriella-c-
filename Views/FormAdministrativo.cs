@@ -19,27 +19,14 @@ namespace DonnaGabriela
         {
             InitializeComponent();
             //showData();
-
-            /*SqlCommand comando = new SqlCommand("Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario", conexao);
-              SqlDataAdapter dataAdapter = new SqlDataAdapter(comando);
-              DataTable dataTable = new DataTable();
-              dataAdapter.Fill(dataTable);
-              dataGridVoluntarias.DataSource = dataTable;
-
-              dataGridVoluntarias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-              dataGridVoluntarias.MultiSelect = false;*/
         }
 
-        // your data table
         private DataTable dataTable = new DataTable();
 
-
-        // your method to pull data from database to datatable   
         public void PullData()
         {
             string connString = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
-            //string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 0";
-            string query = "select * from Voluntario";
+            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 0";
 
             SqlConnection conn = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -49,10 +36,13 @@ namespace DonnaGabriela
             try{
                 conn.Open();
                 //MessageBox.Show("Conexão realizada ! ");
-            // create data adapter
-                // this will query your database and return the result to your datatable
                 adapter.Fill(dt);
                 dataGridVoluntarias.DataSource = dt;
+                dataGridVoluntarias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridVoluntarias.MultiSelect = false;
+                this.dataGridVoluntarias.RowsDefaultCellStyle.BackColor = Color.Bisque;
+                this.dataGridVoluntarias.AlternatingRowsDefaultCellStyle.BackColor =
+                    Color.Beige;
                 conn.Close();
                 //showData();
                 //da.Dispose();
@@ -60,7 +50,6 @@ namespace DonnaGabriela
                 catch (Exception){
             MessageBox.Show("Não foi possível conectar ao servidor ! ");
             }
-
         }
 
  

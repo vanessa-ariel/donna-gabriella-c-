@@ -50,11 +50,6 @@ namespace DonnaGabriela
                 currentBtn.BackColor = Color.FromArgb(171, 112, 224);
                 currentBtn.ForeColor = Color.White;
                 currentBtn.IconColor = Color.White;
-                //Left border button
-                /* leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();*/
             }
         }
 
@@ -100,12 +95,6 @@ namespace DonnaGabriela
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        /* private void btnDashBoard_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormDashboard());
-        }*/
 
         private void btnAdminstrativo_Click(object sender, EventArgs e)
         {
@@ -166,7 +155,7 @@ namespace DonnaGabriela
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

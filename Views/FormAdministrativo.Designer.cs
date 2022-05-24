@@ -29,6 +29,7 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
@@ -42,7 +43,7 @@ namespace DonnaGabriela
             // panel5
             // 
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.dataGridVoluntarias);
             this.panel5.Controls.Add(this.btnEditar);
             this.panel5.Controls.Add(this.btnExcluirCadastro);
@@ -56,10 +57,23 @@ namespace DonnaGabriela
             // 
             // dataGridVoluntarias
             // 
+            this.dataGridVoluntarias.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridVoluntarias.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridVoluntarias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridVoluntarias.Location = new System.Drawing.Point(36, 19);
             this.dataGridVoluntarias.Name = "dataGridVoluntarias";
-            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 305);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridVoluntarias.ShowCellErrors = false;
+            this.dataGridVoluntarias.ShowCellToolTips = false;
+            this.dataGridVoluntarias.ShowEditingIcon = false;
+            this.dataGridVoluntarias.ShowRowErrors = false;
+            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 227);
             this.dataGridVoluntarias.TabIndex = 222;
             // 
             // btnEditar
