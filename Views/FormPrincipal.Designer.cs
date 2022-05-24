@@ -261,7 +261,7 @@ namespace DonnaGabriela
             this.iconeRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconeRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconeRestaurar.Image = global::DonnaGabriela.Properties.Resources.restaurar;
-            this.iconeRestaurar.Location = new System.Drawing.Point(926, 56);
+            this.iconeRestaurar.Location = new System.Drawing.Point(895, 25);
             this.iconeRestaurar.Name = "iconeRestaurar";
             this.iconeRestaurar.Size = new System.Drawing.Size(25, 25);
             this.iconeRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -275,7 +275,7 @@ namespace DonnaGabriela
             this.iconeMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconeMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconeMinimizar.Image = global::DonnaGabriela.Properties.Resources.minimizar;
-            this.iconeMinimizar.Location = new System.Drawing.Point(895, 25);
+            this.iconeMinimizar.Location = new System.Drawing.Point(864, 25);
             this.iconeMinimizar.Name = "iconeMinimizar";
             this.iconeMinimizar.Size = new System.Drawing.Size(25, 25);
             this.iconeMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

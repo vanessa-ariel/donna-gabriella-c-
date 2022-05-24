@@ -2,7 +2,6 @@ CREATE DATABASE DonnaGabriela
 
 USE DonnaGabriela
 
-
 CREATE TABLE Usuario (
 	ID_User INT IDENTITY(1,1) PRIMARY KEY,
 	Senha_User VARCHAR(200),
@@ -20,14 +19,6 @@ CREATE TABLE Usuario (
 	Data_Desligamento DATE,
 	Status_Conta VARCHAR(1),
 )
-
-DROP TABLE Usuario
-
-SELECT Nome_User, CPF_User, Email_User FROM Usuario WHERE Status_Conta = 0;
-
-SELECT COUNT(ID_user) AS 'Usuarios Ativos' FROM Usuario;
-
-SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 0;
 
 CREATE TABLE Voluntario (
     ID_Voluntario INT IDENTITY(1,1) PRIMARY KEY,
@@ -53,7 +44,39 @@ CREATE TABLE Voluntario (
 
 	Data_Desligamento VARCHAR(12),
 	Data_Admissao VARCHAR(12),
-	Status_Conta VARCHAR(1),
+	Status_Conta VARCHAR(20),
+)
+
+INSERT INTO Usuario 
+( 
+	Senha_User, 
+	Nome_User, 
+	CPF_User, 
+	Telefone_User, 
+	Endereco_User, 
+	Numero_User, 
+	Complemento_User, 
+	Cep_User, 
+	Data_Nasci_User, 
+	Sexo_User,
+	Data_Cadastro,
+	Data_Desligamento,
+	Status_Conta
+) VALUES 
+(
+	'123', 
+	'Rodrigo Junior', 
+	'35011829880',
+	'232323231',
+	'rodrigojunior0323@gmail.com', 
+	'Rua teste', 
+	'24', 
+	'1234', 
+	'2020-05-17', 
+	'Masculino', 
+	'2020-05-17',
+	'',
+	'0'
 )
 
 INSERT INTO Voluntario (
@@ -93,8 +116,8 @@ INSERT INTO Voluntario (
 	'20/05/2022',
 	'',
 	'',
-	'0'
-),(
+	'ativo'),
+(
 	1234,
 	'Social',
 	'Voluntaria 02',
@@ -112,7 +135,7 @@ INSERT INTO Voluntario (
 	'20/05/2022',
 	'',
 	'',
-	'0'
+	'pendente'
 ),
 (
 	1234,
@@ -132,45 +155,156 @@ INSERT INTO Voluntario (
 	'20/05/2022',
 	'',
 	'',
-	'0'
-)
-
-DROP TABLE Voluntario
-
-
-INSERT INTO Usuario 
-( 
-	Senha_User, 
-	Nome_User, 
-	CPF_User, 
-	Telefone_User, 
-	Endereco_User, 
-	Numero_User, 
-	Complemento_User, 
-	Cep_User, 
-	Data_Nasci_User, 
-	Sexo_User,
-	Data_Cadastro,
-	Data_Desligamento,
-	Status_Conta
-) VALUES 
+	'pendente'
+),
 (
-	'123', 
-	'Rodrigo Junior', 
-	'35011829880',
-	'232323231',
-	'rodrigojunior0323@gmail.com', 
-	'Rua teste', 
-	'24', 
-	'1234', 
-	'2020-05-17', 
-	'Masculino', 
-	'2020-05-17',
+	123,
+	'Psicologico',
+	'Voluntaria 04',
+	'1199999 99999',
+	'voluntaria04@email.com',
+	'99999-999',
+	'Rua da Voluntaria 04',
+	'1004',
+	'Centro',
+	'Sao Paulo',
+	'Apto 1004',
+	'10/05/2022',
+	'1234563',
+	'F',
+	'20/05/2022',
 	'',
-	'0'
+	'',
+	'ativo'
+),(
+	1234,
+	'Social',
+	'Voluntaria 05',
+	'1199999 99999',
+	'voluntaria05@email.com',
+	'99999-999',
+	'Rua da Voluntaria 05',
+	'1005',
+	'Centro2',
+	'Sao Paulo2',
+	'Apto 1002',
+	'10/05/2022',
+	'1234562',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'ativo'
+),
+(
+	1234,
+	'Juridico',
+	'Voluntaria 06',
+	'1199999 99999',
+	'voluntaria03@email.com',
+	'99999-999',
+	'Rua da Voluntaria 3',
+	'1003',
+	'Centro3',
+	'Sao Paulo3',
+	'Apto 1003',
+	'10/05/2022',
+	'1234562',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'pendente'
+),
+(
+	1234,
+	'Juridico',
+	'Voluntaria 07',
+	'1199999 99999',
+	'voluntaria03@email.com',
+	'99999-999',
+	'Rua da Voluntaria 3',
+	'1003',
+	'Centro3',
+	'Sao Paulo3',
+	'Apto 1003',
+	'10/05/2022',
+	'1234562',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'pendente'
+),
+(
+	123,
+	'Psicologico',
+	'Voluntaria 08',
+	'1199999 99999',
+	'voluntaria01@email.com',
+	'99999-999',
+	'Rua da Voluntaria 01',
+	'1001',
+	'Centro',
+	'Sao Paulo',
+	'Apto 1001',
+	'10/05/2022',
+	'1234563',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'ativo'
+),(
+	1234,
+	'Social',
+	'Voluntaria 09',
+	'1199999 99999',
+	'voluntaria02@email.com',
+	'99999-999',
+	'Rua da Voluntaria 02',
+	'1002',
+	'Centro2',
+	'Sao Paulo2',
+	'Apto 1002',
+	'10/05/2022',
+	'1234562',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'pendente'
+),
+(
+	1234,
+	'Juridico',
+	'Voluntaria 10',
+	'1199999 99999',
+	'voluntaria03@email.com',
+	'99999-999',
+	'Rua da Voluntaria 3',
+	'1003',
+	'Centro3',
+	'Sao Paulo3',
+	'Apto 1003',
+	'10/05/2022',
+	'1234562',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'desativado'
 )
 
 SELECT * FROM Voluntario
 
-Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario
-DELETE Voluntario WHERE ID_Voluntario = 1;
+SELECT Nome_User, CPF_User, Email_User FROM Usuario WHERE Status_Conta = 0;
+SELECT COUNT(ID_user) AS 'Usuarios Ativos' FROM Usuario;
+
+SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 'ativo';
+SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 'pendente';
+
+/*general queries*/
+use master
+drop database DonnaGabriela
+

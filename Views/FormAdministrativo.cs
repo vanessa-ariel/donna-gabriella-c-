@@ -13,12 +13,10 @@ namespace DonnaGabriela
 {
     public partial class FormAdministrativo : Form
     {
-        //string conexao = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
 
         public FormAdministrativo()
         {
             InitializeComponent();
-            //showData();
         }
 
         private DataTable dataTable = new DataTable();
@@ -26,7 +24,7 @@ namespace DonnaGabriela
         public void PullData()
         {
             string connString = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
-            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 0";
+            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 'ativo'";
 
             SqlConnection conn = new SqlConnection(connString);
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -35,10 +33,9 @@ namespace DonnaGabriela
 
             try{
                 conn.Open();
-                //MessageBox.Show("Conexão realizada ! ");
                 adapter.Fill(dt);
+                tableHeader.Visible = true;
                 dataGridVoluntarias.DataSource = dt;
-                // dataGridVoluntarias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridVoluntarias.Columns[0].Width = 100;
                 dataGridVoluntarias.Columns[1].Width = 500;
 
@@ -47,11 +44,10 @@ namespace DonnaGabriela
                 this.dataGridVoluntarias.AlternatingRowsDefaultCellStyle.BackColor =
                     Color.White;
                 conn.Close();
-                //showData();
-                //da.Dispose();
             }
                 catch (Exception){
-            MessageBox.Show("Não foi possível conectar ao servidor ! ");
+            MessageBox.Show("Não foi possível conectar ao banco de dados ! ");
+                lblError.Visible = true;
             }
         }
 
@@ -60,88 +56,13 @@ namespace DonnaGabriela
         private void load_data()
         {
             PullData();
-            /* dataGridVoluntarias.Columns.Clear();
-            using (SqlConnection con1 = new SqlConnection(conexao))
-            {
-                using (SqlCommand cmd = new SqlCommand("Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario", con1))
-                {
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                    {
-                        using (DataTable dt = new DataTable())
-                        {
-                            da.Fill(dt);
-                            dataGridVoluntarias.DataSource = dt;
-                        }
-                    }
-                }
-            }
-            dataGridVoluntarias.AllowUserToAddRows = false;
-            DataGridViewButtonColumn buttoncolumn = new DataGridViewButtonColumn();
-            dataGridVoluntarias.Columns.Insert(3, buttoncolumn);
-            buttoncolumn.HeaderText = "Deletar linha";
-            buttoncolumn.Width = 50;
-            buttoncolumn.Text = "Deletar";
-            buttoncolumn.UseColumnTextForButtonValue = true;*/
         }
 
-
-        private void btnCadastrarVoluntario_Click(object sender, EventArgs e)
-        {
-            FormCadastroUsuario frm = new FormCadastroUsuario();
-            frm.Show();
-        }
-
-        private void btnExcluirCadastro_Click(object sender, EventArgs e)
-        {
-
-            /*   string selectd_id = dataGridVoluntarias.CurrentRow.Cells[0].Value.ToString();
-               string selectd_nome = dataGridVoluntarias.CurrentRow.Cells[1].Value.ToString();
-               string selectd_telefone = dataGridVoluntarias.CurrentRow.Cells[2].Value.ToString();
-
-               string delete_row = "DELETE Voluntario WHERE ID_Voluntario = '"+ selectd_id + "'";
-            */
-
-            /*            if (MessageBox.Show("Tem Certeza?", "Deletar", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
-                        {
-                            int Row = dataGridVoluntarias.CurrentCell.RowIndex;
-                            SqlConnection conexao = new SqlConnection(@"Data Source=DESKTOP-29936OV\SQLEXPRESS;Initial Catalog=DonnaGabriela;User ID=adm;Password=123");
-                            SqlCommand comando = new SqlCommand("DELETE Voluntario WHERE ID_Voluntario = " + Convert.ToString(Row), conexao);
-                            conexao.Open();
-                            comando.ExecuteNonQuery();
-                            conexao.Close();
-                            dataGridVoluntarias.Rows.RemoveAt(Row);
-                        }
-            */
-        }
 
         private void FormAdministrativo_Load(object sender, EventArgs e)
         {
             load_data();
         }
-
-        /*private void dataGridVoluntarias_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-            if (e.ColumnIndex == 2)
-            {
-                 DataGridViewRow row = dataGridVoluntarias.Rows[e.ColumnIndex];
-                if (MessageBox.Show(String.Format("Tem Certeza?", row.Cells["ID_Voluntario"].Value), "Deletar", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    using (SqlConnection con1 = new SqlConnection(conexao))
-                    {
-                        using (SqlCommand cmd = new SqlCommand("DELETE Voluntario WHERE ID_Voluntario=@ID_Voluntario", con1))
-                        {
-                            cmd.Parameters.AddWithValue("ID_Voluntario", row.Cells["ID_Voluntario"].Value);
-                            con1.Open();
-                            cmd.ExecuteNonQuery();
-                            con1.Close();
-                        }
-                    }
-                    load_data();
-                }
-            }
-        }*/
 
 
         private void panel5_Paint(object sender, PaintEventArgs e)
@@ -157,7 +78,7 @@ namespace DonnaGabriela
             frm.Show();
         }
 
-        private void dataGridVoluntarias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void BtnEditar_Click(object sender, EventArgs e)
         {
 
         }

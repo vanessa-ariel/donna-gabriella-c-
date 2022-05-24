@@ -21,5 +21,15 @@ namespace DonnaGabriela
         {
 
         }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
