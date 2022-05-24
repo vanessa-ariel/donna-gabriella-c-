@@ -38,11 +38,14 @@ namespace DonnaGabriela
                 //MessageBox.Show("Conexão realizada ! ");
                 adapter.Fill(dt);
                 dataGridVoluntarias.DataSource = dt;
-                dataGridVoluntarias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                // dataGridVoluntarias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridVoluntarias.Columns[0].Width = 100;
+                dataGridVoluntarias.Columns[1].Width = 500;
+
                 dataGridVoluntarias.MultiSelect = false;
-                this.dataGridVoluntarias.RowsDefaultCellStyle.BackColor = Color.Bisque;
+                this.dataGridVoluntarias.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
                 this.dataGridVoluntarias.AlternatingRowsDefaultCellStyle.BackColor =
-                    Color.Beige;
+                    Color.White;
                 conn.Close();
                 //showData();
                 //da.Dispose();
@@ -152,6 +155,11 @@ namespace DonnaGabriela
             frm.Height = 600;
             frm.Width = 1024;
             frm.Show();
+        }
+
+        private void dataGridVoluntarias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

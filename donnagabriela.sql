@@ -75,26 +75,66 @@ INSERT INTO Voluntario (
 	Data_Desligamento,
 	Data_Admissao,
 	Status_Conta
-) VALUES (
+) VALUES(
 	123,
 	'Psicologico',
 	'Voluntaria 01',
 	'1199999 99999',
-	'voluntaria@email.com',
+	'voluntaria01@email.com',
 	'99999-999',
-	'Rua da Voluntaria',
-	'100',
+	'Rua da Voluntaria 01',
+	'1001',
 	'Centro',
 	'Sao Paulo',
-	'Apto 100',
+	'Apto 1001',
 	'10/05/2022',
-	'123456',
+	'1234563',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'0'
+),(
+	1234,
+	'Social',
+	'Voluntaria 02',
+	'1199999 99999',
+	'voluntaria02@email.com',
+	'99999-999',
+	'Rua da Voluntaria 02',
+	'1002',
+	'Centro2',
+	'Sao Paulo2',
+	'Apto 1002',
+	'10/05/2022',
+	'1234562',
+	'F',
+	'20/05/2022',
+	'',
+	'',
+	'0'
+),
+(
+	1234,
+	'Juridico',
+	'Voluntaria 03',
+	'1199999 99999',
+	'voluntaria03@email.com',
+	'99999-999',
+	'Rua da Voluntaria 3',
+	'1003',
+	'Centro3',
+	'Sao Paulo3',
+	'Apto 1003',
+	'10/05/2022',
+	'1234562',
 	'F',
 	'20/05/2022',
 	'',
 	'',
 	'0'
 )
+
 DROP TABLE Voluntario
 
 
@@ -130,7 +170,7 @@ INSERT INTO Usuario
 	'0'
 )
 
-SELECT * FROM Usuario
+SELECT * FROM Voluntario
 
 Select ID_Voluntario AS ID, Nome_Voluntario AS Nome, Telefone_Voluntario AS Telefone From Voluntario
 DELETE Voluntario WHERE ID_Voluntario = 1;

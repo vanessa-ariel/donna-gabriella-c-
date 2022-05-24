@@ -21,5 +21,25 @@ namespace DonnaGabriela
         {
 
         }
+
+        private void txtNumeroFunc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtConfirmacaoSenhaFunc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
