@@ -29,11 +29,19 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD:Views/FormAdministrativoFuncionario.Designer.cs
+=======
+            this.panelModal = new System.Windows.Forms.Panel();
+            this.btnNao = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnSim = new System.Windows.Forms.Button();
+            this.lblModalTitle = new System.Windows.Forms.Label();
+>>>>>>> feat/add-popup:Views/FormAdministrativo.Designer.cs
             this.lblError = new System.Windows.Forms.Label();
             this.tableHeader = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,8 +53,13 @@ namespace DonnaGabriela
             this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
+<<<<<<< HEAD:Views/FormAdministrativoFuncionario.Designer.cs
+=======
+            this.btnModal = new System.Windows.Forms.Button();
+>>>>>>> feat/add-popup:Views/FormAdministrativo.Designer.cs
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panelModal.SuspendLayout();
             this.tableHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,6 +103,7 @@ namespace DonnaGabriela
             // 
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
+            this.panel5.Controls.Add(this.panelModal);
             this.panel5.Controls.Add(this.lblError);
             this.panel5.Controls.Add(this.tableHeader);
             this.panel5.Controls.Add(this.dataGridVoluntarias);
@@ -100,6 +114,86 @@ namespace DonnaGabriela
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(886, 445);
             this.panel5.TabIndex = 4;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblError.Location = new System.Drawing.Point(140, 142);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(541, 30);
+            this.lblError.TabIndex = 229;
+            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
+            this.lblError.Visible = false;
+            // 
+            // panelModal
+            // 
+            this.panelModal.BackColor = System.Drawing.Color.White;
+            this.panelModal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelModal.Controls.Add(this.btnNao);
+            this.panelModal.Controls.Add(this.richTextBox1);
+            this.panelModal.Controls.Add(this.btnSim);
+            this.panelModal.Controls.Add(this.btnModal);
+            this.panelModal.Controls.Add(this.lblModalTitle);
+            this.panelModal.Location = new System.Drawing.Point(278, 64);
+            this.panelModal.Name = "panelModal";
+            this.panelModal.Size = new System.Drawing.Size(340, 226);
+            this.panelModal.TabIndex = 230;
+            this.panelModal.Visible = false;
+            // 
+            // btnNao
+            // 
+            this.btnNao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            this.btnNao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNao.ForeColor = System.Drawing.Color.White;
+            this.btnNao.Location = new System.Drawing.Point(244, 173);
+            this.btnNao.Name = "btnNao";
+            this.btnNao.Size = new System.Drawing.Size(76, 36);
+            this.btnNao.TabIndex = 6;
+            this.btnNao.Text = "Não";
+            this.btnNao.UseVisualStyleBackColor = false;
+            this.btnNao.Click += new System.EventHandler(this.BtnNao_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.richTextBox1.Location = new System.Drawing.Point(19, 62);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(284, 96);
+            this.richTextBox1.TabIndex = 5;
+            this.richTextBox1.TabStop = false;
+            this.richTextBox1.Text = "Tem certeza que deseja desativar o item cadastrado?";
+            // 
+            // btnSim
+            // 
+            this.btnSim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            this.btnSim.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSim.ForeColor = System.Drawing.Color.White;
+            this.btnSim.Location = new System.Drawing.Point(157, 173);
+            this.btnSim.Name = "btnSim";
+            this.btnSim.Size = new System.Drawing.Size(76, 36);
+            this.btnSim.TabIndex = 2;
+            this.btnSim.Text = "Sim";
+            this.btnSim.UseVisualStyleBackColor = false;
+            this.btnSim.Click += new System.EventHandler(this.BtnSim_Click);
+            // 
+            // lblModalTitle
+            // 
+            this.lblModalTitle.AutoSize = true;
+            this.lblModalTitle.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModalTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.lblModalTitle.Location = new System.Drawing.Point(15, 14);
+            this.lblModalTitle.Name = "lblModalTitle";
+            this.lblModalTitle.Size = new System.Drawing.Size(138, 25);
+            this.lblModalTitle.TabIndex = 0;
+            this.lblModalTitle.Text = "Desativar item";
             // 
             // lblError
             // 
@@ -199,13 +293,13 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.ReadOnly = true;
             this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVoluntarias.ShowCellErrors = false;
             this.dataGridVoluntarias.ShowCellToolTips = false;
@@ -261,6 +355,25 @@ namespace DonnaGabriela
             this.btnDesativarCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDesativarCadastro.UseVisualStyleBackColor = false;
             this.btnDesativarCadastro.Visible = false;
+<<<<<<< HEAD:Views/FormAdministrativoFuncionario.Designer.cs
+=======
+            this.btnDesativarCadastro.Click += new System.EventHandler(this.BtnDesativarCadastro_Click);
+            // 
+            // btnModal
+            // 
+            this.btnModal.BackColor = System.Drawing.Color.White;
+            this.btnModal.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.btnModal.Location = new System.Drawing.Point(298, 3);
+            this.btnModal.Name = "btnModal";
+            this.btnModal.Size = new System.Drawing.Size(39, 40);
+            this.btnModal.TabIndex = 1;
+            this.btnModal.Text = "x";
+            this.btnModal.UseVisualStyleBackColor = false;
+            this.btnModal.Click += new System.EventHandler(this.BtnModal_Click);
+>>>>>>> feat/add-popup:Views/FormAdministrativo.Designer.cs
             // 
             // FormAdministrativo
             // 
@@ -279,6 +392,8 @@ namespace DonnaGabriela
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panelModal.ResumeLayout(false);
+            this.panelModal.PerformLayout();
             this.tableHeader.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -308,5 +423,11 @@ namespace DonnaGabriela
         private FontAwesome.Sharp.IconButton btnEditar;
         private FontAwesome.Sharp.IconButton btnDesativarCadastro;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Panel panelModal;
+        private System.Windows.Forms.Button btnSim;
+        private System.Windows.Forms.Label lblModalTitle;
+        private System.Windows.Forms.Button btnNao;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnModal;
     }
 }

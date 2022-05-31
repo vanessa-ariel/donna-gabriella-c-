@@ -68,10 +68,45 @@ namespace DonnaGabriela
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD:Views/FormAdministrativoFuncionario.cs
             String selectedId = this.dataGridVoluntarias.SelectedRows[0].Cells[0].Value.ToString();
             Form editVoluntaria = new FormEdicaoVoluntaria(selectedId);
             editVoluntaria.BringToFront();
             editVoluntaria.Show();
+=======
+            FormCadastroUsuario frm = new FormCadastroUsuario();
+            frm.Height = 600;
+            frm.Width = 1024;
+            frm.Show();
+        }
+
+        private void BtnDesativarCadastro_Click(object sender, EventArgs e)
+        {
+            //panelOverlay.BackColor = Color.FromArgb(128, Color.Black);
+            //panelOverlay.Visible = true;
+            panelModal.Visible = true;
+        }
+
+        private void BtnModal_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
+
+        private void BtnSim_Click(object sender, EventArgs e)
+        {
+            //add logica de remover item da tabela
+            panelModal.Visible = false;
+        }
+
+        private void BtnNao_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
+
+        private void IconeFechar_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+>>>>>>> feat/add-popup:Views/FormAdministrativo.cs
         }
 
     }
