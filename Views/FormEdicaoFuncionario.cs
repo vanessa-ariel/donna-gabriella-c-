@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace DonnaGabriela
 {
-    public partial class FormPendencias : Form
+    public partial class FormEdicaoFuncionario : Form
     {
-        public FormPendencias()
+        public FormEdicaoFuncionario()
         {
             InitializeComponent();
         }
 
-        private void FormPendencias_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnInfo_Paint(object sender, PaintEventArgs e)
+        private void txtNome_TextChanged(object sender, EventArgs e)
         {
 
         }

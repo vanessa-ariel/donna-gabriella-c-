@@ -81,11 +81,6 @@ namespace DonnaGabriela
             panelModal.Visible = true;
         }
 
-        private void BtnModal_Click(object sender, EventArgs e)
-        {
-            panelModal.Visible = false;
-        }
-
         private void BtnSim_Click(object sender, EventArgs e)
         {
             //add logica de remover item da tabela

@@ -30,148 +30,118 @@ namespace DonnaGabriela
                 // Comandos SQL
                 SqlCommand comando = new SqlCommand("INSERT INTO Voluntario(Nome_Servico, Nome_Voluntario, Telefone_Voluntario, Email_Voluntario, Cep_Voluntario, Endereco_Voluntario, Numero_Voluntario, Bairro_Voluntario, Cidade_Voluntario, Complemento_Voluntario, Senha_Voluntario) VALUES (@Nome_Servico, @Nome_Voluntario, @Telefone_Voluntario, @Email_Voluntario, @Cep_Voluntario, @Endereco_Voluntario, @Numero_Voluntario, @Bairro_Voluntario, @Cidade_Voluntario, @Complemento_Voluntario, @Senha_Voluntario)", conexao);
                 comando.Parameters.Add("@Nome_Servico", SqlDbType.VarChar).Value = cmbProfissoes.Text;
-                comando.Parameters.Add("@Nome_Voluntario", SqlDbType.VarChar).Value = txtNomeVol.Text;
-                comando.Parameters.Add("@Telefone_Voluntario", SqlDbType.VarChar).Value = txtTelefoneVol.Text;
-                comando.Parameters.Add("@Email_Voluntario", SqlDbType.VarChar).Value = txtEmailVol.Text;
-                comando.Parameters.Add("@Cep_Voluntario", SqlDbType.VarChar).Value = txtcepVol.Text;
-                comando.Parameters.Add("@Endereco_Voluntario", SqlDbType.VarChar).Value = txtRuaVol.Text;
-                comando.Parameters.Add("@Numero_Voluntario", SqlDbType.VarChar).Value = txtNumeroVol.Text;
-                comando.Parameters.Add("@Bairro_Voluntario", SqlDbType.VarChar).Value = txtBairroVol.Text;
-                comando.Parameters.Add("@Cidade_Voluntario", SqlDbType.VarChar).Value = txtCidadeVol.Text;
-                comando.Parameters.Add("@Complemento_Voluntario", SqlDbType.VarChar).Value = txtComplementoVol.Text;
-                comando.Parameters.Add("@Senha_Voluntario", SqlDbType.VarChar).Value = txtSenhaVol.Text;
+                comando.Parameters.Add("@Nome_Voluntario", SqlDbType.VarChar).Value = txtNome.Text;
+                comando.Parameters.Add("@Telefone_Voluntario", SqlDbType.VarChar).Value = txtTelefone.Text;
+                comando.Parameters.Add("@Email_Voluntario", SqlDbType.VarChar).Value = txtEmail.Text;
+                comando.Parameters.Add("@Cep_Voluntario", SqlDbType.VarChar).Value = txtcep.Text;
+                comando.Parameters.Add("@Endereco_Voluntario", SqlDbType.VarChar).Value = txtRua.Text;
+                comando.Parameters.Add("@Numero_Voluntario", SqlDbType.VarChar).Value = txtNumeroRua.Text;
+                comando.Parameters.Add("@Bairro_Voluntario", SqlDbType.VarChar).Value = txtBairro.Text;
+                comando.Parameters.Add("@Cidade_Voluntario", SqlDbType.VarChar).Value = txtCidade.Text;
+                comando.Parameters.Add("@Complemento_Voluntario", SqlDbType.VarChar).Value = txtComplemento.Text;
                
-                if (txtNomeVol.Text == "Insira seu nome")
+                if (txtNome.Text == "Insira seu nome")
                 {
                     MessageBox.Show("Insira um nome para para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtNomeVol.Focus();
+                    txtNome.Focus();
                     conexao.Close();
                 }
-                else if (txtNomeVol.Text == "Insira seu e-mail")
+                else if (txtNome.Text == "Insira seu e-mail")
                 {
                     MessageBox.Show("Insira um e-mail para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtEmailVol.Focus();
+                    txtEmail.Focus();
                     conexao.Close();
-                } else if (txtEmailVol.Text == "")
+                } else if (txtEmail.Text == "")
                 {
                     MessageBox.Show("Insira um e-mail para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtEmailVol.Focus();
+                    txtEmail.Focus();
                     conexao.Close();
                 }
-                else if (txtTelefoneVol.Text == "Insira seu telefone")
+                else if (txtTelefone.Text == "Insira seu telefone")
                 {
                     MessageBox.Show("Insira um telefone para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtTelefoneVol.Focus();
+                    txtTelefone.Focus();
                     conexao.Close();
                 }
-                else if (txtTelefoneVol.Text == "")
+                else if (txtTelefone.Text == "")
                 {
                     MessageBox.Show("Insira um telefone para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtTelefoneVol.Focus();
+                    txtTelefone.Focus();
                     conexao.Close();
                 }
-                else if (txtcepVol.Text == "Insira o cep")
+                else if (txtcep.Text == "Insira o cep")
                 {
                     MessageBox.Show("Insira um cep para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtcepVol.Focus();
+                    txtcep.Focus();
                     conexao.Close();
                 }
-                else if (txtcepVol.Text == "")
+                else if (txtcep.Text == "")
                 {
                     MessageBox.Show("Insira um cep para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtcepVol.Focus();
+                    txtcep.Focus();
                     conexao.Close();
                 }
-                else if (txtRuaVol.Text == "Insira o nome da rua")
+                else if (txtRua.Text == "Insira o nome da rua")
                 {
                     MessageBox.Show("Insira a rua para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtRuaVol.Focus();
+                    txtRua.Focus();
                     conexao.Close();
                 }
-                else if (txtRuaVol.Text == "")
+                else if (txtRua.Text == "")
                 {
                     MessageBox.Show("Insira a rua para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtRuaVol.Focus();
+                    txtRua.Focus();
                     conexao.Close();
                 }
-                else if (txtBairroVol.Text == "Insira o bairro")
+                else if (txtBairro.Text == "Insira o bairro")
                 {
                     MessageBox.Show("Insira o bairro para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtBairroVol.Focus();
+                    txtBairro.Focus();
                     conexao.Close();
                 }
-                else if (txtBairroVol.Text == "")
+                else if (txtBairro.Text == "")
                 {
                     MessageBox.Show("Insira o bairro para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtBairroVol.Focus();
+                    txtBairro.Focus();
                     conexao.Close();
                 }
-                else if (txtCidadeVol.Text == "Insira a cidade")
+                else if (txtCidade.Text == "Insira a cidade")
                 {
                     MessageBox.Show("Insira a cidade para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtCidadeVol.Focus();
+                    txtCidade.Focus();
                     conexao.Close();
                 }
-                else if (txtCidadeVol.Text == "")
+                else if (txtCidade.Text == "")
                 {
                     MessageBox.Show("Insira a cidade para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtCidadeVol.Focus();
+                    txtCidade.Focus();
                     conexao.Close();
                 }
-                else if (txtNumeroVol.Text == "Insira o número")
+                else if (txtNumeroRua.Text == "Insira o número")
                 {
                     MessageBox.Show("Insira o numero para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtNumeroVol.Focus();
+                    txtNumeroRua.Focus();
                     conexao.Close();
                 }
-                else if (txtNumeroVol.Text == "")
+                else if (txtNumeroRua.Text == "")
                 {
                     MessageBox.Show("Insira o numero para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtNumeroVol.Focus();
+                    txtNumeroRua.Focus();
                     conexao.Close();
                 }
-                else if (txtComplementoVol.Text == "Insira seu complemento")
+                else if (txtComplemento.Text == "Insira seu complemento")
                 {
                     MessageBox.Show("Insira o complemento para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtComplementoVol.Focus();
+                    txtComplemento.Focus();
                     conexao.Close();
                 }
-                else if (txtComplementoVol.Text == "")
+                else if (txtComplemento.Text == "")
                 {
                     MessageBox.Show("Insira o complemento para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtComplementoVol.Focus();
+                    txtComplemento.Focus();
                     conexao.Close();
                 }
-                else if (txtSenhaVol.Text == "Crie uma senha")
-                {
-                    MessageBox.Show("Insira a senha para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtSenhaVol.Focus();
-                    conexao.Close();
-                }
-                else if (txtSenhaVol.Text == "")
-                {
-                    MessageBox.Show("Insira a senha para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtSenhaVol.Focus();
-                    conexao.Close();
-                }
-                else if (txtConfirmacaoSenhaVol.Text == "Confirmação de senha")
-                {
-                    MessageBox.Show("Insira a senha para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtConfirmacaoSenhaVol.Focus();
-                    conexao.Close();
-                }
-                else if (txtConfirmacaoSenhaVol.Text == "")
-                {
-                    MessageBox.Show("Insira a senha para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtConfirmacaoSenhaVol.Focus();
-                    conexao.Close();
-                }
-                else if (txtSenhaVol.Text != txtConfirmacaoSenhaVol.Text)
-                {
-                    MessageBox.Show("Insira as senhas iguais para fazer o cadastro!", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtConfirmacaoSenhaVol.Focus();
-                    conexao.Close();
-                }
+
                 else
                 {
                     conexao.Open();
@@ -203,6 +173,11 @@ namespace DonnaGabriela
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -29,34 +29,32 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
-            this.btnEditar = new FontAwesome.Sharp.IconButton();
-            this.btnExcluirCadastro = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
             this.panel7.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -97,13 +95,26 @@ namespace DonnaGabriela
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
             this.panel5.Controls.Add(this.dataGridVoluntarias);
-            this.panel5.Controls.Add(this.btnEditar);
-            this.panel5.Controls.Add(this.btnExcluirCadastro);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(11, 83);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1139, 445);
             this.panel5.TabIndex = 230;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(36, 20);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(964, 35);
+            this.flowLayoutPanel1.TabIndex = 229;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowLayoutPanel1_Paint);
             // 
             // panel1
             // 
@@ -123,6 +134,7 @@ namespace DonnaGabriela
             this.label2.Size = new System.Drawing.Size(46, 21);
             this.label2.TabIndex = 223;
             this.label2.Text = "Data";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -143,83 +155,6 @@ namespace DonnaGabriela
             this.label3.TabIndex = 224;
             this.label3.Text = "Hora";
             // 
-            // dataGridVoluntarias
-            // 
-            this.dataGridVoluntarias.AllowUserToAddRows = false;
-            this.dataGridVoluntarias.AllowUserToDeleteRows = false;
-            this.dataGridVoluntarias.AllowUserToOrderColumns = true;
-            this.dataGridVoluntarias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridVoluntarias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridVoluntarias.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridVoluntarias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridVoluntarias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dataGridVoluntarias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVoluntarias.ColumnHeadersVisible = false;
-            this.dataGridVoluntarias.Location = new System.Drawing.Point(36, 54);
-            this.dataGridVoluntarias.Name = "dataGridVoluntarias";
-            this.dataGridVoluntarias.ReadOnly = true;
-            this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridVoluntarias.ShowCellErrors = false;
-            this.dataGridVoluntarias.ShowCellToolTips = false;
-            this.dataGridVoluntarias.ShowEditingIcon = false;
-            this.dataGridVoluntarias.ShowRowErrors = false;
-            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 260);
-            this.dataGridVoluntarias.TabIndex = 222;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.btnEditar.IconColor = System.Drawing.Color.White;
-            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEditar.IconSize = 20;
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(162, 345);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(182, 36);
-            this.btnEditar.TabIndex = 219;
-            this.btnEditar.Text = " Editar Cadastro";
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // btnExcluirCadastro
-            // 
-            this.btnExcluirCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExcluirCadastro.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcluirCadastro.FlatAppearance.BorderSize = 0;
-            this.btnExcluirCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirCadastro.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExcluirCadastro.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExcluirCadastro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExcluirCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExcluirCadastro.IconSize = 20;
-            this.btnExcluirCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluirCadastro.Location = new System.Drawing.Point(162, 396);
-            this.btnExcluirCadastro.Name = "btnExcluirCadastro";
-            this.btnExcluirCadastro.Size = new System.Drawing.Size(182, 36);
-            this.btnExcluirCadastro.TabIndex = 220;
-            this.btnExcluirCadastro.Text = " Desativar Cadastro";
-            this.btnExcluirCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluirCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluirCadastro.UseVisualStyleBackColor = false;
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.label7);
@@ -239,21 +174,6 @@ namespace DonnaGabriela
             this.label7.TabIndex = 223;
             this.label7.Text = "Nome Voluntária";
             this.label7.Click += new System.EventHandler(this.Label7_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(36, 20);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(964, 35);
-            this.flowLayoutPanel1.TabIndex = 229;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowLayoutPanel1_Paint);
             // 
             // panel9
             // 
@@ -293,6 +213,38 @@ namespace DonnaGabriela
             this.label4.TabIndex = 223;
             this.label4.Text = "Especialidade";
             // 
+            // dataGridVoluntarias
+            // 
+            this.dataGridVoluntarias.AllowUserToAddRows = false;
+            this.dataGridVoluntarias.AllowUserToDeleteRows = false;
+            this.dataGridVoluntarias.AllowUserToOrderColumns = true;
+            this.dataGridVoluntarias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridVoluntarias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridVoluntarias.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridVoluntarias.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridVoluntarias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dataGridVoluntarias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVoluntarias.ColumnHeadersVisible = false;
+            this.dataGridVoluntarias.Location = new System.Drawing.Point(36, 54);
+            this.dataGridVoluntarias.Name = "dataGridVoluntarias";
+            this.dataGridVoluntarias.ReadOnly = true;
+            this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridVoluntarias.RowHeadersVisible = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridVoluntarias.ShowCellErrors = false;
+            this.dataGridVoluntarias.ShowCellToolTips = false;
+            this.dataGridVoluntarias.ShowEditingIcon = false;
+            this.dataGridVoluntarias.ShowRowErrors = false;
+            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 260);
+            this.dataGridVoluntarias.TabIndex = 222;
+            // 
             // FormAgendamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,18 +260,18 @@ namespace DonnaGabriela
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,8 +287,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridVoluntarias;
-        private FontAwesome.Sharp.IconButton btnEditar;
-        private FontAwesome.Sharp.IconButton btnExcluirCadastro;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;

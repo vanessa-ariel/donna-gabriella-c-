@@ -30,7 +30,7 @@ namespace DonnaGabriela
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtEmailFunc = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -38,23 +38,23 @@ namespace DonnaGabriela
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCidadeFunc = new System.Windows.Forms.TextBox();
-            this.txtBairroFunc = new System.Windows.Forms.TextBox();
-            this.txtNumeroFunc = new System.Windows.Forms.TextBox();
-            this.txtRuaFunc = new System.Windows.Forms.TextBox();
-            this.txtComplementoFunc = new System.Windows.Forms.TextBox();
-            this.txtcepFunc = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtNumeroRua = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.txtComplemento = new System.Windows.Forms.TextBox();
+            this.txtcep = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.txtAdmissao = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -62,10 +62,10 @@ namespace DonnaGabriela
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCadastrarFunc = new System.Windows.Forms.Button();
-            this.txtNomeFunc = new System.Windows.Forms.TextBox();
-            this.txtConfirmacaoSenhaFunc = new System.Windows.Forms.TextBox();
-            this.txtSenhaFunc = new System.Windows.Forms.TextBox();
-            this.txtTelefoneFunc = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtConfirmacaoSenha = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -76,18 +76,18 @@ namespace DonnaGabriela
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.txtEmailFunc);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txtRg);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txtSalario);
+            this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtCargo);
+            this.panel1.Controls.Add(this.txtAdmissao);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
@@ -95,10 +95,10 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnCadastrarFunc);
-            this.panel1.Controls.Add(this.txtNomeFunc);
-            this.panel1.Controls.Add(this.txtConfirmacaoSenhaFunc);
-            this.panel1.Controls.Add(this.txtSenhaFunc);
-            this.panel1.Controls.Add(this.txtTelefoneFunc);
+            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.txtConfirmacaoSenha);
+            this.panel1.Controls.Add(this.txtSenha);
+            this.panel1.Controls.Add(this.txtTelefone);
             this.panel1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(2, -2);
             this.panel1.Name = "panel1";
@@ -106,16 +106,16 @@ namespace DonnaGabriela
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // txtEmailFunc
+            // txtEmail
             // 
-            this.txtEmailFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmailFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtEmailFunc.Location = new System.Drawing.Point(48, 180);
-            this.txtEmailFunc.Name = "txtEmailFunc";
-            this.txtEmailFunc.Size = new System.Drawing.Size(225, 26);
-            this.txtEmailFunc.TabIndex = 218;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtEmail.Location = new System.Drawing.Point(48, 180);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(225, 26);
+            this.txtEmail.TabIndex = 218;
             // 
             // groupBox1
             // 
@@ -125,12 +125,12 @@ namespace DonnaGabriela
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txtCidadeFunc);
-            this.groupBox1.Controls.Add(this.txtBairroFunc);
-            this.groupBox1.Controls.Add(this.txtNumeroFunc);
-            this.groupBox1.Controls.Add(this.txtRuaFunc);
-            this.groupBox1.Controls.Add(this.txtComplementoFunc);
-            this.groupBox1.Controls.Add(this.txtcepFunc);
+            this.groupBox1.Controls.Add(this.txtCidade);
+            this.groupBox1.Controls.Add(this.txtBairro);
+            this.groupBox1.Controls.Add(this.txtNumeroRua);
+            this.groupBox1.Controls.Add(this.txtRua);
+            this.groupBox1.Controls.Add(this.txtComplemento);
+            this.groupBox1.Controls.Add(this.txtcep);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(10, 397);
             this.groupBox1.Name = "groupBox1";
@@ -212,71 +212,71 @@ namespace DonnaGabriela
             this.label8.TabIndex = 270;
             this.label8.Text = "Nome do logradouro *";
             // 
-            // txtCidadeFunc
+            // txtCidade
             // 
-            this.txtCidadeFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCidadeFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCidadeFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidadeFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtCidadeFunc.Location = new System.Drawing.Point(225, 169);
-            this.txtCidadeFunc.Name = "txtCidadeFunc";
-            this.txtCidadeFunc.Size = new System.Drawing.Size(273, 26);
-            this.txtCidadeFunc.TabIndex = 269;
+            this.txtCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCidade.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtCidade.Location = new System.Drawing.Point(225, 169);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(273, 26);
+            this.txtCidade.TabIndex = 269;
             // 
-            // txtBairroFunc
+            // txtBairro
             // 
-            this.txtBairroFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBairroFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBairroFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairroFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtBairroFunc.Location = new System.Drawing.Point(225, 114);
-            this.txtBairroFunc.Name = "txtBairroFunc";
-            this.txtBairroFunc.Size = new System.Drawing.Size(273, 26);
-            this.txtBairroFunc.TabIndex = 268;
+            this.txtBairro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBairro.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtBairro.Location = new System.Drawing.Point(225, 114);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(273, 26);
+            this.txtBairro.TabIndex = 268;
             // 
-            // txtNumeroFunc
+            // txtNumeroRua
             // 
-            this.txtNumeroFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNumeroFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNumeroFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtNumeroFunc.Location = new System.Drawing.Point(390, 59);
-            this.txtNumeroFunc.Name = "txtNumeroFunc";
-            this.txtNumeroFunc.Size = new System.Drawing.Size(108, 26);
-            this.txtNumeroFunc.TabIndex = 266;
+            this.txtNumeroRua.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumeroRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumeroRua.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroRua.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtNumeroRua.Location = new System.Drawing.Point(390, 59);
+            this.txtNumeroRua.Name = "txtNumeroRua";
+            this.txtNumeroRua.Size = new System.Drawing.Size(108, 26);
+            this.txtNumeroRua.TabIndex = 266;
             // 
-            // txtRuaFunc
+            // txtRua
             // 
-            this.txtRuaFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRuaFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRuaFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRuaFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtRuaFunc.Location = new System.Drawing.Point(37, 59);
-            this.txtRuaFunc.Name = "txtRuaFunc";
-            this.txtRuaFunc.Size = new System.Drawing.Size(338, 26);
-            this.txtRuaFunc.TabIndex = 265;
+            this.txtRua.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRua.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRua.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtRua.Location = new System.Drawing.Point(37, 59);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(338, 26);
+            this.txtRua.TabIndex = 265;
             // 
-            // txtComplementoFunc
+            // txtComplemento
             // 
-            this.txtComplementoFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtComplementoFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtComplementoFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComplementoFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtComplementoFunc.Location = new System.Drawing.Point(38, 114);
-            this.txtComplementoFunc.Name = "txtComplementoFunc";
-            this.txtComplementoFunc.Size = new System.Drawing.Size(173, 26);
-            this.txtComplementoFunc.TabIndex = 267;
+            this.txtComplemento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtComplemento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtComplemento.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComplemento.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtComplemento.Location = new System.Drawing.Point(38, 114);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.Size = new System.Drawing.Size(173, 26);
+            this.txtComplemento.TabIndex = 267;
             // 
-            // txtcepFunc
+            // txtcep
             // 
-            this.txtcepFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtcepFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcepFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcepFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtcepFunc.Location = new System.Drawing.Point(38, 169);
-            this.txtcepFunc.Name = "txtcepFunc";
-            this.txtcepFunc.Size = new System.Drawing.Size(173, 26);
-            this.txtcepFunc.TabIndex = 264;
+            this.txtcep.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcep.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcep.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcep.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtcep.Location = new System.Drawing.Point(38, 169);
+            this.txtcep.Name = "txtcep";
+            this.txtcep.Size = new System.Drawing.Size(173, 26);
+            this.txtcep.TabIndex = 264;
             // 
             // label4
             // 
@@ -303,16 +303,16 @@ namespace DonnaGabriela
             this.label19.TabIndex = 215;
             this.label19.Text = "Salário *";
             // 
-            // textBox5
+            // txtRg
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox5.Location = new System.Drawing.Point(48, 234);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 26);
-            this.textBox5.TabIndex = 214;
+            this.txtRg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRg.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRg.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtRg.Location = new System.Drawing.Point(48, 234);
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(225, 26);
+            this.txtRg.TabIndex = 214;
             // 
             // label14
             // 
@@ -338,27 +338,27 @@ namespace DonnaGabriela
             this.label18.TabIndex = 212;
             this.label18.Text = "Cargo *";
             // 
-            // textBox3
+            // txtSalario
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox3.Location = new System.Drawing.Point(48, 343);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(225, 26);
-            this.textBox3.TabIndex = 210;
+            this.txtSalario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSalario.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtSalario.Location = new System.Drawing.Point(48, 343);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(225, 26);
+            this.txtSalario.TabIndex = 210;
             // 
-            // textBox4
+            // txtCpf
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox4.Location = new System.Drawing.Point(288, 234);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 26);
-            this.textBox4.TabIndex = 211;
+            this.txtCpf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCpf.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtCpf.Location = new System.Drawing.Point(288, 234);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(222, 26);
+            this.txtCpf.TabIndex = 211;
             // 
             // label2
             // 
@@ -384,27 +384,27 @@ namespace DonnaGabriela
             this.label3.TabIndex = 208;
             this.label3.Text = "RG *";
             // 
-            // textBox1
+            // txtCargo
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(288, 289);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 26);
-            this.textBox1.TabIndex = 206;
+            this.txtCargo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCargo.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtCargo.Location = new System.Drawing.Point(288, 289);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(221, 26);
+            this.txtCargo.TabIndex = 206;
             // 
-            // textBox2
+            // txtAdmissao
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(49, 289);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 26);
-            this.textBox2.TabIndex = 207;
+            this.txtAdmissao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAdmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAdmissao.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdmissao.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtAdmissao.Location = new System.Drawing.Point(49, 289);
+            this.txtAdmissao.Name = "txtAdmissao";
+            this.txtAdmissao.Size = new System.Drawing.Size(224, 26);
+            this.txtAdmissao.TabIndex = 207;
             // 
             // label17
             // 
@@ -492,53 +492,53 @@ namespace DonnaGabriela
             this.btnCadastrarFunc.Name = "btnCadastrarFunc";
             this.btnCadastrarFunc.Size = new System.Drawing.Size(253, 35);
             this.btnCadastrarFunc.TabIndex = 190;
-            this.btnCadastrarFunc.Text = "Cadastrar funcionário";
+            this.btnCadastrarFunc.Text = "Cadastrar Funcionário";
             this.btnCadastrarFunc.UseVisualStyleBackColor = false;
             // 
-            // txtNomeFunc
+            // txtNome
             // 
-            this.txtNomeFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNomeFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNomeFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtNomeFunc.Location = new System.Drawing.Point(48, 126);
-            this.txtNomeFunc.Name = "txtNomeFunc";
-            this.txtNomeFunc.Size = new System.Drawing.Size(464, 26);
-            this.txtNomeFunc.TabIndex = 181;
+            this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtNome.Location = new System.Drawing.Point(48, 126);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(464, 26);
+            this.txtNome.TabIndex = 181;
             // 
-            // txtConfirmacaoSenhaFunc
+            // txtConfirmacaoSenha
             // 
-            this.txtConfirmacaoSenhaFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtConfirmacaoSenhaFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConfirmacaoSenhaFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmacaoSenhaFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtConfirmacaoSenhaFunc.Location = new System.Drawing.Point(279, 690);
-            this.txtConfirmacaoSenhaFunc.Name = "txtConfirmacaoSenhaFunc";
-            this.txtConfirmacaoSenhaFunc.Size = new System.Drawing.Size(229, 26);
-            this.txtConfirmacaoSenhaFunc.TabIndex = 189;
-            this.txtConfirmacaoSenhaFunc.TextChanged += new System.EventHandler(this.txtConfirmacaoSenhaFunc_TextChanged);
+            this.txtConfirmacaoSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtConfirmacaoSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConfirmacaoSenha.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmacaoSenha.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtConfirmacaoSenha.Location = new System.Drawing.Point(279, 690);
+            this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
+            this.txtConfirmacaoSenha.Size = new System.Drawing.Size(229, 26);
+            this.txtConfirmacaoSenha.TabIndex = 189;
+            this.txtConfirmacaoSenha.TextChanged += new System.EventHandler(this.txtConfirmacaoSenhaFunc_TextChanged);
             // 
-            // txtSenhaFunc
+            // txtSenha
             // 
-            this.txtSenhaFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSenhaFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenhaFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenhaFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSenhaFunc.Location = new System.Drawing.Point(46, 690);
-            this.txtSenhaFunc.Name = "txtSenhaFunc";
-            this.txtSenhaFunc.Size = new System.Drawing.Size(218, 26);
-            this.txtSenhaFunc.TabIndex = 188;
+            this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenha.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtSenha.Location = new System.Drawing.Point(46, 690);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(218, 26);
+            this.txtSenha.TabIndex = 188;
             // 
-            // txtTelefoneFunc
+            // txtTelefone
             // 
-            this.txtTelefoneFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTelefoneFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefoneFunc.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefoneFunc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtTelefoneFunc.Location = new System.Drawing.Point(288, 180);
-            this.txtTelefoneFunc.Name = "txtTelefoneFunc";
-            this.txtTelefoneFunc.Size = new System.Drawing.Size(223, 26);
-            this.txtTelefoneFunc.TabIndex = 183;
+            this.txtTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefone.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtTelefone.Location = new System.Drawing.Point(288, 180);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(223, 26);
+            this.txtTelefone.TabIndex = 183;
             // 
             // panel6
             // 
@@ -556,9 +556,9 @@ namespace DonnaGabriela
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(44, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 30);
+            this.label1.Size = new System.Drawing.Size(266, 30);
             this.label1.TabIndex = 218;
-            this.label1.Text = "Edição de Funcionários";
+            this.label1.Text = "Cadastro de Funcionários";
             // 
             // FormConfiguracoesFuncionario
             // 
@@ -585,42 +585,42 @@ namespace DonnaGabriela
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.TextBox txtAdmissao;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCadastrarFunc;
-        private System.Windows.Forms.TextBox txtNomeFunc;
-        private System.Windows.Forms.TextBox txtConfirmacaoSenhaFunc;
-        private System.Windows.Forms.TextBox txtSenhaFunc;
-        private System.Windows.Forms.TextBox txtTelefoneFunc;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtConfirmacaoSenha;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtEmailFunc;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCidadeFunc;
-        private System.Windows.Forms.TextBox txtBairroFunc;
-        private System.Windows.Forms.TextBox txtNumeroFunc;
-        private System.Windows.Forms.TextBox txtRuaFunc;
-        private System.Windows.Forms.TextBox txtComplementoFunc;
-        private System.Windows.Forms.TextBox txtcepFunc;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.TextBox txtNumeroRua;
+        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.TextBox txtComplemento;
+        private System.Windows.Forms.TextBox txtcep;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label17;
     }
 }
