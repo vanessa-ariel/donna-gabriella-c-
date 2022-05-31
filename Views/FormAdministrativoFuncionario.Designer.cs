@@ -29,19 +29,17 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD:Views/FormAdministrativoFuncionario.Designer.cs
-=======
             this.panelModal = new System.Windows.Forms.Panel();
             this.btnNao = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnSim = new System.Windows.Forms.Button();
+            this.btnModal = new System.Windows.Forms.Button();
             this.lblModalTitle = new System.Windows.Forms.Label();
->>>>>>> feat/add-popup:Views/FormAdministrativo.Designer.cs
             this.lblError = new System.Windows.Forms.Label();
             this.tableHeader = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -53,10 +51,6 @@ namespace DonnaGabriela
             this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
-<<<<<<< HEAD:Views/FormAdministrativoFuncionario.Designer.cs
-=======
-            this.btnModal = new System.Windows.Forms.Button();
->>>>>>> feat/add-popup:Views/FormAdministrativo.Designer.cs
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panelModal.SuspendLayout();
@@ -115,18 +109,6 @@ namespace DonnaGabriela
             this.panel5.Size = new System.Drawing.Size(886, 445);
             this.panel5.TabIndex = 4;
             // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblError.Location = new System.Drawing.Point(140, 142);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(541, 30);
-            this.lblError.TabIndex = 229;
-            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
-            this.lblError.Visible = false;
-            // 
             // panelModal
             // 
             this.panelModal.BackColor = System.Drawing.Color.White;
@@ -183,6 +165,18 @@ namespace DonnaGabriela
             this.btnSim.Text = "Sim";
             this.btnSim.UseVisualStyleBackColor = false;
             this.btnSim.Click += new System.EventHandler(this.BtnSim_Click);
+            // 
+            // btnModal
+            // 
+            this.btnModal.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModal.Location = new System.Drawing.Point(303, -1);
+            this.btnModal.Name = "btnModal";
+            this.btnModal.Size = new System.Drawing.Size(36, 38);
+            this.btnModal.TabIndex = 7;
+            this.btnModal.Text = "x";
+            this.btnModal.Click += new System.EventHandler(this.btnModal_Click_1);
             // 
             // lblModalTitle
             // 
@@ -293,13 +287,13 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.ReadOnly = true;
             this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVoluntarias.ShowCellErrors = false;
             this.dataGridVoluntarias.ShowCellToolTips = false;
@@ -355,25 +349,7 @@ namespace DonnaGabriela
             this.btnDesativarCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDesativarCadastro.UseVisualStyleBackColor = false;
             this.btnDesativarCadastro.Visible = false;
-<<<<<<< HEAD:Views/FormAdministrativoFuncionario.Designer.cs
-=======
-            this.btnDesativarCadastro.Click += new System.EventHandler(this.BtnDesativarCadastro_Click);
-            // 
-            // btnModal
-            // 
-            this.btnModal.BackColor = System.Drawing.Color.White;
-            this.btnModal.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.btnModal.Location = new System.Drawing.Point(298, 3);
-            this.btnModal.Name = "btnModal";
-            this.btnModal.Size = new System.Drawing.Size(39, 40);
-            this.btnModal.TabIndex = 1;
-            this.btnModal.Text = "x";
-            this.btnModal.UseVisualStyleBackColor = false;
-            this.btnModal.Click += new System.EventHandler(this.BtnModal_Click);
->>>>>>> feat/add-popup:Views/FormAdministrativo.Designer.cs
+            this.btnDesativarCadastro.Click += new System.EventHandler(this.btnDesativarCadastro_Click_1);
             // 
             // FormAdministrativo
             // 
