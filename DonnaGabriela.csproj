@@ -59,6 +59,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Voluntaria.cs" />
     <Compile Include="Model\VoluntariaModel.cs" />
     <Compile Include="Views\FormNovoCadastroFuncionario.cs">
       <SubType>Form</SubType>
