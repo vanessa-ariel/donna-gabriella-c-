@@ -35,6 +35,8 @@ namespace DonnaGabriela
                 conn.Open();
                 adapter.Fill(dt);
                 tableHeader.Visible = true;
+                btnEditar.Visible = true;
+                btnDesativarCadastro.Visible = true;
                 dataGridVoluntarias.DataSource = dt;
                 dataGridVoluntarias.Columns[0].Width = 100;
                 dataGridVoluntarias.Columns[1].Width = 500;
@@ -81,6 +83,34 @@ namespace DonnaGabriela
         private void BtnEditar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnDesativarCadastro_Click(object sender, EventArgs e)
+        {
+            //panelOverlay.BackColor = Color.FromArgb(128, Color.Black);
+            //panelOverlay.Visible = true;
+            panelModal.Visible = true;
+        }
+
+        private void BtnModal_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
+
+        private void BtnSim_Click(object sender, EventArgs e)
+        {
+            //add logica de remover item da tabela
+            panelModal.Visible = false;
+        }
+
+        private void BtnNao_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
+
+        private void IconeFechar_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
         }
     }
 }
