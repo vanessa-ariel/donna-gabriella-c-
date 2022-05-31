@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DonnaGabriela.Model;
 
 namespace DonnaGabriela
 {
@@ -19,22 +15,27 @@ namespace DonnaGabriela
             InitializeComponent();
         }
 
-        private DataTable dataTable = new DataTable();
-
-        public void PullData()
+        private void loadDataTable()
         {
-            string connString = @"Data Source=.\SQLEXPRESS;Database=DonnaGabriela;Trusted_Connection=True";
-            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 'ativo'";
+            DatabaseUtils databaseUtils = new DatabaseUtils();
 
-            SqlConnection conn = new SqlConnection(connString);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = 'ativo'";
+            /**SqlConnection connection = databaseUtils.getConnection();
+            connection.Open();
+
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);**/
+            databaseUtils.openConnection();
+            SqlDataAdapter adapter = databaseUtils.ExecuteAdapter(query);
             DataTable dt = new DataTable();
 
-            try{
-                conn.Open();
+            try
+            {
+                /**connection.Open();**/
                 adapter.Fill(dt);
                 tableHeader.Visible = true;
+                btnEditar.Visible = true;
+                btnDesativarCadastro.Visible = true;
                 dataGridVoluntarias.DataSource = dt;
                 dataGridVoluntarias.Columns[0].Width = 100;
                 dataGridVoluntarias.Columns[1].Width = 500;
@@ -43,36 +44,23 @@ namespace DonnaGabriela
                 this.dataGridVoluntarias.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
                 this.dataGridVoluntarias.AlternatingRowsDefaultCellStyle.BackColor =
                     Color.White;
-                conn.Close();
+                //databaseUtils.closeConnection(connection);
             }
-                catch (Exception){
-            MessageBox.Show("Não foi possível conectar ao banco de dados ! ");
+            catch (Exception e)
+            {
+                MessageBox.Show("Não foi possível conectar ao banco de dados!\n"+e.Message);
                 lblError.Visible = true;
             }
         }
 
- 
-
-        private void load_data()
-        {
-            PullData();
-        }
-
-
         private void FormAdministrativo_Load(object sender, EventArgs e)
         {
-            load_data();
-        }
-
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
+            loadDataTable();
         }
 
         private void BtnCadastrarVoluntario_Click_1(object sender, EventArgs e)
         {
-            FormCadastroUsuario frm = new FormCadastroUsuario();
+            FormEdicaoVoluntaria frm = new FormEdicaoVoluntaria();
             frm.Height = 600;
             frm.Width = 1024;
             frm.Show();
@@ -80,7 +68,11 @@ namespace DonnaGabriela
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-
+            String selectedId = this.dataGridVoluntarias.SelectedRows[0].Cells[0].Value.ToString();
+            Form editVoluntaria = new FormEdicaoVoluntaria(selectedId);
+            editVoluntaria.BringToFront();
+            editVoluntaria.Show();
         }
+
     }
 }

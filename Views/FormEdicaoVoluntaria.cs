@@ -1,23 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DonnaGabriela.Model;
 
 namespace DonnaGabriela
 {
-    public partial class FormCadastroUsuario : Form
+    public partial class FormEdicaoVoluntaria : Form
     {
         SqlConnection conexao = new SqlConnection(@"Data Source=LAPTOP-BMV2PG56;Initial Catalog=DonnaGabriela;User ID=sa; Password=123");
+        Boolean editMode = false;
+        VoluntariaModel voluntariaModel = new VoluntariaModel();
 
-        public FormCadastroUsuario()
+        public FormEdicaoVoluntaria()
         {
             InitializeComponent();
+        }
+        public FormEdicaoVoluntaria(String editId)
+        {
+            InitializeComponent();
+            editMode = true;
+            voluntariaModel.getVoluntariaById(editId);
         }
 
         private void btnCadastrarVol_Click(object sender, EventArgs e)
@@ -184,7 +187,7 @@ namespace DonnaGabriela
             }
         }
 
-        private void FormCadastroUsuario_Load(object sender, EventArgs e)
+        private void FormEdicaoVoluntaria_Load(object sender, EventArgs e)
         {
 
         }

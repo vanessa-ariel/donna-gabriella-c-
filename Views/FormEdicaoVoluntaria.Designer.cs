@@ -1,7 +1,7 @@
 ﻿
 namespace DonnaGabriela
 {
-    partial class FormCadastroUsuario
+    partial class FormEdicaoVoluntaria
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,6 @@ namespace DonnaGabriela
             this.txtEmailVol = new System.Windows.Forms.TextBox();
             this.txtCpfVol = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -83,9 +82,9 @@ namespace DonnaGabriela
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(60, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 30);
+            this.label1.Size = new System.Drawing.Size(226, 30);
             this.label1.TabIndex = 217;
-            this.label1.Text = "Novo cadastro de voluntárias";
+            this.label1.Text = "Edição de voluntárias";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
@@ -279,18 +278,6 @@ namespace DonnaGabriela
             this.label2.TabIndex = 209;
             this.label2.Text = "CPF *";
             // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label17.Location = new System.Drawing.Point(63, 760);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(254, 17);
-            this.label17.TabIndex = 205;
-            this.label17.Text = "* Campos de preenchimento obrigatório";
-            // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -363,7 +350,7 @@ namespace DonnaGabriela
             this.btnCadastrarVol.Name = "btnCadastrarVol";
             this.btnCadastrarVol.Size = new System.Drawing.Size(253, 35);
             this.btnCadastrarVol.TabIndex = 190;
-            this.btnCadastrarVol.Text = "Cadastrar voluntária";
+            this.btnCadastrarVol.Text = "Salvar";
             this.btnCadastrarVol.UseVisualStyleBackColor = false;
             this.btnCadastrarVol.Click += new System.EventHandler(this.btnCadastrarVol_Click);
             // 
@@ -419,7 +406,6 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.txtCpfVol);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label7);
@@ -461,18 +447,18 @@ namespace DonnaGabriela
             this.cmbProfissoes.Size = new System.Drawing.Size(221, 33);
             this.cmbProfissoes.TabIndex = 219;
             // 
-            // FormCadastroUsuario
+            // FormEdicaoVoluntaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(973, 368);
+            this.ClientSize = new System.Drawing.Size(990, 368);
             this.Controls.Add(this.panel1);
-            this.Name = "FormCadastroUsuario";
+            this.Name = "FormEdicaoVoluntaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Volontária";
-            this.Load += new System.EventHandler(this.FormCadastroUsuario_Load);
+            this.Load += new System.EventHandler(this.FormEdicaoVoluntaria_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -501,7 +487,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.TextBox txtEmailVol;
         private System.Windows.Forms.TextBox txtCpfVol;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label7;
