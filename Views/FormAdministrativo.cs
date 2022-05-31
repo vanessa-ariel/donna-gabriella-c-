@@ -82,7 +82,10 @@ namespace DonnaGabriela
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-
+            FormCadastroUsuario frm = new FormCadastroUsuario();
+            frm.Height = 600;
+            frm.Width = 1024;
+            frm.Show();
         }
 
         private void BtnDesativarCadastro_Click(object sender, EventArgs e)
