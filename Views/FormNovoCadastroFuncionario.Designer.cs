@@ -556,9 +556,9 @@ namespace DonnaGabriela
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(44, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 30);
+            this.label1.Size = new System.Drawing.Size(243, 30);
             this.label1.TabIndex = 218;
-            this.label1.Text = "Novo Cadastro de Funcionários";
+            this.label1.Text = "Edição de Funcionários";
             // 
             // FormConfiguracoesFuncionario
             // 
@@ -566,7 +566,7 @@ namespace DonnaGabriela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(824, 705);
+            this.ClientSize = new System.Drawing.Size(841, 722);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "FormConfiguracoesFuncionario";

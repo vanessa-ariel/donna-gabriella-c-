@@ -59,36 +59,31 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormConfiguracoesFuncionario.cs">
+    <Compile Include="Model\VoluntariaModel.cs" />
+    <Compile Include="Views\FormNovoCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormConfiguracoesFuncionario.Designer.cs">
-      <DependentUpon>FormConfiguracoesFuncionario.cs</DependentUpon>
+    <Compile Include="Views\FormNovoCadastroFuncionario.Designer.cs">
+      <DependentUpon>FormNovoCadastroFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormCadastroUsuario.cs">
+    <Compile Include="Views\FormEdicaoVoluntaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormCadastroUsuario.Designer.cs">
-      <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
+    <Compile Include="Views\FormEdicaoVoluntaria.Designer.cs">
+      <DependentUpon>FormEdicaoVoluntaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modal\ConexaoBD.cs" />
-    <Compile Include="Views\FormAdministrativo.cs">
+    <Compile Include="Model\DatabaseUtils.cs" />
+    <Compile Include="Views\FormAdministrativoFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormAdministrativo.Designer.cs">
-      <DependentUpon>FormAdministrativo.cs</DependentUpon>
+    <Compile Include="Views\FormAdministrativoFuncionario.Designer.cs">
+      <DependentUpon>FormAdministrativoFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormAgendamentos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FormAgendamentos.Designer.cs">
       <DependentUpon>FormAgendamentos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FormDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FormDashboard.Designer.cs">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormPendencias.cs">
       <SubType>Form</SubType>
@@ -116,17 +111,14 @@
     <EmbeddedResource Include="Views\FormAgendamentos.resx">
       <DependentUpon>FormAgendamentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormConfiguracoesFuncionario.resx">
-      <DependentUpon>FormConfiguracoesFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormNovoCadastroFuncionario.resx">
+      <DependentUpon>FormNovoCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormAdministrativo.resx">
-      <DependentUpon>FormAdministrativo.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormAdministrativoFuncionario.resx">
+      <DependentUpon>FormAdministrativoFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormCadastroUsuario.resx">
-      <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormDashboard.resx">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormEdicaoVoluntaria.resx">
+      <DependentUpon>FormEdicaoVoluntaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

@@ -34,6 +34,7 @@ namespace DonnaGabriela
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblError = new System.Windows.Forms.Label();
             this.tableHeader = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,8 +44,7 @@ namespace DonnaGabriela
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
-            this.btnExcluirCadastro = new FontAwesome.Sharp.IconButton();
-            this.lblError = new System.Windows.Forms.Label();
+            this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableHeader.SuspendLayout();
@@ -62,9 +62,9 @@ namespace DonnaGabriela
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
             this.label5.Location = new System.Drawing.Point(44, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 30);
+            this.label5.Size = new System.Drawing.Size(300, 30);
             this.label5.TabIndex = 218;
-            this.label5.Text = "Cadastros Ativos";
+            this.label5.Text = "Cadastros Ativos Voluntarias";
             // 
             // panel6
             // 
@@ -94,13 +94,24 @@ namespace DonnaGabriela
             this.panel5.Controls.Add(this.tableHeader);
             this.panel5.Controls.Add(this.dataGridVoluntarias);
             this.panel5.Controls.Add(this.btnEditar);
-            this.panel5.Controls.Add(this.btnExcluirCadastro);
+            this.panel5.Controls.Add(this.btnDesativarCadastro);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(12, 83);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(886, 445);
             this.panel5.TabIndex = 4;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblError.Location = new System.Drawing.Point(140, 142);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(541, 30);
+            this.lblError.TabIndex = 229;
+            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
+            this.lblError.Visible = false;
             // 
             // tableHeader
             // 
@@ -228,40 +239,28 @@ namespace DonnaGabriela
             this.btnEditar.Visible = false;
             this.btnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
-            // btnExcluirCadastro
+            // btnDesativarCadastro
             // 
-            this.btnExcluirCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExcluirCadastro.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcluirCadastro.FlatAppearance.BorderSize = 0;
-            this.btnExcluirCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirCadastro.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExcluirCadastro.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExcluirCadastro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExcluirCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExcluirCadastro.IconSize = 20;
-            this.btnExcluirCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluirCadastro.Location = new System.Drawing.Point(36, 396);
-            this.btnExcluirCadastro.Name = "btnExcluirCadastro";
-            this.btnExcluirCadastro.Size = new System.Drawing.Size(182, 36);
-            this.btnExcluirCadastro.TabIndex = 220;
-            this.btnExcluirCadastro.Text = " Desativar Cadastro";
-            this.btnExcluirCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluirCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExcluirCadastro.UseVisualStyleBackColor = false;
-            this.btnExcluirCadastro.Visible = false;
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblError.Location = new System.Drawing.Point(140, 142);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(541, 30);
-            this.lblError.TabIndex = 229;
-            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
-            this.lblError.Visible = false;
+            this.btnDesativarCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDesativarCadastro.BackColor = System.Drawing.Color.Transparent;
+            this.btnDesativarCadastro.FlatAppearance.BorderSize = 0;
+            this.btnDesativarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDesativarCadastro.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesativarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDesativarCadastro.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnDesativarCadastro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDesativarCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDesativarCadastro.IconSize = 20;
+            this.btnDesativarCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 396);
+            this.btnDesativarCadastro.Name = "btnDesativarCadastro";
+            this.btnDesativarCadastro.Size = new System.Drawing.Size(182, 36);
+            this.btnDesativarCadastro.TabIndex = 220;
+            this.btnDesativarCadastro.Text = " Desativar Cadastro";
+            this.btnDesativarCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDesativarCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDesativarCadastro.UseVisualStyleBackColor = false;
+            this.btnDesativarCadastro.Visible = false;
             // 
             // FormAdministrativo
             // 
@@ -269,7 +268,7 @@ namespace DonnaGabriela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(909, 611);
+            this.ClientSize = new System.Drawing.Size(909, 344);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Name = "FormAdministrativo";
@@ -307,7 +306,7 @@ namespace DonnaGabriela
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridVoluntarias;
         private FontAwesome.Sharp.IconButton btnEditar;
-        private FontAwesome.Sharp.IconButton btnExcluirCadastro;
+        private FontAwesome.Sharp.IconButton btnDesativarCadastro;
         private System.Windows.Forms.Label lblError;
     }
 }
