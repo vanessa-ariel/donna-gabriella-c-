@@ -20,7 +20,7 @@ namespace DonnaGabriela
             DatabaseUtils databaseUtils = new DatabaseUtils();
 
             VoluntariaModel model = new VoluntariaModel();
-            SqlDataAdapter adapter = model.getVoluntariasByStatus("ativo");
+            SqlDataAdapter adapter = model.getVoluntariasByStatus("1");
             DataTable dt = new DataTable();
 
             try
