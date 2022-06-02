@@ -28,7 +28,7 @@ namespace DonnaGabriela
             this.updateVoluntaria();
             if (editMode)
             {
-                //save edit
+                voluntariaModel.editVoluntaria(voluntaria);
                 return;
             }
             //create new

@@ -43,7 +43,7 @@ namespace DonnaGabriela.Model
 
         public SqlDataAdapter getVoluntariasByStatus(String status)
         {
-            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = '"+status+"'";
+            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = '" + status + "'";
 
             databaseUtils.openConnection();
             return databaseUtils.ExecuteAdapter(query);
@@ -51,8 +51,19 @@ namespace DonnaGabriela.Model
 
         public Boolean editVoluntaria(Voluntaria voluntaria)
         {
-            String query = "UPDATE Voluntaria SET ... WHERE ID_Voluntario = " + voluntaria.ID_Voluntario;
-            return false;
+            String query = "UPDATE Voluntario SET " +
+                                "Nome_Servico = '" + voluntaria.Nome_Servico + "', " +
+                                "Nome_Voluntario = '" + voluntaria.Nome_Voluntario + "', " +
+                                "Telefone_Voluntario = '" + voluntaria.Telefone_Voluntario + "', " +
+                                "Email_Voluntario = '" + voluntaria.Email_Voluntario + "', " +
+                                "Cep_Voluntario = '" + voluntaria.Cep_Voluntario + "', " +
+                                "Endereco_Voluntario = '" + voluntaria.Endereco_Voluntario + "', " +
+                                "Numero_Voluntario = '" + voluntaria.Numero_Voluntario + "', " +
+                                "Bairro_Voluntario = '" + voluntaria.Bairro_Voluntario + "', " +
+                                "Cidade_Voluntario = '" + voluntaria.Cidade_Voluntario + "', " +
+                                "Complemento_Voluntario = '" + voluntaria.Complemento_Voluntario + "' " +
+                            "WHERE ID_Voluntario = " + voluntaria.ID_Voluntario;
+            return databaseUtils.ExecuteCommand(query);
         }
 
         public Boolean deleteVoluntariaById(int id)
