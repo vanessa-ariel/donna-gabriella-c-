@@ -43,7 +43,7 @@ namespace DonnaGabriela.Model
 
         public SqlDataAdapter getVoluntariasByStatus(String status)
         {
-            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = '" + status + "'";
+            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = " + status;
 
             databaseUtils.openConnection();
             return databaseUtils.ExecuteAdapter(query);
@@ -69,7 +69,7 @@ namespace DonnaGabriela.Model
         public Boolean deleteVoluntariaById(int id)
         {
             databaseUtils.openConnection();
-            String query = "UPDATE Voluntario SET Status_Conta = 1 WHERE ID_Voluntario = " + id;
+            String query = "UPDATE Voluntario SET Status_Conta = 2 WHERE ID_Voluntario = " + id;
             return databaseUtils.ExecuteCommand(query);
         }
     }
