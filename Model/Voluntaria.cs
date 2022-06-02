@@ -8,6 +8,7 @@ namespace DonnaGabriela.Model
         private String id_servico;
         private String nome_servico;
         private String nome_voluntario;
+        private String cpf_voluntario;
         private String telefone_voluntario;
         private String email_voluntario;
         private String cep_voluntario;
@@ -16,9 +17,8 @@ namespace DonnaGabriela.Model
         private String bairro_voluntario;
         private String cidade_voluntario;
         private String complemento_voluntario;
-        private String data_nasci_User;
+        //private String data_nasci_voluntario;
         private String senha_voluntario;
-        private String sexo_voluntario;
         private String data_cadastro;
         private String data_desligamento;
         private String data_admissao;
@@ -27,6 +27,7 @@ namespace DonnaGabriela.Model
         public int ID_Voluntario { get => id_voluntario; set => id_voluntario = value; }
         public string ID_Servico { get => id_servico; set => id_servico = value; }
         public string Nome_Servico { get => nome_servico; set => nome_servico = value; }
+        public string Cpf_Voluntario { get => cpf_voluntario; set => cpf_voluntario = value; }
         public string Nome_Voluntario { get => nome_voluntario; set => nome_voluntario = value; }
         public string Telefone_Voluntario { get => telefone_voluntario; set => telefone_voluntario = value; }
         public string Email_Voluntario { get => email_voluntario; set => email_voluntario = value; }
@@ -36,9 +37,8 @@ namespace DonnaGabriela.Model
         public string Bairro_Voluntario { get => bairro_voluntario; set => bairro_voluntario = value; }
         public string Cidade_Voluntario { get => cidade_voluntario; set => cidade_voluntario = value; }
         public string Complemento_Voluntario { get => complemento_voluntario; set => complemento_voluntario = value; }
-        public string Data_Nasci_User { get => data_nasci_User; set => data_nasci_User = value; }
+        //public string Data_Nasci_Voluntario { get => data_nasci_voluntario; set => data_nasci_voluntario = value; }
         public string Senha_Voluntario { get => senha_voluntario; set => senha_voluntario = value; }
-        public string Sexo_Voluntario { get => sexo_voluntario; set => sexo_voluntario = value; }
         public string Data_Cadastro { get => data_cadastro; set => data_cadastro = value; }
         public string Data_Desligamento { get => data_desligamento; set => data_desligamento = value; }
         public string Data_Admissao { get => data_admissao; set => data_admissao = value; }

@@ -22,6 +22,7 @@ namespace DonnaGabriela.Model
                 voluntaria.ID_Servico = reader["ID_Servico"].ToString();
                 voluntaria.Nome_Servico = reader["Nome_Servico"].ToString();
                 voluntaria.Nome_Voluntario = reader["Nome_Voluntario"].ToString();
+                voluntaria.Cpf_Voluntario = reader["CPF_Voluntario"].ToString();
                 voluntaria.Telefone_Voluntario = reader["Telefone_Voluntario"].ToString();
                 voluntaria.Email_Voluntario = reader["Email_Voluntario"].ToString();
                 voluntaria.Cep_Voluntario = reader["Cep_Voluntario"].ToString();
@@ -30,14 +31,14 @@ namespace DonnaGabriela.Model
                 voluntaria.Bairro_Voluntario = reader["Bairro_Voluntario"].ToString();
                 voluntaria.Cidade_Voluntario = reader["Cidade_Voluntario"].ToString();
                 voluntaria.Complemento_Voluntario = reader["Complemento_Voluntario"].ToString();
-                voluntaria.Data_Nasci_User = reader["Data_Nasci_User"].ToString();
+                //voluntaria.Data_Nasci_Voluntario = reader["Data_Nasci_Voluntario"].ToString();
                 voluntaria.Senha_Voluntario = reader["Senha_Voluntario"].ToString();
-                voluntaria.Sexo_Voluntario = reader["Sexo_Voluntario"].ToString();
                 voluntaria.Data_Cadastro = reader["Data_Cadastro"].ToString();
                 voluntaria.Data_Desligamento = reader["Data_Desligamento"].ToString();
                 voluntaria.Data_Admissao = reader["Data_Admissao"].ToString();
                 voluntaria.Status_Conta = reader["Status_Conta"].ToString();
             }
+            reader.Close();
             return voluntaria;
         }
 
@@ -54,6 +55,7 @@ namespace DonnaGabriela.Model
             String query = "UPDATE Voluntario SET " +
                                 "Nome_Servico = '" + voluntaria.Nome_Servico + "', " +
                                 "Nome_Voluntario = '" + voluntaria.Nome_Voluntario + "', " +
+                                "Cpf_Voluntario = '" + voluntaria.Cpf_Voluntario + "', " +
                                 "Telefone_Voluntario = '" + voluntaria.Telefone_Voluntario + "', " +
                                 "Email_Voluntario = '" + voluntaria.Email_Voluntario + "', " +
                                 "Cep_Voluntario = '" + voluntaria.Cep_Voluntario + "', " +
