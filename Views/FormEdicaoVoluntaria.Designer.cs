@@ -81,7 +81,6 @@ namespace DonnaGabriela
             this.label1.Size = new System.Drawing.Size(226, 30);
             this.label1.TabIndex = 217;
             this.label1.Text = "Edição de voluntárias";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
@@ -250,7 +249,6 @@ namespace DonnaGabriela
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(221, 33);
             this.txtEmail.TabIndex = 218;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmailFunc_TextChanged);
             // 
             // txtCpf
             // 
@@ -335,7 +333,6 @@ namespace DonnaGabriela
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(470, 33);
             this.txtNome.TabIndex = 181;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // txtTelefone
             // 
@@ -367,7 +364,6 @@ namespace DonnaGabriela
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(912, 884);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -405,7 +401,6 @@ namespace DonnaGabriela
             this.Name = "FormEdicaoVoluntaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Volontária";
-            this.Load += new System.EventHandler(this.FormEdicaoVoluntaria_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

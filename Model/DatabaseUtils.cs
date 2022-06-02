@@ -32,5 +32,13 @@ namespace DonnaGabriela.Model
         {
             return new SqlDataAdapter(command, this.connection);
         }
+
+        public bool ExecuteCommand(string command)
+        {
+            SqlCommand cmd = this.connection.CreateCommand();
+            cmd.CommandText = command;
+            int result = cmd.ExecuteNonQuery();
+            return result > 0;
+        }
     }
 }
