@@ -36,6 +36,7 @@ namespace DonnaGabriela.Model
 
         public bool ExecuteCommand(string command)
         {
+            Console.WriteLine(command);
             SqlCommand cmd = this.connection.CreateCommand();
             cmd.CommandText = command;
             int result = cmd.ExecuteNonQuery();
