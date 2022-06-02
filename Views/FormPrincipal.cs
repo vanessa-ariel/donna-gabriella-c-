@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp;
+﻿using DonnaGabriela.Views;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -117,7 +118,7 @@ namespace DonnaGabriela
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormConfiguracoesFuncionario());
+            OpenChildForm(new FormAdministrativoFuncionarios());
 
         }
 

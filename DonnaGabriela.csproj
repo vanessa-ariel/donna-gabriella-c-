@@ -59,8 +59,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Model\Voluntaria.cs" />
+    <Compile Include="Model\FuncionarioModel.cs" />
     <Compile Include="Model\VoluntariaModel.cs" />
+    <Compile Include="Views\FormAdministrativoFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormAdministrativoFuncionarios.Designer.cs">
+      <DependentUpon>FormAdministrativoFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormNovoCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +82,11 @@
       <DependentUpon>FormEdicaoVoluntaria.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\DatabaseUtils.cs" />
-    <Compile Include="Views\FormAdministrativoFuncionario.cs">
+    <Compile Include="Views\FormAdministrativoVoluntaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormAdministrativoFuncionario.Designer.cs">
-      <DependentUpon>FormAdministrativoFuncionario.cs</DependentUpon>
+    <Compile Include="Views\FormAdministrativoVoluntaria.Designer.cs">
+      <DependentUpon>FormAdministrativoVoluntaria.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormAgendamentos.cs">
       <SubType>Form</SubType>
@@ -109,14 +117,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormAdministrativoFuncionarios.resx">
+      <DependentUpon>FormAdministrativoFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormAgendamentos.resx">
       <DependentUpon>FormAgendamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormNovoCadastroFuncionario.resx">
       <DependentUpon>FormNovoCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormAdministrativoFuncionario.resx">
-      <DependentUpon>FormAdministrativoFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormAdministrativoVoluntaria.resx">
+      <DependentUpon>FormAdministrativoVoluntaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormEdicaoVoluntaria.resx">
       <DependentUpon>FormEdicaoVoluntaria.cs</DependentUpon>
