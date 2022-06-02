@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace DonnaGabriela.Model
@@ -38,6 +39,7 @@ namespace DonnaGabriela.Model
             SqlCommand cmd = this.connection.CreateCommand();
             cmd.CommandText = command;
             int result = cmd.ExecuteNonQuery();
+            Console.WriteLine(result);
             return result > 0;
         }
     }

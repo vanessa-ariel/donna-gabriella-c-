@@ -14,7 +14,7 @@ namespace DonnaGabriela
         {
             InitializeComponent();
         }
-        public FormEdicaoVoluntaria(String editId)
+        public FormEdicaoVoluntaria(int editId)
         {
             InitializeComponent();
             editMode = true;

@@ -7,7 +7,7 @@ namespace DonnaGabriela.Model
     {
 
         DatabaseUtils databaseUtils = new DatabaseUtils();
-        public Voluntaria getVoluntariaById(String id)
+        public Voluntaria getVoluntariaById(int id)
         {
             Voluntaria voluntaria = new Voluntaria();
             String query = "SELECT * FROM Voluntario WHERE ID_Voluntario = " + id;
@@ -41,10 +41,25 @@ namespace DonnaGabriela.Model
             return voluntaria;
         }
 
+        public SqlDataAdapter getVoluntariasByStatus(String status)
+        {
+            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = '"+status+"'";
+
+            databaseUtils.openConnection();
+            return databaseUtils.ExecuteAdapter(query);
+        }
+
         public Boolean editVoluntaria(Voluntaria voluntaria)
         {
             String query = "UPDATE Voluntaria SET ... WHERE ID_Voluntario = " + voluntaria.ID_Voluntario;
             return false;
+        }
+
+        public Boolean deleteVoluntariaById(int id)
+        {
+            databaseUtils.openConnection();
+            String query = "UPDATE Voluntario SET Status_Conta = 1 WHERE ID_Voluntario = " + id;
+            return databaseUtils.ExecuteCommand(query);
         }
     }
 }
