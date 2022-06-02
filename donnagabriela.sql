@@ -39,11 +39,11 @@ CREATE TABLE Voluntario (
 	Data_Nasci_Voluntario VARCHAR(10),
 
 	Senha_Voluntario VARCHAR(25),
-	Data_Cadastro VARCHAR(10),
 
-	Data_Desligamento VARCHAR(12),
-	Data_Admissao VARCHAR(12),
-	Status_Conta VARCHAR(20),
+	Data_Cadastro VARCHAR(10),
+	Data_Admissao VARCHAR(10),
+	Data_Desligamento VARCHAR(10),
+	Status_Conta VARCHAR(1),
 )
 
 INSERT INTO Usuario 
