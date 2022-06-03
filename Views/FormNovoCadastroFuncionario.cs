@@ -29,6 +29,8 @@ namespace DonnaGabriela
             funcionario = funcionarioModel.getFuncionarioById(id);
             populateFuncionarioForm();
 
+            label1.Text = "Edição de Funcionário";
+            btnCadastrarFunc.Text = "Salvar";
         }
         private void populateFuncionarioForm()
         {

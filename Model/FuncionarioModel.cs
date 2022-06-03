@@ -13,7 +13,7 @@ namespace DonnaGabriela.Model
             String query = "SELECT Funcionario.*, Cargo.Nome_Cargo AS Cargo, Departamento.Nome_Depto AS Depto " +
                 "FROM Funcionario " +
                 "INNER JOIN Cargo ON Funcionario.ID_Cargo = Cargo.ID_Cargo " +
-                "INNER JOIN Departamento ON Funcionario.ID_Depto = Departamento.Nome_Depto " +
+                "INNER JOIN Departamento ON Funcionario.ID_Depto = Departamento.ID_Depto " +
                 "WHERE ID_Func = " + id;
 
             databaseUtils.openConnection();
@@ -40,7 +40,6 @@ namespace DonnaGabriela.Model
                 funcionario.Complemento_Func = reader["Complemento_Func"].ToString();
                 funcionario.Data_Nasci_Func = reader["Data_Nasci_Func"].ToString();
                 funcionario.Senha_User = reader["Senha_User"].ToString();
-                funcionario.Data_Cadastro = reader["Data_Cadastro"].ToString();
                 funcionario.Data_Desligamento = reader["Data_Desligamento"].ToString();
                 funcionario.Data_Admissao = reader["Data_Admissao"].ToString();
                 funcionario.Status_Conta = reader["Status_Conta"].ToString();

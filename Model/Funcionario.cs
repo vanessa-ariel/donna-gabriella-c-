@@ -22,7 +22,6 @@ namespace DonnaGabriela.Model
         private String complemento_func;
         private String data_nasci_func;
         private String senha_user;
-        private String data_cadastro;
         private String data_desligamento;
         private String data_admissao;
         private String status_conta;
@@ -45,7 +44,6 @@ namespace DonnaGabriela.Model
         public string Complemento_Func { get => complemento_func; set => complemento_func = value; }
         public string Data_Nasci_Func { get => data_nasci_func; set => data_nasci_func = value; }
         public string Senha_User { get => senha_user; set => senha_user = value; }
-        public string Data_Cadastro { get => data_cadastro; set => data_cadastro = value; }
         public string Data_Desligamento { get => data_desligamento; set => data_desligamento = value; }
         public string Data_Admissao { get => data_admissao; set => data_admissao = value; }
         public string Status_Conta { get => status_conta; set => status_conta = value; }
