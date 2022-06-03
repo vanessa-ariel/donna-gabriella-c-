@@ -178,6 +178,7 @@ namespace DonnaGabriela.Views
             this.btnSim.TabIndex = 2;
             this.btnSim.Text = "Sim";
             this.btnSim.UseVisualStyleBackColor = false;
+            this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
             // 
             // btnModal
             // 

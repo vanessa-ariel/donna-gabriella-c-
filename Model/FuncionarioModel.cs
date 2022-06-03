@@ -10,7 +10,7 @@ namespace DonnaGabriela.Model
         public Funcionario getFuncionarioById(int id)
         {
             Funcionario funcionario = new Funcionario();
-            String query = "SELECT * FROM Voluntario WHERE ID_Voluntario = " + id;
+            String query = "SELECT * FROM Funcionario WHERE ID_Func = " + id;
 
             databaseUtils.openConnection();
             SqlDataReader reader = databaseUtils.ExecuteReader(query);
@@ -43,7 +43,7 @@ namespace DonnaGabriela.Model
 
         public SqlDataAdapter getFuncionariosByStatus(String status)
         {
-            string query = "SELECT ID_Voluntario, Nome_Voluntario, Telefone_Voluntario FROM Voluntario WHERE Status_Conta = '" + status + "'";
+            string query = "SELECT ID_Func, Nome_Func, Telefone_Func FROM Funcionario WHERE Status_Conta = '" + status + "'";
 
             databaseUtils.openConnection();
             return databaseUtils.ExecuteAdapter(query);
@@ -51,7 +51,7 @@ namespace DonnaGabriela.Model
 
         public Boolean editFuncionario(Funcionario funcionario)
         {
-            String query = "UPDATE Voluntario SET " +
+            String query = "UPDATE Funcionario SET " +
                                 "Nome_Servico = '" + funcionario.Nome_Servico + "', " +
                                 "Nome_Voluntario = '" + funcionario.Nome_Voluntario + "', " +
                                 "Telefone_Voluntario = '" + funcionario.Telefone_Voluntario + "', " +
@@ -69,7 +69,7 @@ namespace DonnaGabriela.Model
         public Boolean deleteFuncionarioById(int id)
         {
             databaseUtils.openConnection();
-            String query = "UPDATE Voluntario SET Status_Conta = 1 WHERE ID_Voluntario = " + id;
+            String query = "UPDATE Funcionario SET Status_Conta = 1 WHERE ID_Func = " + id;
             return databaseUtils.ExecuteCommand(query);
         }
     }

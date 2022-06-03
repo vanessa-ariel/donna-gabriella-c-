@@ -23,8 +23,8 @@ namespace DonnaGabriela.Views
         {
             DatabaseUtils databaseUtils = new DatabaseUtils();
 
-            VoluntariaModel model = new VoluntariaModel();
-            SqlDataAdapter adapter = model.getVoluntariasByStatus("ativo");
+            FuncionarioModel model = new FuncionarioModel();
+            SqlDataAdapter adapter = model.getFuncionariosByStatus("1");
             DataTable dt = new DataTable();
 
             try
@@ -54,21 +54,34 @@ namespace DonnaGabriela.Views
             loadDataTable();
         }
 
+<<<<<<< HEAD
         private void btnEditar_Click(object sender, EventArgs e)
         {
             Form editFuncionarios = new FormNovoCadastroFuncionario(getSelectedId());
             editFuncionarios.BringToFront();
             editFuncionarios.Show();
         }
+=======
+        private void btnSim_Click(object sender, EventArgs e)
+        {
+            FuncionarioModel model = new FuncionarioModel();
+            model.deleteFuncionarioById(getSelectedId());
+            panelModal.Visible = false;
+        }
+
+>>>>>>> ea3700635f321e3c29926599199678b0bb1dd5a9
         private int getSelectedId()
         {
             return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
         }
+<<<<<<< HEAD
 
         private void iconButtonNovo_Click(object sender, EventArgs e)
         {
             Form addFuncionarios = new FormNovoCadastroFuncionario();
             addFuncionarios.Show();
         }
+=======
+>>>>>>> ea3700635f321e3c29926599199678b0bb1dd5a9
     }
 }
