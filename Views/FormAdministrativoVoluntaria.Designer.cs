@@ -29,7 +29,7 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@ namespace DonnaGabriela
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(-33, -86);
+            this.label1.Location = new System.Drawing.Point(-33, -62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 30);
             this.label1.TabIndex = 218;
@@ -106,7 +106,7 @@ namespace DonnaGabriela
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(12, 83);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(886, 445);
+            this.panel5.Size = new System.Drawing.Size(886, 492);
             this.panel5.TabIndex = 4;
             // 
             // panelModal
@@ -287,13 +287,13 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.ReadOnly = true;
             this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVoluntarias.ShowCellErrors = false;
             this.dataGridVoluntarias.ShowCellToolTips = false;
@@ -316,13 +316,15 @@ namespace DonnaGabriela
             this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditar.IconSize = 20;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(36, 345);
+            this.btnEditar.Location = new System.Drawing.Point(36, 369);
             this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEditar.Size = new System.Drawing.Size(182, 36);
             this.btnEditar.TabIndex = 219;
             this.btnEditar.Text = " Editar Cadastro";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditar.UseCompatibleTextRendering = true;
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Visible = false;
             this.btnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
@@ -340,13 +342,14 @@ namespace DonnaGabriela
             this.btnDesativarCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDesativarCadastro.IconSize = 20;
             this.btnDesativarCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 396);
+            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 420);
             this.btnDesativarCadastro.Name = "btnDesativarCadastro";
             this.btnDesativarCadastro.Size = new System.Drawing.Size(182, 36);
             this.btnDesativarCadastro.TabIndex = 220;
             this.btnDesativarCadastro.Text = " Desativar Cadastro";
             this.btnDesativarCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDesativarCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDesativarCadastro.UseCompatibleTextRendering = true;
             this.btnDesativarCadastro.UseVisualStyleBackColor = false;
             this.btnDesativarCadastro.Visible = false;
             this.btnDesativarCadastro.Click += new System.EventHandler(this.btnDesativarCadastro_Click_1);
@@ -357,7 +360,7 @@ namespace DonnaGabriela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(920, 561);
+            this.ClientSize = new System.Drawing.Size(914, 577);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Name = "FormAdministrativo";

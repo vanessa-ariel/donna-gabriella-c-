@@ -100,7 +100,7 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.txtTelefone);
             this.panel1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(2, -2);
+            this.panel1.Location = new System.Drawing.Point(236, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(932, 884);
             this.panel1.TabIndex = 0;
@@ -545,7 +545,7 @@ namespace DonnaGabriela
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(2, 1);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(777, 74);
+            this.panel6.Size = new System.Drawing.Size(1175, 74);
             this.panel6.TabIndex = 230;
             // 
             // label1
@@ -554,7 +554,7 @@ namespace DonnaGabriela
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(44, 28);
+            this.label1.Location = new System.Drawing.Point(243, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 30);
             this.label1.TabIndex = 218;
@@ -566,10 +566,11 @@ namespace DonnaGabriela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(841, 722);
+            this.ClientSize = new System.Drawing.Size(1184, 729);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "FormNovoCadastroFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

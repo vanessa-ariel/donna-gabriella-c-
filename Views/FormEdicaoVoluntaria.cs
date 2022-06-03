@@ -180,6 +180,5 @@ namespace DonnaGabriela
             voluntaria.Cidade_Voluntario = txtCidade.Text;
             voluntaria.Complemento_Voluntario = txtComplemento.Text;
         }
-
     }
 }

@@ -49,10 +49,6 @@ namespace DonnaGabriela.Views
             }
         }
 
-        private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
-        {
-            loadDataTable();
-        }
 
         private void btnSim_Click(object sender, EventArgs e)
         {
@@ -61,16 +57,41 @@ namespace DonnaGabriela.Views
             panelModal.Visible = false;
         }
 
+        private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
+        {
+            loadDataTable();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Form editFuncionarios = new FormNovoCadastroFuncionario(getSelectedId());
+            editFuncionarios.BringToFront();
+            editFuncionarios.Show();
+        }
         private int getSelectedId()
         {
             return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void iconButtonNovo_Click(object sender, EventArgs e)
         {
-            Form editFuncionario = new FormNovoCadastroFuncionario(getSelectedId());
-            editFuncionario.BringToFront();
-            editFuncionario.Show();
+            Form addFuncionarios = new FormNovoCadastroFuncionario();
+            addFuncionarios.Show();
+        }
+
+        private void btnDesativarCadastro_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = true;
+        }
+
+        private void btnNao_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
+
+        private void btnModal_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
         }
     }
 }

@@ -16,9 +16,11 @@ namespace DonnaGabriela
         {
             InitializeComponent();
         }
+
         public FormNovoCadastroFuncionario(int id)
         {
             InitializeComponent();
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

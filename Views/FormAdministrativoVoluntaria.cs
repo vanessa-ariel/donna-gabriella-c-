@@ -50,26 +50,11 @@ namespace DonnaGabriela
             loadDataTable();
         }
 
-        private void BtnCadastrarVoluntario_Click_1(object sender, EventArgs e)
-        {
-            FormEdicaoVoluntaria frm = new FormEdicaoVoluntaria();
-            frm.Height = 600;
-            frm.Width = 1024;
-            frm.Show();
-        }
-
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             Form editVoluntaria = new FormEdicaoVoluntaria(getSelectedId());
             editVoluntaria.BringToFront();
             editVoluntaria.Show();
-        }
-
-        private void BtnDesativarCadastro_Click(object sender, EventArgs e)
-        {
-            //panelOverlay.BackColor = Color.FromArgb(128, Color.Black);
-            //panelOverlay.Visible = true;
-            panelModal.Visible = true;
         }
 
         private void BtnSim_Click(object sender, EventArgs e)
