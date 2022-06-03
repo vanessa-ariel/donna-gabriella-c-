@@ -70,8 +70,10 @@ namespace DonnaGabriela.Model
 
         public Boolean deleteVoluntariaById(int id)
         {
+            DateTime dateTime = DateTime.UtcNow.Date;
+
             databaseUtils.openConnection();
-            String query = "UPDATE Voluntario SET Status_Conta = 2 WHERE ID_Voluntario = " + id;
+            String query = "UPDATE Voluntario SET Status_Conta = 2, Data_Desligamento = '" + dateTime.ToString("dd/MM/yyyy") + "' WHERE ID_Voluntario = " + id;
             return databaseUtils.ExecuteCommand(query);
         }
     }
