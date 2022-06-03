@@ -111,6 +111,7 @@ namespace DonnaGabriela
             {
                 MessageBox.Show("Preencha o campo Cidade", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCidade.Focus();
+                return;
             }
             else if (!editMode)
                 {
@@ -131,6 +132,33 @@ namespace DonnaGabriela
                     txtComplemento.Focus();
                 }
             }
+
+            this.updateFuncionario();
+            if (editMode)
+            {
+                funcionarioModel.editFuncionario(funcionario);
+                this.Close();
+                return;
+            }
+            funcionarioModel.createFuncionario(funcionario);
+            this.Close();
+            return;
+        }
+        private void updateFuncionario()
+        {
+            funcionario.Nome_Func = txtNome.Text;
+            funcionario.Telefone_Func = txtTelefone.Text;
+            funcionario.Email_Func = txtEmail.Text;
+            funcionario.CPF_Func = txtCpf.Text;
+            funcionario.RG_Func = txtRg.Text;
+            funcionario.Data_Admissao = txtAdmissao.Text;
+            funcionario.Cargo = txtCargo.Text;
+            funcionario.Cep_Func = txtcep.Text;
+            funcionario.Endereco_Func = txtRua.Text;
+            funcionario.Numero_Func = txtNumeroRua.Text;
+            funcionario.Bairro_Func = txtBairro.Text;
+            funcionario.Cidade_Func = txtCidade.Text;
+            funcionario.Complemento_Func = txtComplemento.Text;
         }
     }
 }

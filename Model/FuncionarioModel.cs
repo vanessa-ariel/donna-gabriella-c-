@@ -44,6 +44,7 @@ namespace DonnaGabriela.Model
                 funcionario.Data_Admissao = reader["Data_Admissao"].ToString();
                 funcionario.Status_Conta = reader["Status_Conta"].ToString();
             }
+            reader.Close();
             return funcionario;
         }
 
@@ -55,12 +56,54 @@ namespace DonnaGabriela.Model
             return databaseUtils.ExecuteAdapter(query);
         }
 
+        public Boolean createFuncionario(Funcionario funcionario)
+        {
+            DateTime dateTime = DateTime.UtcNow.Date;
+            String query = "INSERT INTO Funcionario (" +
+                    "Nome_Func, " +
+                    "CPF_Func, " +
+                    "RG_Func, " +
+                    "Telefone_Func, " +
+                    "Email_Func, " +
+                    "Endereco_Func, " +
+                    "Numero_Func, " +
+                    "Complemento_Func, " +
+                    "Bairro_Func, " +
+                    "Cidade_Func, " +
+                    "Cep_Func, " +
+                    "Data_Nasci_Func, " +
+                    "Data_Admissao, " +
+                    "Status_Conta, " +
+                    "Senha_User" +
+                ") VALUES (" +
+                    "'" + funcionario.Nome_Func + "', " +
+                    "'" + funcionario.CPF_Func + "', " +
+                    "'" + funcionario.RG_Func + "', " +
+                    "'" + funcionario.Telefone_Func + "', " +
+                    "'" + funcionario.Email_Func + "', " +
+                    "'" + funcionario.Endereco_Func + "', " +
+                    "'" + funcionario.Numero_Func + "', " +
+                    "'" + funcionario.Complemento_Func + "', " +
+                    "'" + funcionario.Bairro_Func + "', " +
+                    "'" + funcionario.Cidade_Func + "', " +
+                    "'" + funcionario.Cep_Func + "', " +
+                    "'" + funcionario.Data_Nasci_Func + "', " +
+                    "'" + dateTime.ToString("dd/MM/yyyy") + "', " +
+                    1 + ", " +
+                    "'" + funcionario.Senha_User + "' " +
+                ");";
+            return databaseUtils.ExecuteCommand(query);
+        }
+
         public Boolean editFuncionario(Funcionario funcionario)
         {
             String query = "UPDATE Funcionario SET " +
                                 "Nome_Func = '" + funcionario.Nome_Func + "', " +
                                 "Telefone_Func = '" + funcionario.Telefone_Func + "', " +
                                 "Email_Func = '" + funcionario.Email_Func + "', " +
+                                "CPF_Func = '" + funcionario.CPF_Func + "', " +
+                                "RG_Func = '" + funcionario.RG_Func + "', " +
+                                "Data_Admissao = '" + funcionario.Data_Admissao + "', " +
                                 "Cep_Func = '" + funcionario.Cep_Func + "', " +
                                 "Endereco_Func = '" + funcionario.Endereco_Func + "', " +
                                 "Numero_Func = '" + funcionario.Numero_Func + "', " +
@@ -73,8 +116,10 @@ namespace DonnaGabriela.Model
 
         public Boolean deleteFuncionarioById(int id)
         {
+            DateTime dateTime = DateTime.UtcNow.Date;
+
             databaseUtils.openConnection();
-            String query = "UPDATE Funcionario SET Status_Conta = 2 WHERE ID_Func = " + id;
+            String query = "UPDATE Funcionario SET Status_Conta = 2, Data_Desligamento = '" + dateTime.ToString("dd/MM/yyyy") + "' WHERE ID_Func = " + id;
             return databaseUtils.ExecuteCommand(query);
         }
     }
