@@ -19,7 +19,7 @@ namespace DonnaGabriela.Views
             InitializeComponent();
         }
 
-        private void loadDataTable()
+        public void loadDataTable()
         {
             DatabaseUtils databaseUtils = new DatabaseUtils();
 
@@ -65,6 +65,7 @@ namespace DonnaGabriela.Views
         private void btnEditar_Click(object sender, EventArgs e)
         {
             Form editFuncionarios = new FormNovoCadastroFuncionario(getSelectedId());
+            editFuncionarios.Owner = this;
             editFuncionarios.BringToFront();
             editFuncionarios.Show();
         }
@@ -76,6 +77,8 @@ namespace DonnaGabriela.Views
         private void iconButtonNovo_Click(object sender, EventArgs e)
         {
             Form addFuncionarios = new FormNovoCadastroFuncionario();
+            addFuncionarios.Owner = this;
+            addFuncionarios.BringToFront();
             addFuncionarios.Show();
         }
 

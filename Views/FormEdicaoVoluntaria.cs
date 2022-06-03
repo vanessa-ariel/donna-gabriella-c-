@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using DonnaGabriela.Model;
+using DonnaGabriela.Views;
 
 namespace DonnaGabriela
 {
@@ -26,9 +27,11 @@ namespace DonnaGabriela
         {
             //VALIDA OS CAMPOS SE PRECISAR
             this.updateVoluntaria();
+            var owner = this.Owner as FormAdministrativo;
             if (editMode)
             {
                 voluntariaModel.editVoluntaria(voluntaria);
+                owner.loadDataTable();
                 this.Close();
                 return;
             }

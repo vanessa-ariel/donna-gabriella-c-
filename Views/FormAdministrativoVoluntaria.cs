@@ -15,7 +15,7 @@ namespace DonnaGabriela
             InitializeComponent();
         }
 
-        private void loadDataTable()
+        public void loadDataTable()
         {
             DatabaseUtils databaseUtils = new DatabaseUtils();
 
@@ -53,6 +53,7 @@ namespace DonnaGabriela
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             Form editVoluntaria = new FormEdicaoVoluntaria(getSelectedId());
+            editVoluntaria.Owner = this;
             editVoluntaria.BringToFront();
             editVoluntaria.Show();
         }

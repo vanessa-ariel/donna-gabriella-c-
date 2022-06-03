@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DonnaGabriela.Model;
+using DonnaGabriela.Views;
 
 namespace DonnaGabriela
 {
@@ -51,14 +52,17 @@ namespace DonnaGabriela
 
         private void btnCadastrarFunc_Click(object sender, EventArgs e)
         {
+            var owner = this.Owner as FormAdministrativoFuncionarios;
             this.updateFuncionario();
             if (editMode)
             {
                 funcionarioModel.editFuncionario(funcionario);
+                owner.loadDataTable();
                 this.Close();
                 return;
             }
             funcionarioModel.createFuncionario(funcionario);
+            owner.loadDataTable();
             this.Close();
             return;
         }
