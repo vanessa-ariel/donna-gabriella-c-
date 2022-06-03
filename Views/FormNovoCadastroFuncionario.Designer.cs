@@ -464,6 +464,7 @@ namespace DonnaGabriela
             this.btnCadastrarFunc.TabIndex = 190;
             this.btnCadastrarFunc.Text = "Cadastrar Funcionário";
             this.btnCadastrarFunc.UseVisualStyleBackColor = false;
+            this.btnCadastrarFunc.Click += new System.EventHandler(this.btnCadastrarFunc_Click);
             // 
             // txtNome
             // 
