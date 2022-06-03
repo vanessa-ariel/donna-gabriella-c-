@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DonnaGabriela.Fonts;
 
 namespace DonnaGabriela.Views
 {
@@ -41,6 +42,14 @@ namespace DonnaGabriela.Views
                 this.dataGridFuncionarios.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
                 this.dataGridFuncionarios.AlternatingRowsDefaultCellStyle.BackColor =
                     Color.White;
+                if (dataGridFuncionarios.Rows.Count == 0)
+                {
+                    tableHeader.Visible = false;
+                    lblError.Text = "Nenhum funcionário cadastrado.";
+                    lblError.Visible = true;
+                    btnDesativarCadastro.Visible = false;
+                    btnEditar.Visible = false;
+                }
             }
             catch (Exception e)
             {
@@ -52,6 +61,8 @@ namespace DonnaGabriela.Views
 
         private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
         {
+            //GetFont getFont = new GetFont();
+            //getFont.CustomFonts(this);
             loadDataTable();
         }
 
@@ -94,6 +105,11 @@ namespace DonnaGabriela.Views
         private void btnModal_Click(object sender, EventArgs e)
         {
             panelModal.Visible = false;
+        }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

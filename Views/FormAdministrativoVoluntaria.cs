@@ -37,6 +37,14 @@ namespace DonnaGabriela
                 this.dataGridVoluntarias.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
                 this.dataGridVoluntarias.AlternatingRowsDefaultCellStyle.BackColor =
                     Color.White;
+                if(dataGridVoluntarias.Rows.Count == 0)
+                {
+                    tableHeader.Visible = false;
+                    lblError.Text = "Nenhum dado cadastrado.Tente novamente mais tarde.";
+                    lblError.Visible = true;
+                    btnDesativarCadastro.Visible = false;
+                    btnEditar.Visible = false;
+                }
             }
             catch (Exception e)
             {

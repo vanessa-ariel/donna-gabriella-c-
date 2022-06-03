@@ -162,7 +162,7 @@ namespace DonnaGabriela
             this.btnAdministrativo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrativo.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrativo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdministrativo.IconChar = FontAwesome.Sharp.IconChar.Suitcase;
+            this.btnAdministrativo.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.btnAdministrativo.IconColor = System.Drawing.Color.DarkOrchid;
             this.btnAdministrativo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdministrativo.IconSize = 24;

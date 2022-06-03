@@ -29,8 +29,7 @@ namespace DonnaGabriela.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblError = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridFuncionarios = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,10 +47,11 @@ namespace DonnaGabriela.Views
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblError = new System.Windows.Forms.Label();
             this.iconButtonNovo = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFuncionarios)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelModal.SuspendLayout();
@@ -61,18 +61,6 @@ namespace DonnaGabriela.Views
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblError.Location = new System.Drawing.Point(140, 142);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(541, 30);
-            this.lblError.TabIndex = 229;
-            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
-            this.lblError.Visible = false;
             // 
             // dataGridFuncionarios
             // 
@@ -90,13 +78,13 @@ namespace DonnaGabriela.Views
             this.dataGridFuncionarios.ReadOnly = true;
             this.dataGridFuncionarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridFuncionarios.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridFuncionarios.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridFuncionarios.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridFuncionarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridFuncionarios.ShowCellErrors = false;
             this.dataGridFuncionarios.ShowCellToolTips = false;
@@ -310,9 +298,9 @@ namespace DonnaGabriela.Views
             // 
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
-            this.panel5.Controls.Add(this.iconButtonNovo);
             this.panel5.Controls.Add(this.panelModal);
             this.panel5.Controls.Add(this.lblError);
+            this.panel5.Controls.Add(this.iconButtonNovo);
             this.panel5.Controls.Add(this.tableHeader);
             this.panel5.Controls.Add(this.dataGridFuncionarios);
             this.panel5.Controls.Add(this.btnEditar);
@@ -322,6 +310,21 @@ namespace DonnaGabriela.Views
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(886, 496);
             this.panel5.TabIndex = 230;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblError.Location = new System.Drawing.Point(3, 159);
+            this.lblError.MinimumSize = new System.Drawing.Size(881, 0);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(881, 21);
+            this.lblError.TabIndex = 232;
+            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
+            this.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblError.Visible = false;
+            this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
             // iconButtonNovo
             // 
@@ -360,25 +363,24 @@ namespace DonnaGabriela.Views
             this.label1.TabIndex = 218;
             this.label1.Text = "Lista de voluntárias cadastradas";
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(1, 1);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(777, 74);
-            this.panel6.TabIndex = 231;
-            // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label5.Location = new System.Drawing.Point(44, 28);
+            this.label5.Location = new System.Drawing.Point(292, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(314, 30);
             this.label5.TabIndex = 218;
-            this.label5.Text = "Cadastros Ativos Funcionarios";
+            this.label5.Text = "Cadastros Ativos Funcionários";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Location = new System.Drawing.Point(2, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(895, 74);
+            this.panel6.TabIndex = 232;
             // 
             // FormAdministrativoFuncionarios
             // 
@@ -386,8 +388,8 @@ namespace DonnaGabriela.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(914, 577);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
             this.Name = "FormAdministrativoFuncionarios";
             this.Text = "FormAdministrativoFuncionarios";
             this.Load += new System.EventHandler(this.FormAdministrativoFuncionarios_Load);
@@ -410,8 +412,6 @@ namespace DonnaGabriela.Views
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.DataGridView dataGridFuncionarios;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
@@ -430,8 +430,9 @@ namespace DonnaGabriela.Views
         private FontAwesome.Sharp.IconButton btnDesativarCadastro;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton iconButtonNovo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lblError;
     }
 }
