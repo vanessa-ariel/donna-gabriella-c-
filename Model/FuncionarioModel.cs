@@ -75,7 +75,7 @@ namespace DonnaGabriela.Model
         public Boolean deleteFuncionarioById(int id)
         {
             databaseUtils.openConnection();
-            String query = "UPDATE Funcionario SET Status_Conta = 1 WHERE ID_Func = " + id;
+            String query = "UPDATE Funcionario SET Status_Conta = 2 WHERE ID_Func = " + id;
             return databaseUtils.ExecuteCommand(query);
         }
     }
