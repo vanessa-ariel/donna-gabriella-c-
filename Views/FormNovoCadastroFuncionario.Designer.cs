@@ -45,11 +45,9 @@ namespace DonnaGabriela
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.txtcep = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.txtRg = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtSalario = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -78,11 +76,9 @@ namespace DonnaGabriela
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.txtRg);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.txtSalario);
             this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
@@ -289,18 +285,6 @@ namespace DonnaGabriela
             this.label4.Text = "Informações de endereço";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label19.Location = new System.Drawing.Point(46, 320);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(72, 21);
-            this.label19.TabIndex = 215;
-            this.label19.Text = "Salário *";
-            // 
             // txtRg
             // 
             this.txtRg.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -335,17 +319,6 @@ namespace DonnaGabriela
             this.label18.Size = new System.Drawing.Size(67, 21);
             this.label18.TabIndex = 212;
             this.label18.Text = "Cargo *";
-            // 
-            // txtSalario
-            // 
-            this.txtSalario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSalario.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSalario.Location = new System.Drawing.Point(48, 343);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(225, 26);
-            this.txtSalario.TabIndex = 210;
             // 
             // txtCpf
             // 
@@ -581,11 +554,9 @@ namespace DonnaGabriela
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

@@ -33,9 +33,12 @@ namespace DonnaGabriela
         private void populateFuncionarioForm()
         {
             txtNome.Text = funcionario.Nome_Func;
-            txtCpf.Text = funcionario.CPF_Func;
             txtTelefone.Text = funcionario.Telefone_Func;
             txtEmail.Text = funcionario.Email_Func;
+            txtCpf.Text = funcionario.CPF_Func;
+            txtRg.Text = funcionario.RG_Func;
+            txtAdmissao.Text = funcionario.Data_Admissao;
+            txtCargo.Text = funcionario.Cargo;
             txtcep.Text = funcionario.Cep_Func;
             txtRua.Text = funcionario.Endereco_Func;
             txtNumeroRua.Text = funcionario.Numero_Func;
