@@ -102,7 +102,7 @@ namespace DonnaGabriela.Views
             this.dataGridFuncionarios.ShowCellToolTips = false;
             this.dataGridFuncionarios.ShowEditingIcon = false;
             this.dataGridFuncionarios.ShowRowErrors = false;
-            this.dataGridFuncionarios.Size = new System.Drawing.Size(832, 232);
+            this.dataGridFuncionarios.Size = new System.Drawing.Size(832, 285);
             this.dataGridFuncionarios.TabIndex = 222;
             // 
             // label3
@@ -152,6 +152,7 @@ namespace DonnaGabriela.Views
             this.btnNao.TabIndex = 6;
             this.btnNao.Text = "Não";
             this.btnNao.UseVisualStyleBackColor = false;
+            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
             // 
             // richTextBox1
             // 
@@ -190,6 +191,7 @@ namespace DonnaGabriela.Views
             this.btnModal.Size = new System.Drawing.Size(36, 38);
             this.btnModal.TabIndex = 7;
             this.btnModal.Text = "x";
+            this.btnModal.Click += new System.EventHandler(this.btnModal_Click);
             // 
             // lblModalTitle
             // 
@@ -266,13 +268,15 @@ namespace DonnaGabriela.Views
             this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditar.IconSize = 20;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(36, 345);
+            this.btnEditar.Location = new System.Drawing.Point(36, 371);
             this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEditar.Size = new System.Drawing.Size(182, 36);
             this.btnEditar.TabIndex = 219;
             this.btnEditar.Text = " Editar Cadastro";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditar.UseCompatibleTextRendering = true;
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Visible = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -290,15 +294,17 @@ namespace DonnaGabriela.Views
             this.btnDesativarCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDesativarCadastro.IconSize = 20;
             this.btnDesativarCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 396);
+            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 422);
             this.btnDesativarCadastro.Name = "btnDesativarCadastro";
             this.btnDesativarCadastro.Size = new System.Drawing.Size(182, 36);
             this.btnDesativarCadastro.TabIndex = 220;
             this.btnDesativarCadastro.Text = " Desativar Cadastro";
             this.btnDesativarCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDesativarCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDesativarCadastro.UseCompatibleTextRendering = true;
             this.btnDesativarCadastro.UseVisualStyleBackColor = false;
             this.btnDesativarCadastro.Visible = false;
+            this.btnDesativarCadastro.Click += new System.EventHandler(this.btnDesativarCadastro_Click);
             // 
             // panel5
             // 
@@ -314,30 +320,31 @@ namespace DonnaGabriela.Views
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(11, 82);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(886, 445);
+            this.panel5.Size = new System.Drawing.Size(886, 496);
             this.panel5.TabIndex = 230;
             // 
             // iconButtonNovo
             // 
             this.iconButtonNovo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButtonNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.iconButtonNovo.BackColor = System.Drawing.Color.White;
             this.iconButtonNovo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.iconButtonNovo.FlatAppearance.BorderSize = 0;
             this.iconButtonNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonNovo.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonNovo.ForeColor = System.Drawing.Color.White;
-            this.iconButtonNovo.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconButtonNovo.IconColor = System.Drawing.Color.White;
+            this.iconButtonNovo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.iconButtonNovo.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.iconButtonNovo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.iconButtonNovo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonNovo.IconSize = 20;
             this.iconButtonNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonNovo.Location = new System.Drawing.Point(36, 289);
+            this.iconButtonNovo.Location = new System.Drawing.Point(674, 371);
             this.iconButtonNovo.Name = "iconButtonNovo";
+            this.iconButtonNovo.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
             this.iconButtonNovo.Size = new System.Drawing.Size(182, 36);
             this.iconButtonNovo.TabIndex = 231;
             this.iconButtonNovo.Text = " Novo Cadastro";
-            this.iconButtonNovo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButtonNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonNovo.UseCompatibleTextRendering = true;
             this.iconButtonNovo.UseVisualStyleBackColor = false;
             this.iconButtonNovo.Click += new System.EventHandler(this.iconButtonNovo_Click);
             // 
@@ -347,7 +354,7 @@ namespace DonnaGabriela.Views
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(-33, -86);
+            this.label1.Location = new System.Drawing.Point(-33, -60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 30);
             this.label1.TabIndex = 218;
@@ -378,7 +385,7 @@ namespace DonnaGabriela.Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(914, 538);
+            this.ClientSize = new System.Drawing.Size(914, 577);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Name = "FormAdministrativoFuncionarios";

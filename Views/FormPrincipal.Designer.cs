@@ -233,7 +233,7 @@ namespace DonnaGabriela
             // 
             this.lblFooter.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFooter.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFooter.Location = new System.Drawing.Point(6, 40);
+            this.lblFooter.Location = new System.Drawing.Point(118, 40);
             this.lblFooter.Name = "lblFooter";
             this.lblFooter.Size = new System.Drawing.Size(597, 21);
             this.lblFooter.TabIndex = 0;

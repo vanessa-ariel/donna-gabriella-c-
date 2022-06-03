@@ -49,19 +49,7 @@ namespace DonnaGabriela.Views
             }
         }
 
-        private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
-        {
-            loadDataTable();
-        }
 
-<<<<<<< HEAD
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            Form editFuncionarios = new FormNovoCadastroFuncionario(getSelectedId());
-            editFuncionarios.BringToFront();
-            editFuncionarios.Show();
-        }
-=======
         private void btnSim_Click(object sender, EventArgs e)
         {
             FuncionarioModel model = new FuncionarioModel();
@@ -69,19 +57,41 @@ namespace DonnaGabriela.Views
             panelModal.Visible = false;
         }
 
->>>>>>> ea3700635f321e3c29926599199678b0bb1dd5a9
+        private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
+        {
+            loadDataTable();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Form editFuncionarios = new FormNovoCadastroFuncionario(getSelectedId());
+            editFuncionarios.BringToFront();
+            editFuncionarios.Show();
+        }
         private int getSelectedId()
         {
             return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
         }
-<<<<<<< HEAD
 
         private void iconButtonNovo_Click(object sender, EventArgs e)
         {
             Form addFuncionarios = new FormNovoCadastroFuncionario();
             addFuncionarios.Show();
         }
-=======
->>>>>>> ea3700635f321e3c29926599199678b0bb1dd5a9
+
+        private void btnDesativarCadastro_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = true;
+        }
+
+        private void btnNao_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
+
+        private void btnModal_Click(object sender, EventArgs e)
+        {
+            panelModal.Visible = false;
+        }
     }
 }
