@@ -29,7 +29,7 @@ namespace DonnaGabriela.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblError = new System.Windows.Forms.Label();
             this.dataGridFuncionarios = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,13 +90,13 @@ namespace DonnaGabriela.Views
             this.dataGridFuncionarios.ReadOnly = true;
             this.dataGridFuncionarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridFuncionarios.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridFuncionarios.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridFuncionarios.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridFuncionarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridFuncionarios.ShowCellErrors = false;
             this.dataGridFuncionarios.ShowCellToolTips = false;
@@ -178,6 +178,7 @@ namespace DonnaGabriela.Views
             this.btnSim.TabIndex = 2;
             this.btnSim.Text = "Sim";
             this.btnSim.UseVisualStyleBackColor = false;
+            this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
             // 
             // btnModal
             // 
@@ -381,6 +382,7 @@ namespace DonnaGabriela.Views
             this.Controls.Add(this.panel6);
             this.Name = "FormAdministrativoFuncionarios";
             this.Text = "FormAdministrativoFuncionarios";
+            this.Load += new System.EventHandler(this.FormAdministrativoFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFuncionarios)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

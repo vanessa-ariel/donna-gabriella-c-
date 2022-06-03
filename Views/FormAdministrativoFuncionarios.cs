@@ -23,8 +23,8 @@ namespace DonnaGabriela.Views
         {
             DatabaseUtils databaseUtils = new DatabaseUtils();
 
-            VoluntariaModel model = new VoluntariaModel();
-            SqlDataAdapter adapter = model.getVoluntariasByStatus("ativo");
+            FuncionarioModel model = new FuncionarioModel();
+            SqlDataAdapter adapter = model.getFuncionariosByStatus("1");
             DataTable dt = new DataTable();
 
             try
@@ -49,5 +49,21 @@ namespace DonnaGabriela.Views
             }
         }
 
+        private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
+        {
+            loadDataTable();
+        }
+
+        private void btnSim_Click(object sender, EventArgs e)
+        {
+            FuncionarioModel model = new FuncionarioModel();
+            model.deleteFuncionarioById(getSelectedId());
+            panelModal.Visible = false;
+        }
+
+        private int getSelectedId()
+        {
+            return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
+        }
     }
 }
