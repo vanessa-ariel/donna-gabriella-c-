@@ -196,6 +196,7 @@ namespace DonnaGabriela
             this.txtNumeroRua.Name = "txtNumeroRua";
             this.txtNumeroRua.Size = new System.Drawing.Size(99, 33);
             this.txtNumeroRua.TabIndex = 254;
+            this.txtNumeroRua.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroRua_KeyPress);
             // 
             // txtRua
             // 
@@ -226,6 +227,7 @@ namespace DonnaGabriela
             this.txtcep.Name = "txtcep";
             this.txtcep.Size = new System.Drawing.Size(173, 33);
             this.txtcep.TabIndex = 252;
+            this.txtcep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcep_KeyPress);
             // 
             // label4
             // 
@@ -259,6 +261,7 @@ namespace DonnaGabriela
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(221, 33);
             this.txtCpf.TabIndex = 211;
+            this.txtCpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCpf_KeyPress);
             // 
             // label2
             // 
@@ -343,6 +346,7 @@ namespace DonnaGabriela
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(221, 33);
             this.txtTelefone.TabIndex = 183;
+            this.txtTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefone_KeyPress);
             // 
             // panel1
             // 

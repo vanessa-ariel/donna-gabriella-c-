@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DonnaGabriela.Model;
+using DonnaGabriela.InputValidations;
 
 namespace DonnaGabriela
 {
@@ -101,12 +102,6 @@ namespace DonnaGabriela
                 txtRua.Focus();
                 return;
             }
-            else if (txtComplemento.Text == "")
-            {
-                MessageBox.Show("Preencha o campo Complemento", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtBairro.Focus();
-                return;
-            }
             else if (txtBairro.Text == "")
             {
                 MessageBox.Show("Preencha o campo Bairro", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -175,6 +170,49 @@ namespace DonnaGabriela
             funcionario.Bairro_Func = txtBairro.Text;
             funcionario.Cidade_Func = txtCidade.Text;
             funcionario.Complemento_Func = txtComplemento.Text;
+            funcionario.Senha_User = txtSenha.Text;
+        }
+
+        private void txtTelefone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelefone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateInputs v = new ValidateInputs();
+            v.AllowOnlyNumbers(e);
+
+        }
+
+        private void txtCpf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateInputs v = new ValidateInputs();
+            v.AllowOnlyNumbers(e);
+        }
+
+        private void txtRg_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateInputs v = new ValidateInputs();
+            v.AllowOnlyNumbers(e);
+        }
+
+        private void txtAdmissao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateInputs v = new ValidateInputs();
+            v.AllowOnlyNumbers(e);
+        }
+
+        private void txtcep_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateInputs v = new ValidateInputs();
+            v.AllowOnlyNumbers(e);
+        }
+
+        private void txtNumeroRua_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidateInputs v = new ValidateInputs();
+            v.AllowOnlyNumbers(e);
         }
     }
 }

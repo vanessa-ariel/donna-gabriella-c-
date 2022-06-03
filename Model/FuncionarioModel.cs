@@ -74,7 +74,9 @@ namespace DonnaGabriela.Model
                     "Data_Nasci_Func, " +
                     "Data_Admissao, " +
                     "Status_Conta, " +
-                    "Senha_User" +
+                    "Senha_User," +
+                    "ID_Cargo," +
+                    "ID_Depto" +
                 ") VALUES (" +
                     "'" + funcionario.Nome_Func + "', " +
                     "'" + funcionario.CPF_Func + "', " +
@@ -90,7 +92,9 @@ namespace DonnaGabriela.Model
                     "'" + funcionario.Data_Nasci_Func + "', " +
                     "'" + dateTime.ToString("dd/MM/yyyy") + "', " +
                     1 + ", " +
-                    "'" + funcionario.Senha_User + "' " +
+                    "'" + funcionario.Senha_User + "', " +
+                    1 + ", " +
+                    1 +
                 ");";
             databaseUtils.openConnection();
             return databaseUtils.ExecuteCommand(query);
