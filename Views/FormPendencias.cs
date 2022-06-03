@@ -22,9 +22,5 @@ namespace DonnaGabriela
 
         }
 
-        private void pnInfo_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

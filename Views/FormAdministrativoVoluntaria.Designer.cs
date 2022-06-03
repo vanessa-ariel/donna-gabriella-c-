@@ -29,7 +29,7 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,7 +40,6 @@ namespace DonnaGabriela
             this.btnSim = new System.Windows.Forms.Button();
             this.btnModal = new System.Windows.Forms.Button();
             this.lblModalTitle = new System.Windows.Forms.Label();
-            this.lblError = new System.Windows.Forms.Label();
             this.tableHeader = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@ namespace DonnaGabriela
             this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
+            this.lblError = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panelModal.SuspendLayout();
@@ -67,7 +67,7 @@ namespace DonnaGabriela
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label5.Location = new System.Drawing.Point(44, 28);
+            this.label5.Location = new System.Drawing.Point(300, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(300, 30);
             this.label5.TabIndex = 218;
@@ -78,7 +78,7 @@ namespace DonnaGabriela
             this.panel6.Controls.Add(this.label5);
             this.panel6.Location = new System.Drawing.Point(2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(777, 74);
+            this.panel6.Size = new System.Drawing.Size(896, 74);
             this.panel6.TabIndex = 229;
             // 
             // label1
@@ -189,18 +189,6 @@ namespace DonnaGabriela
             this.lblModalTitle.TabIndex = 0;
             this.lblModalTitle.Text = "Desativar item";
             // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblError.Location = new System.Drawing.Point(140, 142);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(541, 30);
-            this.lblError.TabIndex = 229;
-            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
-            this.lblError.Visible = false;
-            // 
             // tableHeader
             // 
             this.tableHeader.BackColor = System.Drawing.Color.White;
@@ -287,13 +275,13 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.ReadOnly = true;
             this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVoluntarias.ShowCellErrors = false;
             this.dataGridVoluntarias.ShowCellToolTips = false;
@@ -354,6 +342,20 @@ namespace DonnaGabriela
             this.btnDesativarCadastro.Visible = false;
             this.btnDesativarCadastro.Click += new System.EventHandler(this.btnDesativarCadastro_Click_1);
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblError.Location = new System.Drawing.Point(3, 159);
+            this.lblError.MinimumSize = new System.Drawing.Size(881, 0);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(881, 21);
+            this.lblError.TabIndex = 234;
+            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
+            this.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblError.Visible = false;
+            // 
             // FormAdministrativo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,12 +403,12 @@ namespace DonnaGabriela
         private System.Windows.Forms.DataGridView dataGridVoluntarias;
         private FontAwesome.Sharp.IconButton btnEditar;
         private FontAwesome.Sharp.IconButton btnDesativarCadastro;
-        private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Panel panelModal;
         private System.Windows.Forms.Button btnSim;
         private System.Windows.Forms.Label lblModalTitle;
         private System.Windows.Forms.Button btnNao;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnModal;
+        private System.Windows.Forms.Label lblError;
     }
 }

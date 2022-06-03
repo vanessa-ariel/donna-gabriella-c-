@@ -29,7 +29,7 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,11 +59,10 @@ namespace DonnaGabriela
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label5.Location = new System.Drawing.Point(44, 28);
+            this.label5.Location = new System.Drawing.Point(359, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(250, 30);
             this.label5.TabIndex = 218;
@@ -74,7 +73,7 @@ namespace DonnaGabriela
             this.panel6.Controls.Add(this.label5);
             this.panel6.Location = new System.Drawing.Point(1, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(777, 74);
+            this.panel6.Size = new System.Drawing.Size(968, 74);
             this.panel6.TabIndex = 231;
             // 
             // label1
@@ -83,7 +82,7 @@ namespace DonnaGabriela
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(93, -86);
+            this.label1.Location = new System.Drawing.Point(7, -86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 30);
             this.label1.TabIndex = 218;
@@ -96,9 +95,9 @@ namespace DonnaGabriela
             this.panel5.Controls.Add(this.flowLayoutPanel1);
             this.panel5.Controls.Add(this.dataGridVoluntarias);
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(11, 83);
+            this.panel5.Location = new System.Drawing.Point(3, 83);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1139, 445);
+            this.panel5.Size = new System.Drawing.Size(966, 445);
             this.panel5.TabIndex = 230;
             // 
             // flowLayoutPanel1
@@ -109,7 +108,7 @@ namespace DonnaGabriela
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(36, 20);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(964, 35);
@@ -230,13 +229,13 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.ReadOnly = true;
             this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVoluntarias.ShowCellErrors = false;
             this.dataGridVoluntarias.ShowCellToolTips = false;
@@ -250,7 +249,7 @@ namespace DonnaGabriela
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1213, 450);
+            this.ClientSize = new System.Drawing.Size(987, 450);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Name = "FormAgendamentos";
