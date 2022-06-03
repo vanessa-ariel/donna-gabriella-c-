@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace DonnaGabriela
 {
-    public partial class FormConfiguracoesFuncionario : Form
+    public partial class FormNovoCadastroFuncionario : Form
     {
-        public FormConfiguracoesFuncionario()
+        public FormNovoCadastroFuncionario()
         {
             InitializeComponent();
+        }
+
+        public FormNovoCadastroFuncionario(int id)
+        {
+            InitializeComponent();
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

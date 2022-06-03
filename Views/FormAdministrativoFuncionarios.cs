@@ -49,5 +49,26 @@ namespace DonnaGabriela.Views
             }
         }
 
+        private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
+        {
+            loadDataTable();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Form editFuncionarios = new FormNovoCadastroFuncionario(getSelectedId());
+            editFuncionarios.BringToFront();
+            editFuncionarios.Show();
+        }
+        private int getSelectedId()
+        {
+            return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
+        }
+
+        private void iconButtonNovo_Click(object sender, EventArgs e)
+        {
+            Form addFuncionarios = new FormNovoCadastroFuncionario();
+            addFuncionarios.Show();
+        }
     }
 }
