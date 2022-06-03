@@ -29,6 +29,7 @@ namespace DonnaGabriela
             if (editMode)
             {
                 voluntariaModel.editVoluntaria(voluntaria);
+                this.Close();
                 return;
             }
             //create new
@@ -154,6 +155,7 @@ namespace DonnaGabriela
         {
             cmbProfissoes.Text = voluntaria.Nome_Servico;
             txtNome.Text = voluntaria.Nome_Voluntario;
+            txtCpf.Text = voluntaria.Cpf_Voluntario;
             txtTelefone.Text = voluntaria.Telefone_Voluntario;
             txtEmail.Text = voluntaria.Email_Voluntario;
             txtcep.Text = voluntaria.Cep_Voluntario;
@@ -162,15 +164,13 @@ namespace DonnaGabriela
             txtBairro.Text = voluntaria.Bairro_Voluntario;
             txtCidade.Text = voluntaria.Cidade_Voluntario;
             txtComplemento.Text = voluntaria.Complemento_Voluntario;
-            // FALTA CAMPO DATA NASCIMENTO NO FORM = voluntaria.Data_Nasci_User;
-            // FALTA CAMPO SEXO NO FORM = voluntaria.Sexo_Voluntario;
-            // FALTA CPF NO BANCO
         }
 
         private void updateVoluntaria()
         {
             voluntaria.Nome_Servico = cmbProfissoes.Text;
             voluntaria.Nome_Voluntario = txtNome.Text;
+            voluntaria.Cpf_Voluntario = txtCpf.Text;
             voluntaria.Telefone_Voluntario = txtTelefone.Text;
             voluntaria.Email_Voluntario = txtEmail.Text;
             voluntaria.Cep_Voluntario = txtcep.Text;

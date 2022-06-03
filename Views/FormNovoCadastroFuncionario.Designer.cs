@@ -1,7 +1,7 @@
 ﻿
 namespace DonnaGabriela
 {
-    partial class FormConfiguracoesFuncionario
+    partial class FormNovoCadastroFuncionario
     {
         /// <summary>
         /// Required designer variable.
@@ -45,11 +45,9 @@ namespace DonnaGabriela
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.txtcep = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.txtRg = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtSalario = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -78,11 +76,9 @@ namespace DonnaGabriela
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.txtRg);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.txtSalario);
             this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
@@ -100,11 +96,10 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.txtTelefone);
             this.panel1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(2, -2);
+            this.panel1.Location = new System.Drawing.Point(236, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(932, 884);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtEmail
             // 
@@ -138,7 +133,6 @@ namespace DonnaGabriela
             this.groupBox1.TabIndex = 216;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Endereço";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label13
             // 
@@ -291,18 +285,6 @@ namespace DonnaGabriela
             this.label4.Text = "Informações de endereço";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label19.Location = new System.Drawing.Point(46, 320);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(72, 21);
-            this.label19.TabIndex = 215;
-            this.label19.Text = "Salário *";
-            // 
             // txtRg
             // 
             this.txtRg.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -337,17 +319,6 @@ namespace DonnaGabriela
             this.label18.Size = new System.Drawing.Size(67, 21);
             this.label18.TabIndex = 212;
             this.label18.Text = "Cargo *";
-            // 
-            // txtSalario
-            // 
-            this.txtSalario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSalario.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtSalario.Location = new System.Drawing.Point(48, 343);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(225, 26);
-            this.txtSalario.TabIndex = 210;
             // 
             // txtCpf
             // 
@@ -429,7 +400,6 @@ namespace DonnaGabriela
             this.label16.Size = new System.Drawing.Size(188, 21);
             this.label16.TabIndex = 204;
             this.label16.Text = "Confirmação de senha *";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label15
             // 
@@ -516,7 +486,6 @@ namespace DonnaGabriela
             this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
             this.txtConfirmacaoSenha.Size = new System.Drawing.Size(229, 26);
             this.txtConfirmacaoSenha.TabIndex = 189;
-            this.txtConfirmacaoSenha.TextChanged += new System.EventHandler(this.txtConfirmacaoSenhaFunc_TextChanged);
             // 
             // txtSenha
             // 
@@ -545,7 +514,7 @@ namespace DonnaGabriela
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(2, 1);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(777, 74);
+            this.panel6.Size = new System.Drawing.Size(1175, 74);
             this.panel6.TabIndex = 230;
             // 
             // label1
@@ -554,22 +523,23 @@ namespace DonnaGabriela
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(44, 28);
+            this.label1.Location = new System.Drawing.Point(243, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 30);
             this.label1.TabIndex = 218;
             this.label1.Text = "Cadastro de Funcionários";
             // 
-            // FormConfiguracoesFuncionario
+            // FormNovoCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(841, 722);
+            this.ClientSize = new System.Drawing.Size(1184, 729);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.Name = "FormConfiguracoesFuncionario";
+            this.Name = "FormNovoCadastroFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -584,11 +554,9 @@ namespace DonnaGabriela
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

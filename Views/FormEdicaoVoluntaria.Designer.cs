@@ -360,7 +360,7 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.txtTelefone);
-            this.panel1.Location = new System.Drawing.Point(7, 1);
+            this.panel1.Location = new System.Drawing.Point(256, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(912, 884);
             this.panel1.TabIndex = 1;
@@ -380,6 +380,7 @@ namespace DonnaGabriela
             // cmbProfissoes
             // 
             this.cmbProfissoes.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProfissoes.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cmbProfissoes.FormattingEnabled = true;
             this.cmbProfissoes.Items.AddRange(new object[] {
             "Psicológico",
@@ -396,11 +397,11 @@ namespace DonnaGabriela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(990, 368);
+            this.ClientSize = new System.Drawing.Size(1184, 729);
             this.Controls.Add(this.panel1);
             this.Name = "FormEdicaoVoluntaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastrar Volontária";
+            this.Text = "Cadastrar Voluntária";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -34,7 +34,7 @@ namespace DonnaGabriela
             this.btnConfiguracoes = new FontAwesome.Sharp.IconButton();
             this.btnAgendamentos = new FontAwesome.Sharp.IconButton();
             this.btnPendencias = new FontAwesome.Sharp.IconButton();
-            this.btnAdminstrativo = new FontAwesome.Sharp.IconButton();
+            this.btnAdministrativo = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelFormularios = new System.Windows.Forms.Panel();
@@ -65,7 +65,7 @@ namespace DonnaGabriela
             this.panelMenu.Controls.Add(this.btnConfiguracoes);
             this.panelMenu.Controls.Add(this.btnAgendamentos);
             this.panelMenu.Controls.Add(this.btnPendencias);
-            this.panelMenu.Controls.Add(this.btnAdminstrativo);
+            this.panelMenu.Controls.Add(this.btnAdministrativo);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -100,7 +100,7 @@ namespace DonnaGabriela
             this.btnConfiguracoes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnConfiguracoes.Size = new System.Drawing.Size(221, 60);
             this.btnConfiguracoes.TabIndex = 5;
-            this.btnConfiguracoes.Text = "Configurações";
+            this.btnConfiguracoes.Text = "Funcionários";
             this.btnConfiguracoes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfiguracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfiguracoes.UseVisualStyleBackColor = false;
@@ -154,29 +154,29 @@ namespace DonnaGabriela
             this.btnPendencias.UseVisualStyleBackColor = false;
             this.btnPendencias.Click += new System.EventHandler(this.btnPendencias_Click);
             // 
-            // btnAdminstrativo
+            // btnAdministrativo
             // 
-            this.btnAdminstrativo.BackColor = System.Drawing.Color.White;
-            this.btnAdminstrativo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdminstrativo.FlatAppearance.BorderSize = 0;
-            this.btnAdminstrativo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdminstrativo.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminstrativo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdminstrativo.IconChar = FontAwesome.Sharp.IconChar.Suitcase;
-            this.btnAdminstrativo.IconColor = System.Drawing.Color.DarkOrchid;
-            this.btnAdminstrativo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAdminstrativo.IconSize = 24;
-            this.btnAdminstrativo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdminstrativo.Location = new System.Drawing.Point(0, 100);
-            this.btnAdminstrativo.Name = "btnAdminstrativo";
-            this.btnAdminstrativo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnAdminstrativo.Size = new System.Drawing.Size(221, 60);
-            this.btnAdminstrativo.TabIndex = 2;
-            this.btnAdminstrativo.Text = "Administrativo";
-            this.btnAdminstrativo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdminstrativo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdminstrativo.UseVisualStyleBackColor = false;
-            this.btnAdminstrativo.Click += new System.EventHandler(this.btnAdminstrativo_Click);
+            this.btnAdministrativo.BackColor = System.Drawing.Color.White;
+            this.btnAdministrativo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAdministrativo.FlatAppearance.BorderSize = 0;
+            this.btnAdministrativo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministrativo.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrativo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAdministrativo.IconChar = FontAwesome.Sharp.IconChar.Suitcase;
+            this.btnAdministrativo.IconColor = System.Drawing.Color.DarkOrchid;
+            this.btnAdministrativo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAdministrativo.IconSize = 24;
+            this.btnAdministrativo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdministrativo.Location = new System.Drawing.Point(0, 100);
+            this.btnAdministrativo.Name = "btnAdministrativo";
+            this.btnAdministrativo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnAdministrativo.Size = new System.Drawing.Size(221, 60);
+            this.btnAdministrativo.TabIndex = 2;
+            this.btnAdministrativo.Text = "Voluntárias";
+            this.btnAdministrativo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdministrativo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdministrativo.UseVisualStyleBackColor = false;
+            this.btnAdministrativo.Click += new System.EventHandler(this.btnAdministrativo_Click);
             // 
             // panel1
             // 
@@ -198,7 +198,6 @@ namespace DonnaGabriela
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panelFormularios
             // 
@@ -211,7 +210,6 @@ namespace DonnaGabriela
             this.panelFormularios.Name = "panelFormularios";
             this.panelFormularios.Size = new System.Drawing.Size(979, 668);
             this.panelFormularios.TabIndex = 3;
-            this.panelFormularios.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelFormularios_Paint);
             // 
             // splitter1
             // 
@@ -230,13 +228,12 @@ namespace DonnaGabriela
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(979, 100);
             this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // lblFooter
             // 
             this.lblFooter.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFooter.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFooter.Location = new System.Drawing.Point(6, 40);
+            this.lblFooter.Location = new System.Drawing.Point(118, 40);
             this.lblFooter.Name = "lblFooter";
             this.lblFooter.Size = new System.Drawing.Size(597, 21);
             this.lblFooter.TabIndex = 0;
@@ -281,7 +278,6 @@ namespace DonnaGabriela
             this.iconeMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconeMinimizar.TabIndex = 2;
             this.iconeMinimizar.TabStop = false;
-            this.iconeMinimizar.Click += new System.EventHandler(this.iconeMinimizar_Click);
             // 
             // iconeMaximizar
             // 
@@ -342,7 +338,7 @@ namespace DonnaGabriela
         private FontAwesome.Sharp.IconButton btnConfiguracoes;
         private FontAwesome.Sharp.IconButton btnAgendamentos;
         private FontAwesome.Sharp.IconButton btnPendencias;
-        private FontAwesome.Sharp.IconButton btnAdminstrativo;
+        private FontAwesome.Sharp.IconButton btnAdministrativo;
         private System.Windows.Forms.Panel panelFormularios;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblFooter;

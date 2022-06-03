@@ -7,39 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DonnaGabriela.Model;
 
 namespace DonnaGabriela
 {
-    public partial class FormConfiguracoesFuncionario : Form
+    public partial class FormNovoCadastroFuncionario : Form
     {
-        public FormConfiguracoesFuncionario()
+        private Boolean editMode = false;
+        private FuncionarioModel funcionarioModel = new FuncionarioModel();
+        private Funcionario funcionario;
+
+        public FormNovoCadastroFuncionario()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        public FormNovoCadastroFuncionario(int id)
         {
+            InitializeComponent();
+            editMode = true;
+            funcionario = funcionarioModel.getFuncionarioById(id);
+            populateFuncionarioForm();
 
         }
-
-        private void txtNumeroFunc_TextChanged(object sender, EventArgs e)
+        private void populateFuncionarioForm()
         {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtConfirmacaoSenhaFunc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            txtNome.Text = funcionario.Nome_Func;
+            txtTelefone.Text = funcionario.Telefone_Func;
+            txtEmail.Text = funcionario.Email_Func;
+            txtCpf.Text = funcionario.CPF_Func;
+            txtRg.Text = funcionario.RG_Func;
+            txtAdmissao.Text = funcionario.Data_Admissao;
+            txtCargo.Text = funcionario.Cargo;
+            txtcep.Text = funcionario.Cep_Func;
+            txtRua.Text = funcionario.Endereco_Func;
+            txtNumeroRua.Text = funcionario.Numero_Func;
+            txtBairro.Text = funcionario.Bairro_Func;
+            txtCidade.Text = funcionario.Cidade_Func;
+            txtComplemento.Text = funcionario.Complemento_Func;
         }
     }
 }
