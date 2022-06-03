@@ -168,7 +168,7 @@ namespace DonnaGabriela
             this.pnInfo.Controls.Add(this.label4);
             this.pnInfo.Controls.Add(this.label3);
             this.pnInfo.Controls.Add(this.label2);
-            this.pnInfo.Location = new System.Drawing.Point(48, 89);
+            this.pnInfo.Location = new System.Drawing.Point(75, 89);
             this.pnInfo.Name = "pnInfo";
             this.pnInfo.Size = new System.Drawing.Size(702, 300);
             this.pnInfo.TabIndex = 243;
@@ -176,6 +176,8 @@ namespace DonnaGabriela
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(216, 219);
             this.textBox4.Multiline = true;
@@ -185,6 +187,8 @@ namespace DonnaGabriela
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(216, 175);
             this.textBox3.Multiline = true;
@@ -194,6 +198,8 @@ namespace DonnaGabriela
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(216, 131);
             this.textBox2.Multiline = true;
@@ -203,6 +209,8 @@ namespace DonnaGabriela
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(216, 84);
             this.textBox1.Multiline = true;
@@ -212,6 +220,8 @@ namespace DonnaGabriela
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.Color.White;
+            this.txtNome.Enabled = false;
             this.txtNome.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(216, 37);
             this.txtNome.Multiline = true;
