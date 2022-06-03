@@ -62,6 +62,7 @@ namespace DonnaGabriela
             //add logica de remover item da tabela
             VoluntariaModel model = new VoluntariaModel();
             model.deleteVoluntariaById(getSelectedId());
+            loadDataTable();
             panelModal.Visible = false;
         }
 

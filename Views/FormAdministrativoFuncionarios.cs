@@ -50,13 +50,6 @@ namespace DonnaGabriela.Views
         }
 
 
-        private void btnSim_Click(object sender, EventArgs e)
-        {
-            FuncionarioModel model = new FuncionarioModel();
-            model.deleteFuncionarioById(getSelectedId());
-            panelModal.Visible = false;
-        }
-
         private void FormAdministrativoFuncionarios_Load(object sender, EventArgs e)
         {
             loadDataTable();
@@ -82,6 +75,15 @@ namespace DonnaGabriela.Views
         private void btnDesativarCadastro_Click(object sender, EventArgs e)
         {
             panelModal.Visible = true;
+        }
+
+        private void btnSim_Click(object sender, EventArgs e)
+        {
+            FuncionarioModel model = new FuncionarioModel();
+            model.deleteFuncionarioById(getSelectedId());
+            loadDataTable();
+            panelModal.Visible = false;
+
         }
 
         private void btnNao_Click(object sender, EventArgs e)
