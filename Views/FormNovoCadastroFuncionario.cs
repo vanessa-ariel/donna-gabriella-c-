@@ -32,17 +32,16 @@ namespace DonnaGabriela
         }
         private void populateFuncionarioForm()
         {
-            cmbProfissoes.Text = funcionario.Nome_Servico;
-            txtNome.Text = funcionario.Nome_Voluntario;
-            txtCpf.Text = funcionario.Cpf_Voluntario;
-            txtTelefone.Text = funcionario.Telefone_Voluntario;
-            txtEmail.Text = funcionario.Email_Voluntario;
-            txtcep.Text = funcionario.Cep_Voluntario;
-            txtRua.Text = funcionario.Endereco_Voluntario;
-            txtNumeroRua.Text = funcionario.Numero_Voluntario;
-            txtBairro.Text = funcionario.Bairro_Voluntario;
-            txtCidade.Text = funcionario.Cidade_Voluntario;
-            txtComplemento.Text = funcionario.Complemento_Voluntario;
+            txtNome.Text = funcionario.Nome_Func;
+            txtCpf.Text = funcionario.CPF_Func;
+            txtTelefone.Text = funcionario.Telefone_Func;
+            txtEmail.Text = funcionario.Email_Func;
+            txtcep.Text = funcionario.Cep_Func;
+            txtRua.Text = funcionario.Endereco_Func;
+            txtNumeroRua.Text = funcionario.Numero_Func;
+            txtBairro.Text = funcionario.Bairro_Func;
+            txtCidade.Text = funcionario.Cidade_Func;
+            txtComplemento.Text = funcionario.Complemento_Func;
         }
     }
 }

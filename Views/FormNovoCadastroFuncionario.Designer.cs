@@ -104,7 +104,6 @@ namespace DonnaGabriela
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(932, 884);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtEmail
             // 
@@ -138,7 +137,6 @@ namespace DonnaGabriela
             this.groupBox1.TabIndex = 216;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Endereço";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label13
             // 
@@ -429,7 +427,6 @@ namespace DonnaGabriela
             this.label16.Size = new System.Drawing.Size(188, 21);
             this.label16.TabIndex = 204;
             this.label16.Text = "Confirmação de senha *";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label15
             // 
@@ -516,7 +513,6 @@ namespace DonnaGabriela
             this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
             this.txtConfirmacaoSenha.Size = new System.Drawing.Size(229, 26);
             this.txtConfirmacaoSenha.TabIndex = 189;
-            this.txtConfirmacaoSenha.TextChanged += new System.EventHandler(this.txtConfirmacaoSenhaFunc_TextChanged);
             // 
             // txtSenha
             // 

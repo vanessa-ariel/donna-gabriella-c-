@@ -380,6 +380,7 @@ namespace DonnaGabriela
             // cmbProfissoes
             // 
             this.cmbProfissoes.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProfissoes.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cmbProfissoes.FormattingEnabled = true;
             this.cmbProfissoes.Items.AddRange(new object[] {
             "Psicológico",
@@ -400,7 +401,7 @@ namespace DonnaGabriela
             this.Controls.Add(this.panel1);
             this.Name = "FormEdicaoVoluntaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastrar Volontária";
+            this.Text = "Cadastrar Voluntária";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
