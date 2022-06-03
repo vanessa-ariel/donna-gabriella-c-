@@ -1,7 +1,7 @@
 ﻿
 namespace DonnaGabriela
 {
-    partial class FormConfiguracoesFuncionario
+    partial class FormNovoCadastroFuncionario
     {
         /// <summary>
         /// Required designer variable.
@@ -560,7 +560,7 @@ namespace DonnaGabriela
             this.label1.TabIndex = 218;
             this.label1.Text = "Cadastro de Funcionários";
             // 
-            // FormConfiguracoesFuncionario
+            // FormNovoCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -569,7 +569,7 @@ namespace DonnaGabriela
             this.ClientSize = new System.Drawing.Size(841, 722);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.Name = "FormConfiguracoesFuncionario";
+            this.Name = "FormNovoCadastroFuncionario";
             this.Text = "pa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

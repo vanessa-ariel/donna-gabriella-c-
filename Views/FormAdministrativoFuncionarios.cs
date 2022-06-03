@@ -65,5 +65,12 @@ namespace DonnaGabriela.Views
         {
             return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Form editFuncionario = new FormNovoCadastroFuncionario(getSelectedId());
+            editFuncionario.BringToFront();
+            editFuncionario.Show();
+        }
     }
 }

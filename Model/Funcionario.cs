@@ -4,41 +4,47 @@ namespace DonnaGabriela.Model
 {
     class Funcionario
     {
-        private int id_voluntario;
-        private String id_servico;
-        private String nome_servico;
-        private String nome_voluntario;
-        private String telefone_voluntario;
-        private String email_voluntario;
-        private String cep_voluntario;
-        private String endereco_voluntario;
-        private String numero_voluntario;
-        private String bairro_voluntario;
-        private String cidade_voluntario;
-        private String complemento_voluntario;
-        private String data_nasci_User;
-        private String senha_voluntario;
-        private String sexo_voluntario;
+        private int id_func;
+        private int id_cargo;
+        private String cargo;
+        private int id_depto;
+        private String depto;
+        private String nome_func;
+        private String telefone_func;
+        private String email_func;
+        private String cep_func;
+        private String cpf_func;
+        private String rg_func;
+        private String endereco_func;
+        private String numero_func;
+        private String bairro_func;
+        private String cidade_func;
+        private String complemento_func;
+        private String data_nasci_func;
+        private String senha_user;
         private String data_cadastro;
         private String data_desligamento;
         private String data_admissao;
         private String status_conta;
 
-        public int ID_Voluntario { get => id_voluntario; set => id_voluntario = value; }
-        public string ID_Servico { get => id_servico; set => id_servico = value; }
-        public string Nome_Servico { get => nome_servico; set => nome_servico = value; }
-        public string Nome_Voluntario { get => nome_voluntario; set => nome_voluntario = value; }
-        public string Telefone_Voluntario { get => telefone_voluntario; set => telefone_voluntario = value; }
-        public string Email_Voluntario { get => email_voluntario; set => email_voluntario = value; }
-        public string Cep_Voluntario { get => cep_voluntario; set => cep_voluntario = value; }
-        public string Endereco_Voluntario { get => endereco_voluntario; set => endereco_voluntario = value; }
-        public string Numero_Voluntario { get => numero_voluntario; set => numero_voluntario = value; }
-        public string Bairro_Voluntario { get => bairro_voluntario; set => bairro_voluntario = value; }
-        public string Cidade_Voluntario { get => cidade_voluntario; set => cidade_voluntario = value; }
-        public string Complemento_Voluntario { get => complemento_voluntario; set => complemento_voluntario = value; }
-        public string Data_Nasci_User { get => data_nasci_User; set => data_nasci_User = value; }
-        public string Senha_Voluntario { get => senha_voluntario; set => senha_voluntario = value; }
-        public string Sexo_Voluntario { get => sexo_voluntario; set => sexo_voluntario = value; }
+        public int ID_Func { get => id_func; set => id_func = value; }
+        public int ID_Cargo { get => id_cargo; set => id_cargo = value; }
+        public string Cargo { get => cargo; set => cargo = value; }
+        public int ID_Depto { get => id_depto; set => id_depto = value; }
+        public string Depto { get => depto; set => depto = value; }
+        public string CPF_Func { get => cpf_func; set => cpf_func = value; }
+        public string RG_Func { get => rg_func; set => rg_func = value; }
+        public string Nome_Func { get => nome_func; set => nome_func = value; }
+        public string Telefone_Func { get => telefone_func; set => telefone_func = value; }
+        public string Email_Func { get => email_func; set => email_func = value; }
+        public string Cep_Func { get => cep_func; set => cep_func = value; }
+        public string Endereco_Func { get => endereco_func; set => endereco_func = value; }
+        public string Numero_Func { get => numero_func; set => numero_func = value; }
+        public string Bairro_Func { get => bairro_func; set => bairro_func = value; }
+        public string Cidade_Func { get => cidade_func; set => cidade_func = value; }
+        public string Complemento_Func { get => complemento_func; set => complemento_func = value; }
+        public string Data_Nasci_Func { get => data_nasci_func; set => data_nasci_func = value; }
+        public string Senha_User { get => senha_user; set => senha_user = value; }
         public string Data_Cadastro { get => data_cadastro; set => data_cadastro = value; }
         public string Data_Desligamento { get => data_desligamento; set => data_desligamento = value; }
         public string Data_Admissao { get => data_admissao; set => data_admissao = value; }
