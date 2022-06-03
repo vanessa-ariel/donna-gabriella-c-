@@ -31,6 +31,7 @@ namespace DonnaGabriela
 
             label1.Text = "Edição de Funcionário";
             btnCadastrarFunc.Text = "Salvar";
+            passwordPanel.Visible = false;
         }
         private void populateFuncionarioForm()
         {
@@ -47,6 +48,89 @@ namespace DonnaGabriela
             txtBairro.Text = funcionario.Bairro_Func;
             txtCidade.Text = funcionario.Cidade_Func;
             txtComplemento.Text = funcionario.Complemento_Func;
+        }
+
+        private void btnCadastrarFunc_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Nome", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNome.Focus();
+            }
+            else if (txtEmail.Text == "")
+            {
+                MessageBox.Show("Preencha o campo E-mail", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Focus();
+            }
+            else if (txtTelefone.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Telefone", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTelefone.Focus();
+            }
+            else if (txtRg.Text == "")
+            {
+                MessageBox.Show("Preencha o campo RG", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTelefone.Focus();
+            }
+            else if (txtAdmissao.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Data de Admissão", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtcep.Focus();
+            }
+            else if (txtCargo.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Cargo", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtcep.Focus();
+            }
+            else if (txtRua.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Nome do Logradouro", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtRua.Focus();
+            }
+            else if (txtNumeroRua.Text == "")
+            {
+                MessageBox.Show("Preencha o campo № da rua", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtRua.Focus();
+            }
+            else if (txtComplemento.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Complemento", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtBairro.Focus();
+            }
+            else if (txtBairro.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Bairro", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtBairro.Focus();
+            }
+            else if (txtcep.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Cep", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCidade.Focus();
+            }
+            else if (txtCidade.Text == "")
+            {
+                MessageBox.Show("Preencha o campo Cidade", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCidade.Focus();
+            }
+            else if (!editMode)
+                {
+
+                if (txtSenha.Text == "")
+                {
+                    MessageBox.Show("Preencha o campo Senha", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtComplemento.Focus();
+                }
+                else if (txtConfirmacaoSenha.Text == "")
+                {
+                    MessageBox.Show("Preencha o campo Confirmação Senha", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtComplemento.Focus();
+                }
+                else if (txtSenha.Text != txtConfirmacaoSenha.Text)
+                {
+                    MessageBox.Show("As senhas devem ser iguais", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtComplemento.Focus();
+                }
+            }
         }
     }
 }
