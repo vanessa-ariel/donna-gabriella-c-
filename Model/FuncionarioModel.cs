@@ -92,6 +92,7 @@ namespace DonnaGabriela.Model
                     1 + ", " +
                     "'" + funcionario.Senha_User + "' " +
                 ");";
+            databaseUtils.openConnection();
             return databaseUtils.ExecuteCommand(query);
         }
 
@@ -111,6 +112,8 @@ namespace DonnaGabriela.Model
                                 "Cidade_Func = '" + funcionario.Cidade_Func + "', " +
                                 "Complemento_Func = '" + funcionario.Complemento_Func + "' " +
                             "WHERE ID_Func = " + funcionario.ID_Func;
+            
+            databaseUtils.openConnection();
             return databaseUtils.ExecuteCommand(query);
         }
 
