@@ -32,6 +32,9 @@ namespace DonnaGabriela
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblQtdPendencias = new System.Windows.Forms.Label();
             this.pnInfo = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -45,13 +48,10 @@ namespace DonnaGabriela
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblQtdPendencias = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pnInfo.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.pnInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,6 +82,38 @@ namespace DonnaGabriela
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(944, 494);
             this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.lblQtdPendencias);
+            this.panel3.Location = new System.Drawing.Point(121, 26);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(286, 45);
+            this.panel3.TabIndex = 247;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(13, 12);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(220, 21);
+            this.label7.TabIndex = 245;
+            this.label7.Text = "Quantidade de pendências:";
+            // 
+            // lblQtdPendencias
+            // 
+            this.lblQtdPendencias.AutoSize = true;
+            this.lblQtdPendencias.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQtdPendencias.ForeColor = System.Drawing.Color.White;
+            this.lblQtdPendencias.Location = new System.Drawing.Point(235, 12);
+            this.lblQtdPendencias.Name = "lblQtdPendencias";
+            this.lblQtdPendencias.Size = new System.Drawing.Size(37, 21);
+            this.lblQtdPendencias.TabIndex = 246;
+            this.lblQtdPendencias.Text = "100";
             // 
             // pnInfo
             // 
@@ -172,6 +204,7 @@ namespace DonnaGabriela
             this.btnReprovar.TabIndex = 242;
             this.btnReprovar.Text = "Reprovar";
             this.btnReprovar.UseVisualStyleBackColor = false;
+            this.btnReprovar.Click += new System.EventHandler(this.btnReprovar_Click);
             // 
             // btnAprovar
             // 
@@ -187,6 +220,7 @@ namespace DonnaGabriela
             this.btnAprovar.TabIndex = 241;
             this.btnAprovar.Text = "Aprovar";
             this.btnAprovar.UseVisualStyleBackColor = false;
+            this.btnAprovar.Click += new System.EventHandler(this.btnAprovar_Click);
             // 
             // label6
             // 
@@ -243,44 +277,12 @@ namespace DonnaGabriela
             this.label2.TabIndex = 231;
             this.label2.Text = "Nome da voluntária:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 21);
-            this.label7.TabIndex = 245;
-            this.label7.Text = "Quantidade de pendências:";
-            // 
-            // lblQtdPendencias
-            // 
-            this.lblQtdPendencias.AutoSize = true;
-            this.lblQtdPendencias.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQtdPendencias.ForeColor = System.Drawing.Color.White;
-            this.lblQtdPendencias.Location = new System.Drawing.Point(235, 12);
-            this.lblQtdPendencias.Name = "lblQtdPendencias";
-            this.lblQtdPendencias.Size = new System.Drawing.Size(37, 21);
-            this.lblQtdPendencias.TabIndex = 246;
-            this.lblQtdPendencias.Text = "100";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.lblQtdPendencias);
-            this.panel3.Location = new System.Drawing.Point(121, 26);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 45);
-            this.panel3.TabIndex = 247;
-            // 
             // FormPendencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(987, 450);
+            this.ClientSize = new System.Drawing.Size(1004, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormPendencias";
@@ -289,10 +291,10 @@ namespace DonnaGabriela
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.pnInfo.ResumeLayout(false);
-            this.pnInfo.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.pnInfo.ResumeLayout(false);
+            this.pnInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
