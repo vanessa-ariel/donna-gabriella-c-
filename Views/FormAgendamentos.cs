@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DonnaGabriela.Model;
 
 namespace DonnaGabriela
 {
@@ -19,22 +21,33 @@ namespace DonnaGabriela
 
         private void FormAgendamentos_Load(object sender, EventArgs e)
         {
-
+            loadDataTable();
         }
 
-        private void Label7_Click(object sender, EventArgs e)
+        private void loadDataTable()
         {
+            DatabaseUtils databaseUtils = new DatabaseUtils();
 
-        }
+            AgendamentoModel model = new AgendamentoModel();
+            SqlDataAdapter adapter = model.getAgendamentos();
+            DataTable dt = new DataTable();
 
-        private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+            try
+            {
+                adapter.Fill(dt);
+                dataGridAgendamentos.DataSource = dt;
+                //dataGridAgendamentos.Columns[0].Width = 100;
+                //dataGridAgendamentos.Columns[1].Width = 500;
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+                dataGridAgendamentos.MultiSelect = false;
+                this.dataGridAgendamentos.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
+                this.dataGridAgendamentos.AlternatingRowsDefaultCellStyle.BackColor =
+                    Color.White;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Não foi possível conectar ao banco de dados!\n" + e.Message);
+            }
         }
     }
 }

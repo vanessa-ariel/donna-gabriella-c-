@@ -29,7 +29,7 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@ namespace DonnaGabriela
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
+            this.dataGridAgendamentos = new System.Windows.Forms.DataGridView();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -54,7 +54,7 @@ namespace DonnaGabriela
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAgendamentos)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -93,7 +93,7 @@ namespace DonnaGabriela
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
-            this.panel5.Controls.Add(this.dataGridVoluntarias);
+            this.panel5.Controls.Add(this.dataGridAgendamentos);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(3, 83);
             this.panel5.Name = "panel5";
@@ -113,7 +113,6 @@ namespace DonnaGabriela
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(964, 35);
             this.flowLayoutPanel1.TabIndex = 229;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowLayoutPanel1_Paint);
             // 
             // panel1
             // 
@@ -133,7 +132,6 @@ namespace DonnaGabriela
             this.label2.Size = new System.Drawing.Size(46, 21);
             this.label2.TabIndex = 223;
             this.label2.Text = "Data";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -172,7 +170,6 @@ namespace DonnaGabriela
             this.label7.Size = new System.Drawing.Size(142, 21);
             this.label7.TabIndex = 223;
             this.label7.Text = "Nome Voluntária";
-            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // panel9
             // 
@@ -212,44 +209,44 @@ namespace DonnaGabriela
             this.label4.TabIndex = 223;
             this.label4.Text = "Especialidade";
             // 
-            // dataGridVoluntarias
+            // dataGridAgendamentos
             // 
-            this.dataGridVoluntarias.AllowUserToAddRows = false;
-            this.dataGridVoluntarias.AllowUserToDeleteRows = false;
-            this.dataGridVoluntarias.AllowUserToOrderColumns = true;
-            this.dataGridVoluntarias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridVoluntarias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridVoluntarias.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridVoluntarias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridVoluntarias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dataGridVoluntarias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVoluntarias.ColumnHeadersVisible = false;
-            this.dataGridVoluntarias.Location = new System.Drawing.Point(36, 54);
-            this.dataGridVoluntarias.Name = "dataGridVoluntarias";
-            this.dataGridVoluntarias.ReadOnly = true;
-            this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridVoluntarias.ShowCellErrors = false;
-            this.dataGridVoluntarias.ShowCellToolTips = false;
-            this.dataGridVoluntarias.ShowEditingIcon = false;
-            this.dataGridVoluntarias.ShowRowErrors = false;
-            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 260);
-            this.dataGridVoluntarias.TabIndex = 222;
+            this.dataGridAgendamentos.AllowUserToAddRows = false;
+            this.dataGridAgendamentos.AllowUserToDeleteRows = false;
+            this.dataGridAgendamentos.AllowUserToOrderColumns = true;
+            this.dataGridAgendamentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridAgendamentos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridAgendamentos.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridAgendamentos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridAgendamentos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dataGridAgendamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridAgendamentos.ColumnHeadersVisible = false;
+            this.dataGridAgendamentos.Location = new System.Drawing.Point(36, 54);
+            this.dataGridAgendamentos.Name = "dataGridAgendamentos";
+            this.dataGridAgendamentos.ReadOnly = true;
+            this.dataGridAgendamentos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridAgendamentos.RowHeadersVisible = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridAgendamentos.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridAgendamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridAgendamentos.ShowCellErrors = false;
+            this.dataGridAgendamentos.ShowCellToolTips = false;
+            this.dataGridAgendamentos.ShowEditingIcon = false;
+            this.dataGridAgendamentos.ShowRowErrors = false;
+            this.dataGridAgendamentos.Size = new System.Drawing.Size(832, 260);
+            this.dataGridAgendamentos.TabIndex = 222;
             // 
             // FormAgendamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(987, 450);
+            this.ClientSize = new System.Drawing.Size(1004, 450);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Name = "FormAgendamentos";
@@ -270,7 +267,7 @@ namespace DonnaGabriela
             this.panel9.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAgendamentos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,7 +282,7 @@ namespace DonnaGabriela
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridVoluntarias;
+        private System.Windows.Forms.DataGridView dataGridAgendamentos;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;
