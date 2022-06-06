@@ -27,14 +27,10 @@ namespace DonnaGabriela
             {
                 Conexao.Open();
 
-                string query_banco = "SELECT Senha_User, Email_User FROM Usuario WHERE Senha_User = '" + txtSenha.Text + "' AND Email_User = '" + txtEmail.Text + "'";
+                string query_banco = "SELECT Senha_Func, Email_Func FROM Funcionario WHERE Senha_Func = '" + txtSenha.Text + "' AND Email_Func = '" + txtEmail.Text + "'";
                 SqlDataAdapter dp = new SqlDataAdapter(query_banco, Conexao);
                 DataTable dt = new DataTable();
                 dp.Fill(dt);
-
-                //REMOVER DEPOOOOOOOOOIS
-                txtEmail.Text = "admin@admin.com";
-                txtSenha.Text = "123";
 
                 if (dt.Rows.Count == 1)
                 {
@@ -106,16 +102,6 @@ namespace DonnaGabriela
         private void txtSenha_KeyDown(object sender, KeyEventArgs e)
         {
             txtSenha.ForeColor = Color.Black;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtEmail_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

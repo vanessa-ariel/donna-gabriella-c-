@@ -32,6 +32,7 @@ CREATE TABLE Usuario (
 
 	Data_Nasci_User VARCHAR(10),
 	Data_Cadastro VARCHAR(10),
+	Data_Admissao VARCHAR(10),
 	Data_Desligamento VARCHAR(10),
 	Status_Conta CHAR(1),
 
@@ -104,7 +105,8 @@ CREATE TABLE Servico_Solicitado (
 	ID_Voluntario INT FOREIGN KEY REFERENCES Voluntario(ID_Voluntario),
 	Data_Solicitacao VARCHAR(10),
 	Data_Inicio VARCHAR(10),
-	Data_Termino VARCHAR(10)
+	Data_Termino VARCHAR(10),
+	Hora_Solicitacao VARCHAR(5)
 )
 
 CREATE TABLE Suporte (
@@ -143,6 +145,7 @@ INSERT INTO Usuario (
 	Cep_User,
 	Data_Nasci_User,
 	Data_Cadastro,
+	Data_Admissao,
 	Data_Desligamento,
 	Status_Conta,
 	Senha_User
@@ -159,6 +162,7 @@ VALUES (
 	'São Paulo',
 	'02938-928', 
 	'21/05/2000', 
+	'21/05/2000',
 	'11/01/2022',
 	'02/04/2022',
 	0, 
@@ -175,7 +179,8 @@ VALUES (
 	'Jardim Europa',
 	'São Paulo',
 	'02938-928', 
-	'21/05/2000', 
+	'21/05/2000',
+	'21/05/2000',
 	'11/01/2022',
 	'02/04/2022',
 	1, 
@@ -193,6 +198,7 @@ VALUES (
 	'São Paulo',
 	'02938-928', 
 	'21/05/2000', 
+	'21/05/2000',
 	'11/01/2022',
 	'02/04/2022',
 	2, 
@@ -380,7 +386,10 @@ INSERT INTO Funcionario (
 	'123456'
 )
 
+INSERT INTO Servico(Nome_Serviço,Duracao, Status_Servico) VALUES ('Atendimento Psicológico', '01:00', 1),('Assistência Social', '01:00', 1),('Atendimento Jurídico', '01:00', 1);
 
+INSERT INTO Servico_Solicitado(ID_Servico, ID_User, ID_Voluntario, Data_Solicitacao, Data_Inicio, Data_Termino, Hora_Solicitacao) VALUES(1, 1, 1, '01/01/2022', '10/01/2022', NULL, '10:00'), 
+(2, 2, 2, '01/01/2022', '10/01/2022', NULL, '12:00'), (3, 3, 3, '01/01/2022', '10/01/2022', NULL, '13:00')
 
 /*
 ID SERVICO: 

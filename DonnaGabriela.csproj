@@ -63,8 +63,10 @@
     <Compile Include="InputValidations\ValidateInputs.cs" />
     <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Model\AgendamentoModel.cs" />
+    <Compile Include="Model\Usuaria.cs" />
     <Compile Include="Model\Voluntaria.cs" />
     <Compile Include="Model\FuncionarioModel.cs" />
+    <Compile Include="Model\UsuariaModel.cs" />
     <Compile Include="Model\VoluntariaModel.cs" />
     <Compile Include="Views\FormAdministrativoFuncionarios.cs">
       <SubType>Form</SubType>

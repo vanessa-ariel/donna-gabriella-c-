@@ -36,8 +36,13 @@ namespace DonnaGabriela
             {
                 adapter.Fill(dt);
                 dataGridAgendamentos.DataSource = dt;
-                //dataGridAgendamentos.Columns[0].Width = 100;
-                //dataGridAgendamentos.Columns[1].Width = 500;
+                dataGridAgendamentos.Columns[0].Width = 150;
+                dataGridAgendamentos.Columns[1].Width = 150;
+                dataGridAgendamentos.Columns[2].Width = 290;
+                dataGridAgendamentos.Columns[3].Width = 290;
+                dataGridAgendamentos.Columns[4].Width = 290;
+
+
 
                 dataGridAgendamentos.MultiSelect = false;
                 this.dataGridAgendamentos.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);

@@ -16,7 +16,7 @@ namespace DonnaGabriela
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal()); // FormLogin
+            Application.Run(new FormLogin()); // FormLogin
         }
     }
 }

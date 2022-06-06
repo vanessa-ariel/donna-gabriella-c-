@@ -55,7 +55,6 @@ namespace DonnaGabriela
             this.txtEmail.Text = "Insira seu e-mail";
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
-            this.txtEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // panel1
@@ -135,7 +134,6 @@ namespace DonnaGabriela
             this.label1.Size = new System.Drawing.Size(198, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Faça login para continuar";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
