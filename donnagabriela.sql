@@ -16,6 +16,8 @@ CREATE TABLE Departamento(
 	Status_Depto CHAR(1),
 )
 
+
+
 CREATE TABLE Usuario (
 	ID_User INT IDENTITY(1,1) PRIMARY KEY,
 	Nome_User VARCHAR(50),
@@ -88,7 +90,7 @@ CREATE TABLE Funcionario (
 	Data_Desligamento VARCHAR(10),
 	Status_Conta CHAR(1),
 
-	Senha_User VARCHAR(25),
+	Senha_Func VARCHAR(25),
 )
 
 CREATE TABLE Servico(
@@ -304,7 +306,7 @@ INSERT INTO Funcionario (
 	Data_Admissao,
 	Data_Desligamento,
 	Status_Conta,
-	Senha_User
+	Senha_Func
 ) VALUES (
 	1,
 	1,
@@ -396,28 +398,22 @@ ID SERVICO:
 1 - PSICOLÓGICO
 2 - ASSISTÊNCIA SOCIAL
 3 - JURÍDICO
-
 STATUS CONTA
 0 - PENDENTE
 1 - ATIVO
 2 - INATIVO
-
 ID CARGO
 1 - Programador Web
 2 - Programador Desk
 3 - Programador Mobile
 4 - Product Owner
 5 - UI Designer
-
-
 ID DEPTO
 1 - Tecnologia
 2 - Marketing
 3 - RH
 4 - Finanças
 */
-
-
 
 /*general queries*/
 use master
@@ -433,3 +429,77 @@ SELECT * FROM Servico
 SELECT * FROM Servico_Solicitado
 SELECT * FROM Suporte
 SELECT * FROM Suporte_Solicitado
+
+INSERT INTO Usuario (
+	Nome_User,
+	CPF_User,
+	Telefone_user,
+	Email_User,
+	Endereco_User,
+	Numero_User,
+	Complemento_User,
+	Bairro_User,
+	Cidade_User,
+	Cep_User,
+	Data_Nasci_User,
+	Data_Cadastro,
+	Data_Admissao,
+	Data_Desligamento,
+	Status_Conta,
+	Senha_User
+) 
+VALUES (
+	'Fernanda da Silva', 
+	'404.749.450-06', 
+	'11 98374 6253', 
+	'mariasilvaa@email.com', 
+	'Rua Lorem Ipsum', 
+	'29', 
+	'Apto 2', 
+	'Jardim Europa',
+	'São Paulo',
+	'02938-928', 
+	'21/05/2000', 
+	'21/05/2000',
+	'11/01/2022',
+	'02/04/2022',
+	0, 
+	123456
+),
+(
+	'Bruna', 
+	'404.749.450-06', 
+	'11 98374 6253', 
+	'mariasilvaa@email.com', 
+	'Rua Lorem Ipsum', 
+	'29', 
+	'Apto 2', 
+	'Jardim Europa',
+	'São Paulo',
+	'02938-928', 
+	'21/05/2000',
+	'21/05/2000',
+	'11/01/2022',
+	'02/04/2022',
+	0, 
+	123456
+),
+(
+	'Andressa', 
+	'404.749.450-06', 
+	'11 98374 6253', 
+	'mariasilvaa@email.com', 
+	'Rua Lorem Ipsum', 
+	'29', 
+	'Apto 2', 
+	'Jardim Europa',
+	'São Paulo',
+	'02938-928', 
+	'21/05/2000', 
+	'21/05/2000',
+	'11/01/2022',
+	'02/04/2022',
+	0, 
+	123456
+)
+/*teste*/
