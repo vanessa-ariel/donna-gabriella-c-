@@ -34,19 +34,26 @@ namespace DonnaGabriela
             updatePendenciasLeft();
             updatePendenciasLeftUsuaria();
 
+            loadContentVoluntaria();
+            loadContentUsuaria();
+        }
+
+        private void loadContentVoluntaria()
+        {
             if (voluntarias.Count() == 0)
             {
                 return;
             }
             setNextVoluntaria();
-
+        }
+        private void loadContentUsuaria()
+        {
             if (usuarias.Count() == 0)
             {
                 return;
             }
             setNextUsuaria();
         }
-
 
         private void updatePendenciasLeft()
         {
@@ -57,7 +64,10 @@ namespace DonnaGabriela
             Console.WriteLine("APROVE++ ");
 
             updateVoluntariaStatus("1");
-            string id = txtIdVol.Text;
+
+            Usuaria current = usuarias.First();
+            string id = current.ID_User.ToString();
+
             string target = "http://localhost:8080/donnagabriela.com.br/usuario?id=" + id;
             try
             {
@@ -97,7 +107,6 @@ namespace DonnaGabriela
             textBox2.Text = current.Email_Voluntario;
             textBox3.Text = current.Telefone_Voluntario;
             textBox4.Text = current.Nome_Servico;
-            txtIdVol.Text = current.ID_Voluntario.ToString();
         }
 
         private void updateVoluntariaStatus(String status)
@@ -111,7 +120,6 @@ namespace DonnaGabriela
 
             Voluntaria current = voluntarias.First();
             current.Status_Conta = status;
-//            current.ID_Voluntario =
 
             Console.WriteLine("ID++ " + current.ID_Voluntario);
             Console.WriteLine("STATUS++ " + current.Status_Conta);
@@ -140,7 +148,6 @@ namespace DonnaGabriela
                 txtDataUsuaria.Text = "";
                 txtEmailUsuaria.Text = "";
                 txtTelefoneUsuaria.Text = "";
-                txtIdUsuaria.Text = "";
                 return;
             }
             Usuaria current = usuarias.First();
@@ -148,8 +155,6 @@ namespace DonnaGabriela
             txtDataUsuaria.Text = current.Data_Cadastro;
             txtEmailUsuaria.Text = current.Email_User;
             txtTelefoneUsuaria.Text = current.Telefone_User;
-            txtIdUsuaria.Text = current.ID_User.ToString();
-
         }
 
         private void btnAprovarUsuaria_Click(object sender, EventArgs e)
@@ -157,7 +162,8 @@ namespace DonnaGabriela
             Console.WriteLine("APROVE++ ");
             updateUsuariaStatus("1");
 
-            string id = txtIdUsuaria.Text;
+            Voluntaria current = voluntarias.First();
+            String id = current.ID_Voluntario.ToString();
             string target = "http://localhost:8080/donnagabriela.com.br/usuario?id=" + id;
             try
             {

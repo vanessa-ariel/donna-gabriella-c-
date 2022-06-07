@@ -62,8 +62,6 @@ namespace DonnaGabriela
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtIdVol = new System.Windows.Forms.TextBox();
-            this.txtIdUsuaria = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -138,7 +136,6 @@ namespace DonnaGabriela
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.txtIdUsuaria);
             this.panel5.Controls.Add(this.txtTelefoneUsuaria);
             this.panel5.Controls.Add(this.txtEmailUsuaria);
             this.panel5.Controls.Add(this.txtDataUsuaria);
@@ -309,7 +306,6 @@ namespace DonnaGabriela
             // pnInfo
             // 
             this.pnInfo.BackColor = System.Drawing.Color.White;
-            this.pnInfo.Controls.Add(this.txtIdVol);
             this.pnInfo.Controls.Add(this.textBox4);
             this.pnInfo.Controls.Add(this.textBox3);
             this.pnInfo.Controls.Add(this.textBox2);
@@ -396,6 +392,7 @@ namespace DonnaGabriela
             this.btnReprovar.TabIndex = 242;
             this.btnReprovar.Text = "Reprovar";
             this.btnReprovar.UseVisualStyleBackColor = false;
+            this.btnReprovar.Click += new System.EventHandler(this.btnReprovar_Click);
             // 
             // btnAprovar
             // 
@@ -468,36 +465,12 @@ namespace DonnaGabriela
             this.label2.TabIndex = 231;
             this.label2.Text = "Nome da voluntária:";
             // 
-            // txtIdVol
-            // 
-            this.txtIdVol.BackColor = System.Drawing.Color.White;
-            this.txtIdVol.Enabled = false;
-            this.txtIdVol.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdVol.Location = new System.Drawing.Point(216, 257);
-            this.txtIdVol.Multiline = true;
-            this.txtIdVol.Name = "txtIdVol";
-            this.txtIdVol.Size = new System.Drawing.Size(271, 20);
-            this.txtIdVol.TabIndex = 248;
-            this.txtIdVol.Visible = false;
-            // 
-            // txtIdUsuaria
-            // 
-            this.txtIdUsuaria.BackColor = System.Drawing.Color.White;
-            this.txtIdUsuaria.Enabled = false;
-            this.txtIdUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdUsuaria.Location = new System.Drawing.Point(216, 201);
-            this.txtIdUsuaria.Multiline = true;
-            this.txtIdUsuaria.Name = "txtIdUsuaria";
-            this.txtIdUsuaria.Size = new System.Drawing.Size(271, 20);
-            this.txtIdUsuaria.TabIndex = 249;
-            this.txtIdUsuaria.Visible = false;
-            // 
             // FormPendencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1004, 450);
+            this.ClientSize = new System.Drawing.Size(1021, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormPendencias";
@@ -553,7 +526,5 @@ namespace DonnaGabriela
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIdUsuaria;
-        private System.Windows.Forms.TextBox txtIdVol;
     }
 }
