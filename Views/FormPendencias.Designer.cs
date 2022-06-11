@@ -31,7 +31,7 @@ namespace DonnaGabriela
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnContent = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.lblQtdPendenciasUsuaria = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@ namespace DonnaGabriela
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnContent.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,16 +90,16 @@ namespace DonnaGabriela
             this.label1.TabIndex = 218;
             this.label1.Text = "Cadastros Pendentes para Aprovação";
             // 
-            // panel2
+            // pnContent
             // 
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.pnInfo);
-            this.panel2.Location = new System.Drawing.Point(2, 79);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(942, 867);
-            this.panel2.TabIndex = 1;
+            this.pnContent.Controls.Add(this.panel4);
+            this.pnContent.Controls.Add(this.panel5);
+            this.pnContent.Controls.Add(this.panel3);
+            this.pnContent.Controls.Add(this.pnInfo);
+            this.pnContent.Location = new System.Drawing.Point(2, 79);
+            this.pnContent.Name = "pnContent";
+            this.pnContent.Size = new System.Drawing.Size(942, 867);
+            this.pnContent.TabIndex = 1;
             // 
             // panel4
             // 
@@ -155,7 +155,7 @@ namespace DonnaGabriela
             // 
             this.txtTelefoneUsuaria.BackColor = System.Drawing.Color.White;
             this.txtTelefoneUsuaria.Enabled = false;
-            this.txtTelefoneUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefoneUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefoneUsuaria.Location = new System.Drawing.Point(216, 175);
             this.txtTelefoneUsuaria.Multiline = true;
             this.txtTelefoneUsuaria.Name = "txtTelefoneUsuaria";
@@ -166,7 +166,7 @@ namespace DonnaGabriela
             // 
             this.txtEmailUsuaria.BackColor = System.Drawing.Color.White;
             this.txtEmailUsuaria.Enabled = false;
-            this.txtEmailUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailUsuaria.Location = new System.Drawing.Point(216, 131);
             this.txtEmailUsuaria.Multiline = true;
             this.txtEmailUsuaria.Name = "txtEmailUsuaria";
@@ -177,7 +177,7 @@ namespace DonnaGabriela
             // 
             this.txtDataUsuaria.BackColor = System.Drawing.Color.White;
             this.txtDataUsuaria.Enabled = false;
-            this.txtDataUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataUsuaria.Location = new System.Drawing.Point(216, 84);
             this.txtDataUsuaria.Multiline = true;
             this.txtDataUsuaria.Name = "txtDataUsuaria";
@@ -188,7 +188,7 @@ namespace DonnaGabriela
             // 
             this.txtNomeUsuaria.BackColor = System.Drawing.Color.White;
             this.txtNomeUsuaria.Enabled = false;
-            this.txtNomeUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeUsuaria.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeUsuaria.Location = new System.Drawing.Point(216, 37);
             this.txtNomeUsuaria.Multiline = true;
             this.txtNomeUsuaria.Name = "txtNomeUsuaria";
@@ -327,7 +327,7 @@ namespace DonnaGabriela
             // 
             this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(216, 219);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -338,7 +338,7 @@ namespace DonnaGabriela
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(216, 175);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -349,7 +349,7 @@ namespace DonnaGabriela
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(216, 131);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -360,7 +360,7 @@ namespace DonnaGabriela
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(216, 84);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -371,7 +371,7 @@ namespace DonnaGabriela
             // 
             this.txtNome.BackColor = System.Drawing.Color.White;
             this.txtNome.Enabled = false;
-            this.txtNome.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(216, 37);
             this.txtNome.Multiline = true;
             this.txtNome.Name = "txtNome";
@@ -470,15 +470,15 @@ namespace DonnaGabriela
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1021, 450);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(856, 450);
+            this.Controls.Add(this.pnContent);
             this.Controls.Add(this.panel1);
             this.Name = "FormPendencias";
             this.Text = "FormPendencias";
             this.Load += new System.EventHandler(this.FormPendencias_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.pnContent.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -495,7 +495,7 @@ namespace DonnaGabriela
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnContent;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblQtdPendenciasUsuaria;

@@ -42,6 +42,8 @@ namespace DonnaGabriela
         {
             if (voluntarias.Count() == 0)
             {
+                panel3.Visible = false;
+                pnInfo.Visible = false;
                 return;
             }
             setNextVoluntaria();
@@ -50,6 +52,8 @@ namespace DonnaGabriela
         {
             if (usuarias.Count() == 0)
             {
+                panel4.Visible = false;
+                panel5.Visible = false;
                 return;
             }
             setNextUsuaria();

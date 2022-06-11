@@ -11,7 +11,7 @@ namespace DonnaGabriela.Model
         {
             string query = "SELECT " +
                                 "Data_Solicitacao, " +
-                                "Data_Solicitacao AS Hora_Solicitacao, " +
+                                "Hora_Solicitacao, " +
                                 "Voluntario.Nome_Voluntario AS Nome_Voluntario, " +
                                 "Usuario.Nome_User AS Nome_User, " +
                                 "Servico.Nome_Serviço AS Nome_Serviço " +
