@@ -65,8 +65,8 @@ namespace DonnaGabriela
 
             updateVoluntariaStatus("1");
 
-            Usuaria current = usuarias.First();
-            string id = current.ID_User.ToString();
+            Voluntaria current = voluntarias.First();
+            string id = current.ID_Voluntario.ToString();
 
             string target = "http://localhost:8080/donnagabriela.com.br/usuario?id=" + id;
             try
@@ -162,8 +162,8 @@ namespace DonnaGabriela
             Console.WriteLine("APROVE++ ");
             updateUsuariaStatus("1");
 
-            Voluntaria current = voluntarias.First();
-            String id = current.ID_Voluntario.ToString();
+            Usuaria current = usuarias.First();
+            String id = current.ID_User.ToString();
             string target = "http://localhost:8080/donnagabriela.com.br/usuario?id=" + id;
             try
             {
