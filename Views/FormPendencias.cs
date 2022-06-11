@@ -44,6 +44,7 @@ namespace DonnaGabriela
             {
                 panel3.Visible = false;
                 pnInfo.Visible = false;
+                panelEmpty.Visible = true;
                 return;
             }
             setNextVoluntaria();
@@ -54,6 +55,7 @@ namespace DonnaGabriela
             {
                 panel4.Visible = false;
                 panel5.Visible = false;
+                panelEmptyUsuaria.Visible = true;
                 return;
             }
             setNextUsuaria();
@@ -68,6 +70,12 @@ namespace DonnaGabriela
             Console.WriteLine("APROVE++ ");
 
             updateVoluntariaStatus("1");
+            panelEmpty.Visible = false;
+            if (voluntarias.Count() == 0)
+            {
+                panelEmpty.Visible = true;
+                return;
+            }
 
             Voluntaria current = voluntarias.First();
             string id = current.ID_Voluntario.ToString();
@@ -92,6 +100,7 @@ namespace DonnaGabriela
             Console.WriteLine("REJECT++ ");
 
             updateVoluntariaStatus("2");
+            showEmptyMessageVoluntarias();
         }
 
         private void setNextVoluntaria()
@@ -165,6 +174,12 @@ namespace DonnaGabriela
         {
             Console.WriteLine("APROVE++ ");
             updateUsuariaStatus("1");
+            panelEmptyUsuaria.Visible = false;
+            if (usuarias.Count() == 0)
+            {
+                panelEmptyUsuaria.Visible = true;
+                return;
+            }
 
             Usuaria current = usuarias.First();
             String id = current.ID_User.ToString();
@@ -187,6 +202,7 @@ namespace DonnaGabriela
             Console.WriteLine("REJECT++ ");
 
             updateUsuariaStatus("2");
+            showEmptyMessageUsuarias();
         }
 
         private void updateUsuariaStatus(String status)
@@ -212,6 +228,26 @@ namespace DonnaGabriela
 
             setNextUsuaria();
             updatePendenciasLeftUsuaria();
+        }
+
+        private void showEmptyMessageVoluntarias()
+        {
+            panelEmpty.Visible = false;
+            if (voluntarias.Count() == 0)
+            {
+                panelEmpty.Visible = true;
+                return;
+            }
+        }
+
+        private void showEmptyMessageUsuarias()
+        {
+            panelEmptyUsuaria.Visible = false;
+            if (usuarias.Count() == 0)
+            {
+                panelEmptyUsuaria.Visible = true;
+                return;
+            }
         }
     }
 }
