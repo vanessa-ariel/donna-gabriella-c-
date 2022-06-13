@@ -146,7 +146,6 @@ namespace DonnaGabriela
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(227, 26);
             this.txtRg.TabIndex = 231;
-            this.txtRg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRg_KeyPress);
             // 
             // txtEmail
             // 

@@ -81,8 +81,7 @@ namespace DonnaGabriela
                 txtEmail.Focus();
                 return;
             }
-            else if (txtTelefone.Text == "")
-            {
+            else if (txtTelefone.Text == "" || !txtTelefone.MaskCompleted) {
                 MessageBox.Show("Preencha o campo Telefone", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTelefone.Focus();
                 return;
@@ -93,7 +92,7 @@ namespace DonnaGabriela
                 txtTelefone.Focus();
                 return;
             }
-            else if (txtAdmissao.Text == "")
+            else if (txtAdmissao.Text == "" || !txtAdmissao.MaskCompleted)
             {
                 MessageBox.Show("Preencha o campo Data de Admissão", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtcep.Focus();
@@ -123,7 +122,7 @@ namespace DonnaGabriela
                 txtBairro.Focus();
                 return;
             }
-            else if (txtcep.Text == "")
+            else if (txtcep.Text == "" || !txtcep.MaskCompleted)
             {
                 MessageBox.Show("Preencha o campo Cep", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCidade.Focus();
@@ -199,12 +198,6 @@ namespace DonnaGabriela
         }
 
         private void txtCpf_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ValidateInputs v = new ValidateInputs();
-            v.AllowOnlyNumbers(e);
-        }
-
-        private void txtRg_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidateInputs v = new ValidateInputs();
             v.AllowOnlyNumbers(e);
