@@ -66,7 +66,7 @@ namespace DonnaGabriela
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.passwordPanel.SuspendLayout();
@@ -76,6 +76,7 @@ namespace DonnaGabriela
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.cmbCargo);
             this.panel1.Controls.Add(this.txtAdmissao);
             this.panel1.Controls.Add(this.txtTelefone);
             this.panel1.Controls.Add(this.txtCpf);
@@ -86,7 +87,6 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtCargo);
             this.panel1.Controls.Add(this.lblRequiredFields);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -111,6 +111,7 @@ namespace DonnaGabriela
             this.txtAdmissao.Size = new System.Drawing.Size(227, 26);
             this.txtAdmissao.TabIndex = 234;
             this.txtAdmissao.ValidatingType = typeof(System.DateTime);
+            this.txtAdmissao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAdmissao_KeyPress);
             // 
             // txtTelefone
             // 
@@ -122,6 +123,7 @@ namespace DonnaGabriela
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(223, 26);
             this.txtTelefone.TabIndex = 233;
+            this.txtTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefone_KeyPress);
             // 
             // txtCpf
             // 
@@ -133,6 +135,7 @@ namespace DonnaGabriela
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(224, 26);
             this.txtCpf.TabIndex = 232;
+            this.txtCpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCpf_KeyPress);
             // 
             // txtRg
             // 
@@ -143,6 +146,7 @@ namespace DonnaGabriela
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(227, 26);
             this.txtRg.TabIndex = 231;
+            this.txtRg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRg_KeyPress);
             // 
             // txtEmail
             // 
@@ -188,6 +192,7 @@ namespace DonnaGabriela
             this.txtcep.Name = "txtcep";
             this.txtcep.Size = new System.Drawing.Size(174, 26);
             this.txtcep.TabIndex = 276;
+            this.txtcep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcep_KeyPress);
             // 
             // label13
             // 
@@ -541,17 +546,13 @@ namespace DonnaGabriela
             this.label1.TabIndex = 218;
             this.label1.Text = "Cadastro de Funcionários";
             // 
-            // txtCargo
+            // cmbCargo
             // 
-            this.txtCargo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCargo.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtCargo.Location = new System.Drawing.Point(288, 289);
-            this.txtCargo.MaxLength = 50;
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(221, 26);
-            this.txtCargo.TabIndex = 206;
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Location = new System.Drawing.Point(288, 289);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(224, 29);
+            this.cmbCargo.TabIndex = 235;
             // 
             // FormNovoCadastroFuncionario
             // 
@@ -616,6 +617,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCpf;
         private System.Windows.Forms.MaskedTextBox txtcep;
-        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.ComboBox cmbCargo;
     }
 }

@@ -18,10 +18,13 @@ namespace DonnaGabriela
         private Boolean editMode = false;
         private FuncionarioModel funcionarioModel = new FuncionarioModel();
         private Funcionario funcionario;
+        private CargoModel cargoModel = new CargoModel();
+        private List<Cargo> cargosList = new List<Cargo>();
 
         public FormNovoCadastroFuncionario()
         {
             InitializeComponent();
+            populateCargoField();
             funcionario = new Funcionario();
         }
 
@@ -29,6 +32,7 @@ namespace DonnaGabriela
         {
             InitializeComponent();
             editMode = true;
+            populateCargoField();
             funcionario = funcionarioModel.getFuncionarioById(id);
             populateFuncionarioForm();
 
@@ -36,6 +40,15 @@ namespace DonnaGabriela
             btnCadastrarFunc.Text = "Salvar";
             passwordPanel.Visible = false;
         }
+
+        private void populateCargoField()
+        {
+            cargosList = cargoModel.getCargos();
+            cmbCargo.DataSource = cargosList;
+            cmbCargo.DisplayMember = "Nome_Cargo";
+            cmbCargo.ValueMember = "ID_Cargo";
+        }
+ 
         private void populateFuncionarioForm()
         {
             txtNome.Text = funcionario.Nome_Func;
@@ -44,7 +57,7 @@ namespace DonnaGabriela
             txtCpf.Text = funcionario.CPF_Func;
             txtRg.Text = funcionario.RG_Func;
             txtAdmissao.Text = funcionario.Data_Admissao;
-            txtCargo.Text = funcionario.Cargo;
+            cmbCargo.Text = funcionario.Cargo;
             txtcep.Text = funcionario.Cep_Func;
             txtRua.Text = funcionario.Endereco_Func;
             txtNumeroRua.Text = funcionario.Numero_Func;
@@ -86,7 +99,7 @@ namespace DonnaGabriela
                 txtcep.Focus();
                 return;
             }
-            else if (txtCargo.Text == "")
+            else if (cmbCargo.Text == "")
             {
                 MessageBox.Show("Preencha o campo Cargo", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtcep.Focus();
@@ -167,19 +180,15 @@ namespace DonnaGabriela
             funcionario.CPF_Func = txtCpf.Text;
             funcionario.RG_Func = txtRg.Text;
             funcionario.Data_Admissao = txtAdmissao.Text;
-            funcionario.Cargo = txtCargo.Text;
+            funcionario.Cargo = cmbCargo.Text;
+            funcionario.ID_Cargo = cmbCargo.SelectedIndex;
             funcionario.Cep_Func = txtcep.Text;
             funcionario.Endereco_Func = txtRua.Text;
             funcionario.Numero_Func = txtNumeroRua.Text;
             funcionario.Bairro_Func = txtBairro.Text;
             funcionario.Cidade_Func = txtCidade.Text;
             funcionario.Complemento_Func = txtComplemento.Text;
-            funcionario.Senha_User = txtSenha.Text;
-        }
-
-        private void txtTelefone_TextChanged(object sender, EventArgs e)
-        {
-
+            funcionario.Senha_Func = txtSenha.Text;
         }
 
         private void txtTelefone_KeyPress(object sender, KeyPressEventArgs e)

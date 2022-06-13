@@ -15,7 +15,7 @@ namespace DonnaGabriela.Model
                 "INNER JOIN Cargo ON Funcionario.ID_Cargo = Cargo.ID_Cargo " +
                 "INNER JOIN Departamento ON Funcionario.ID_Depto = Departamento.ID_Depto " +
                 "WHERE ID_Func = " + id;
-
+           
             databaseUtils.openConnection();
             SqlDataReader reader = databaseUtils.ExecuteReader(query);
 
@@ -39,7 +39,7 @@ namespace DonnaGabriela.Model
                 funcionario.Cidade_Func = reader["Cidade_Func"].ToString();
                 funcionario.Complemento_Func = reader["Complemento_Func"].ToString();
                 funcionario.Data_Nasci_Func = reader["Data_Nasci_Func"].ToString();
-                funcionario.Senha_User = reader["Senha_User"].ToString();
+                funcionario.Senha_Func = reader["Senha_Func"].ToString();
                 funcionario.Data_Desligamento = reader["Data_Desligamento"].ToString();
                 funcionario.Data_Admissao = reader["Data_Admissao"].ToString();
                 funcionario.Status_Conta = reader["Status_Conta"].ToString();
@@ -74,7 +74,7 @@ namespace DonnaGabriela.Model
                     "Data_Nasci_Func, " +
                     "Data_Admissao, " +
                     "Status_Conta, " +
-                    "Senha_User," +
+                    "Senha_Func," +
                     "ID_Cargo," +
                     "ID_Depto" +
                 ") VALUES (" +
@@ -92,8 +92,8 @@ namespace DonnaGabriela.Model
                     "'" + funcionario.Data_Nasci_Func + "', " +
                     "'" + dateTime.ToString("dd/MM/yyyy") + "', " +
                     1 + ", " +
-                    "'" + funcionario.Senha_User + "', " +
-                    1 + ", " +
+                    "'" + funcionario.Senha_Func + "', " +
+                    (funcionario.ID_Cargo + 1) + ", " +
                     1 +
                 ");";
             databaseUtils.openConnection();
@@ -114,7 +114,8 @@ namespace DonnaGabriela.Model
                                 "Numero_Func = '" + funcionario.Numero_Func + "', " +
                                 "Bairro_Func = '" + funcionario.Bairro_Func + "', " +
                                 "Cidade_Func = '" + funcionario.Cidade_Func + "', " +
-                                "Complemento_Func = '" + funcionario.Complemento_Func + "' " +
+                                "Complemento_Func = '" + funcionario.Complemento_Func + "', " +
+                                "ID_Cargo = " + (funcionario.ID_Cargo + 1) + " " +
                             "WHERE ID_Func = " + funcionario.ID_Func;
             
             databaseUtils.openConnection();

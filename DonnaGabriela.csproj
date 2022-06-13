@@ -61,6 +61,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="InputValidations\ValidateInputs.cs" />
+    <Compile Include="Model\Cargo.cs" />
+    <Compile Include="Model\CargoModel.cs" />
     <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Model\AgendamentoModel.cs" />
     <Compile Include="Model\Usuaria.cs" />
