@@ -16,25 +16,5 @@ namespace DonnaGabriela.InputValidations
             if (e.KeyChar == 8) return;
             e.Handled = true;
         }
-
-        public bool IsValidEmail(string email)
-        {
-            var trimmedEmail = email.Trim();
-
-            if (trimmedEmail.EndsWith("."))
-            {
-                MessageBox.Show("teste");
-                return false;
-            }
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == trimmedEmail;
-            }
-            catch
-            {
-                return false;
-            }
-        }
     }
 }

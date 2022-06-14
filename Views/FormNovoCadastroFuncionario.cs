@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DonnaGabriela.Model;
 using DonnaGabriela.InputValidations;
 using DonnaGabriela.Views;
+using System.Text.RegularExpressions;
 
 namespace DonnaGabriela
 {
@@ -66,6 +61,12 @@ namespace DonnaGabriela
             txtComplemento.Text = funcionario.Complemento_Func;
         }
 
+        private bool IsValidEmail(string email)
+        {
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = regex.Match(email);
+            return match.Success;
+        }
         private void btnCadastrarFunc_Click(object sender, EventArgs e)
         {
             var owner = this.Owner as FormAdministrativoFuncionarios;
@@ -79,6 +80,11 @@ namespace DonnaGabriela
             {
                 MessageBox.Show("Preencha o campo E-mail", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtEmail.Focus();
+                return;
+            }
+            else if (!IsValidEmail(txtEmail.Text))
+            {
+                MessageBox.Show("E-mail inválido, preencha o campo e-mail corretamente", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else if (txtTelefone.Text == "" || !txtTelefone.MaskCompleted) {
