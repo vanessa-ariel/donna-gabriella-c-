@@ -29,7 +29,7 @@ namespace DonnaGabriela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +40,10 @@ namespace DonnaGabriela
             this.btnSim = new System.Windows.Forms.Button();
             this.btnModal = new System.Windows.Forms.Button();
             this.lblModalTitle = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
+            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
+            this.btnEditar = new FontAwesome.Sharp.IconButton();
+            this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
             this.tableHeader = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,18 +51,14 @@ namespace DonnaGabriela
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridVoluntarias = new System.Windows.Forms.DataGridView();
-            this.btnEditar = new FontAwesome.Sharp.IconButton();
-            this.btnDesativarCadastro = new FontAwesome.Sharp.IconButton();
-            this.lblError = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panelModal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
             this.tableHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -108,6 +108,7 @@ namespace DonnaGabriela
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(886, 492);
             this.panel5.TabIndex = 4;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panelModal
             // 
@@ -189,74 +190,19 @@ namespace DonnaGabriela
             this.lblModalTitle.TabIndex = 0;
             this.lblModalTitle.Text = "Desativar item";
             // 
-            // tableHeader
+            // lblError
             // 
-            this.tableHeader.BackColor = System.Drawing.Color.White;
-            this.tableHeader.Controls.Add(this.panel1);
-            this.tableHeader.Controls.Add(this.panel3);
-            this.tableHeader.Controls.Add(this.panel2);
-            this.tableHeader.Location = new System.Drawing.Point(36, 19);
-            this.tableHeader.Name = "tableHeader";
-            this.tableHeader.Size = new System.Drawing.Size(832, 34);
-            this.tableHeader.TabIndex = 228;
-            this.tableHeader.Visible = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(3, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 20);
-            this.panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(36, -1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 21);
-            this.label2.TabIndex = 223;
-            this.label2.Text = "Id";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(612, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 20);
-            this.panel3.TabIndex = 227;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(72, -1);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 21);
-            this.label4.TabIndex = 225;
-            this.label4.Text = "Telefone";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(109, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 20);
-            this.panel2.TabIndex = 226;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(220, -1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 21);
-            this.label3.TabIndex = 224;
-            this.label3.Text = "Nome";
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblError.Location = new System.Drawing.Point(3, 159);
+            this.lblError.MinimumSize = new System.Drawing.Size(881, 0);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(881, 21);
+            this.lblError.TabIndex = 234;
+            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
+            this.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblError.Visible = false;
             // 
             // dataGridVoluntarias
             // 
@@ -275,20 +221,21 @@ namespace DonnaGabriela
             this.dataGridVoluntarias.ReadOnly = true;
             this.dataGridVoluntarias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridVoluntarias.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVoluntarias.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridVoluntarias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVoluntarias.ShowCellErrors = false;
             this.dataGridVoluntarias.ShowCellToolTips = false;
             this.dataGridVoluntarias.ShowEditingIcon = false;
             this.dataGridVoluntarias.ShowRowErrors = false;
-            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 260);
+            this.dataGridVoluntarias.Size = new System.Drawing.Size(832, 220);
             this.dataGridVoluntarias.TabIndex = 222;
+            this.dataGridVoluntarias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVoluntarias_CellContentClick);
             // 
             // btnEditar
             // 
@@ -304,7 +251,7 @@ namespace DonnaGabriela
             this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditar.IconSize = 20;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(36, 369);
+            this.btnEditar.Location = new System.Drawing.Point(36, 313);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEditar.Size = new System.Drawing.Size(182, 36);
@@ -330,7 +277,7 @@ namespace DonnaGabriela
             this.btnDesativarCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDesativarCadastro.IconSize = 20;
             this.btnDesativarCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 420);
+            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 364);
             this.btnDesativarCadastro.Name = "btnDesativarCadastro";
             this.btnDesativarCadastro.Size = new System.Drawing.Size(182, 36);
             this.btnDesativarCadastro.TabIndex = 220;
@@ -342,19 +289,75 @@ namespace DonnaGabriela
             this.btnDesativarCadastro.Visible = false;
             this.btnDesativarCadastro.Click += new System.EventHandler(this.btnDesativarCadastro_Click_1);
             // 
-            // lblError
+            // tableHeader
             // 
-            this.lblError.AutoSize = true;
-            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblError.Location = new System.Drawing.Point(3, 159);
-            this.lblError.MinimumSize = new System.Drawing.Size(881, 0);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(881, 21);
-            this.lblError.TabIndex = 234;
-            this.lblError.Text = "Nenhum dado disponível. Tente novamente mais tarde.";
-            this.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblError.Visible = false;
+            this.tableHeader.BackColor = System.Drawing.Color.White;
+            this.tableHeader.Controls.Add(this.panel1);
+            this.tableHeader.Controls.Add(this.panel3);
+            this.tableHeader.Controls.Add(this.panel2);
+            this.tableHeader.Location = new System.Drawing.Point(36, 19);
+            this.tableHeader.Name = "tableHeader";
+            this.tableHeader.Size = new System.Drawing.Size(832, 34);
+            this.tableHeader.TabIndex = 228;
+            this.tableHeader.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(399, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(210, 20);
+            this.panel1.TabIndex = 231;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(54, -2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 21);
+            this.label2.TabIndex = 223;
+            this.label2.Text = "Tipo Serviço";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(611, 7);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(220, 20);
+            this.panel3.TabIndex = 230;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(94, -1);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 21);
+            this.label4.TabIndex = 225;
+            this.label4.Text = "CPF";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(2, 8);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(390, 20);
+            this.panel2.TabIndex = 229;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(154, -1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 21);
+            this.label3.TabIndex = 224;
+            this.label3.Text = "Nome";
             // 
             // FormAdministrativo
             // 
@@ -375,6 +378,7 @@ namespace DonnaGabriela
             this.panel5.PerformLayout();
             this.panelModal.ResumeLayout(false);
             this.panelModal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).EndInit();
             this.tableHeader.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -382,7 +386,6 @@ namespace DonnaGabriela
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVoluntarias)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,13 +396,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel tableHeader;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridVoluntarias;
         private FontAwesome.Sharp.IconButton btnEditar;
         private FontAwesome.Sharp.IconButton btnDesativarCadastro;
@@ -410,5 +406,12 @@ namespace DonnaGabriela
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnModal;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Panel tableHeader;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
     }
 }

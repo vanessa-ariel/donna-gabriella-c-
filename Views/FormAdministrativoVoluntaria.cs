@@ -30,8 +30,9 @@ namespace DonnaGabriela
                 btnEditar.Visible = true;
                 btnDesativarCadastro.Visible = true;
                 dataGridVoluntarias.DataSource = dt;
-                dataGridVoluntarias.Columns[0].Width = 100;
-                dataGridVoluntarias.Columns[1].Width = 500;
+                dataGridVoluntarias.Columns[0].Width = 290;
+                dataGridVoluntarias.Columns[1].Width = 220;
+                dataGridVoluntarias.Columns[2].Width = 290;
 
                 dataGridVoluntarias.MultiSelect = false;
                 this.dataGridVoluntarias.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
@@ -93,6 +94,16 @@ namespace DonnaGabriela
         private int getSelectedId()
         {
             return int.Parse(this.dataGridVoluntarias.SelectedRows[0].Cells[0].Value.ToString());
+        }
+
+        private void dataGridVoluntarias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -35,8 +35,10 @@ namespace DonnaGabriela.Views
                 btnEditar.Visible = true;
                 btnDesativarCadastro.Visible = true;
                 dataGridFuncionarios.DataSource = dt;
-                dataGridFuncionarios.Columns[0].Width = 100;
-                dataGridFuncionarios.Columns[1].Width = 500;
+                dataGridFuncionarios.Columns[0].Width = 250;
+                dataGridFuncionarios.Columns[1].Width = 100;
+                dataGridFuncionarios.Columns[2].Width = 200;
+                dataGridFuncionarios.Columns[3].Width = 260;
 
                 dataGridFuncionarios.MultiSelect = false;
                 this.dataGridFuncionarios.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
