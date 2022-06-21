@@ -151,7 +151,7 @@ INSERT INTO Usuario (
 	Senha_User
 ) 
 VALUES (
-	'Lilian Barsosa Hall', 
+	'Lilian Alves Hall', 
 	'414.774.318-88', 
 	'(12) 98171-4569', 
 	'lilian.hall@email.com.br', 
@@ -187,10 +187,10 @@ VALUES (
 	123456
 ),
 (
-	'Helena Nigro Cordeiro', 
+	'Helena Fernandes Cordeiro', 
 	'669.394.863-48', 
 	'(86) 97531-5143', 
-	'helena.cordeiro@email.com.br', 
+	'helena.fernandes.us@gmail.com', 
 	'Rua Paulo Pessoa', 
 	'3821', 
 	'', 
@@ -331,8 +331,6 @@ VALUES (
 	123456
 )
 
-
-
 INSERT INTO Voluntario (
 	ID_Servico,
 	Nome_Servico,
@@ -359,7 +357,7 @@ INSERT INTO Voluntario (
 	'Julia Melissa Luiza Nogueira',
 	'356.697.548-67',
 	'(19) 99104-0743',
-	'julia_nogueira@email.com.br',
+	'julia.melissa.vol@gmail.com',
 	'Rua 16',
 	'963',
 	'Apto 101',
