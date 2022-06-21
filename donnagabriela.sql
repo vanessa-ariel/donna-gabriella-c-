@@ -5,44 +5,40 @@ USE DonnaGabriela
 /*TABLES*/
 
 CREATE TABLE Cargo(
-	ID_Cargo INT IDENTITY(1,1) PRIMARY KEY,
-	Nome_Cargo VARCHAR(50),
-	Status_Cargo CHAR(1),
+	ID_Cargo INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	Nome_Cargo VARCHAR(50) NOT NULL,
+	Status_Cargo CHAR(1) NOT NULL,
 )
 
 CREATE TABLE Departamento(
-	ID_Depto INT IDENTITY(1,1) PRIMARY KEY,
-	Nome_Depto VARCHAR(50),
-	Status_Depto CHAR(1),
+	ID_Depto INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	Nome_Depto VARCHAR(50) NOT NULL,
+	Status_Depto CHAR(1) NOT NULL,
 )
 
 CREATE TABLE Usuario (
-	ID_User INT IDENTITY(1,1) PRIMARY KEY,
-	Nome_User VARCHAR(50),
-	CPF_User VARCHAR(14),
-	Telefone_User VARCHAR(19),
-	Email_User VARCHAR(120),
+	ID_User INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	Nome_User VARCHAR(50) NOT NULL,
+	CPF_User VARCHAR(14) NOT NULL,
+	Telefone_User VARCHAR(19) NOT NULL,
+	Email_User VARCHAR(120) NOT NULL,
+	Data_Nasci_User VARCHAR(10) NOT NULL,
 
-	Endereco_User VARCHAR(250),
-	Numero_User VARCHAR(10),
-	Complemento_User VARCHAR(100),
-	Bairro_User VARCHAR(150),
-	Cidade_User VARCHAR(150),
-	Cep_User VARCHAR(9),
+	Cep_User VARCHAR(9) NOT NULL,
+	Endereco_User VARCHAR(250) NOT NULL,
+	Numero_User VARCHAR(10) NOT NULL,
+	Complemento_User VARCHAR(100) NOT NULL,
+	Bairro_User VARCHAR(150) NOT NULL,
+	Cidade_User VARCHAR(150) NOT NULL,
 
-	Data_Nasci_User VARCHAR(10),
-	Data_Cadastro VARCHAR(10),
-	Data_Admissao VARCHAR(10),
-	Data_Desligamento VARCHAR(10),
-	Status_Conta CHAR(1),
-
-	Senha_User VARCHAR(25),
+	Data_Cadastro VARCHAR(10) NOT NULL,
+	Senha_User VARCHAR(25) NOT NULL,
+	Recuperar_Senha VARCHAR(255),
+	Status_Conta CHAR(1) NOT NULL,
 )
 
 CREATE TABLE Voluntario (
     ID_Voluntario INT IDENTITY(1,1) PRIMARY KEY,
-	ID_Servico varchar(10),
-
 	Nome_Servico varchar(100),
 	Nome_Voluntario VARCHAR(150),
 	CPF_Voluntario VARCHAR(14),
@@ -55,7 +51,6 @@ CREATE TABLE Voluntario (
 	Bairro_Voluntario VARCHAR(150),
 	Cidade_Voluntario VARCHAR(150),
 	Cep_Voluntario VARCHAR(9),
-
 	Data_Nasci_Voluntario VARCHAR(10),
 	Data_Cadastro VARCHAR(10),
 	Data_Admissao VARCHAR(10),
@@ -63,6 +58,7 @@ CREATE TABLE Voluntario (
 	Status_Conta CHAR(1),
 
 	Senha_Voluntario VARCHAR(25),
+	Recuperar_Senha VARCHAR(255),
 )
 
 CREATE TABLE Funcionario (
@@ -91,22 +87,23 @@ CREATE TABLE Funcionario (
 	Senha_Func VARCHAR(25),
 )
 
-CREATE TABLE Servico(
+CREATE TABLE Servico (
 	ID_Servico INT IDENTITY(1,1) PRIMARY KEY,
-	Nome_Serviço VARCHAR(50),
-	Duracao VARCHAR(5),
+	ID_Voluntario INT FOREIGN KEY REFERENCES Voluntario(ID_Voluntario),
+	Nome_Servico VARCHAR(100),
+	Dia_Disponivel DATE,
+	Horario_Inicio DATETIME,
+	Horario_Termino DATETIME,
 	Status_Servico CHAR(1)
 )
 
 CREATE TABLE Servico_Solicitado (
 	ID_Serv_Solicitado INT IDENTITY(1,1) PRIMARY KEY,
-	ID_Servico INT FOREIGN KEY REFERENCES Servico(ID_Servico),
 	ID_User INT FOREIGN KEY REFERENCES Usuario(ID_User),
 	ID_Voluntario INT FOREIGN KEY REFERENCES Voluntario(ID_Voluntario),
-	Data_Solicitacao VARCHAR(10),
-	Data_Inicio VARCHAR(10),
-	Data_Termino VARCHAR(10),
-	Hora_Solicitacao VARCHAR(5)
+	Data_Solicitacao DATETIME,
+	Data_Inicio DATETIME,
+	Data_Termino DATETIME,
 )
 
 CREATE TABLE Suporte (
@@ -145,10 +142,9 @@ INSERT INTO Usuario (
 	Cep_User,
 	Data_Nasci_User,
 	Data_Cadastro,
-	Data_Admissao,
-	Data_Desligamento,
 	Status_Conta,
-	Senha_User
+	Senha_User,
+	Recuperar_Senha
 ) 
 VALUES (
 	'Lilian Alves Hall', 
@@ -163,10 +159,9 @@ VALUES (
 	'09371-066', 
 	'21/05/2000', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	0, 
-	123456
+	123456,
+	''
 ),
 (
 	'Eva Vasconcelos Sodre', 
@@ -181,10 +176,9 @@ VALUES (
 	'09371-066', 
 	'03/08/1990', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	0, 
-	123456
+	123456,
+	''
 ),
 (
 	'Helena Fernandes Cordeiro', 
@@ -199,10 +193,9 @@ VALUES (
 	'64038-451', 
 	'03/08/1990', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	0, 
-	123456
+	123456,
+	''
 ),
 (
 	'Gilmara Gualberto Vasconcelos', 
@@ -217,10 +210,9 @@ VALUES (
 	'69307-690', 
 	'03/12/1982', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	0, 
-	123456
+	123456,
+	''
 ),
 (
 	'Simone Gouveia Coelho', 
@@ -235,10 +227,9 @@ VALUES (
 	'69919-830', 
 	'11/04/1999', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	1, 
-	123456
+	123456,
+	''
 ),
 (
 	'Gabriela Morais Latin', 
@@ -253,10 +244,9 @@ VALUES (
 	'59065-210', 
 	'18/07/1989', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	1, 
-	123456
+	123456,
+	''
 ),
 (
 	'Kamila Bonimo Fernando', 
@@ -271,10 +261,9 @@ VALUES (
 	'88010-240', 
 	'18/07/1989', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	1, 
-	123456
+	123456,
+	''
 ),
 (
 	'Lina Prata Pacheco', 
@@ -289,10 +278,9 @@ VALUES (
 	'69047-741', 
 	'17/08/1983', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	1, 
-	123456
+	123456,
+	''
 ),
 (
 	'Stephania Stutz Rezende', 
@@ -307,10 +295,9 @@ VALUES (
 	'85603-585', 
 	'05/02/1997', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	1, 
-	123456
+	123456,
+	''
 ),
 (
 	'Nathalia Sousa Belmiro', 
@@ -325,14 +312,12 @@ VALUES (
 	'13321-192', 
 	'26/12/1983', 
 	'10/09/2021',
-	'12/09/2021',
-	'',
 	1, 
-	123456
+	123456,
+	''
 )
 
 INSERT INTO Voluntario (
-	ID_Servico,
 	Nome_Servico,
 	Nome_Voluntario,
 	CPF_Voluntario,
@@ -349,10 +334,10 @@ INSERT INTO Voluntario (
 	Data_Admissao,
 	Data_Desligamento,
 	Status_Conta,
-	Senha_Voluntario
+	Senha_Voluntario,
+    Recuperar_Senha
 )VALUES 
 (
-	1,
 	'Psicologico',
 	'Julia Melissa Luiza Nogueira',
 	'356.697.548-67',
@@ -369,10 +354,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	0,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	2,
 	'Assistencia Social',
 	'Sabrina Yasmin Maya Silveira',
 	'112.756.778-00',
@@ -389,10 +374,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	0,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	3,
 	'Jurídico',
 	'Luciana Ester Rosa Souza',
 	'422.864.078-86',
@@ -409,10 +394,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	0,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	1,
 	'Psicologico',
 	'Isadora Jennifer Sarah da Cruz',
 	'147.922.868-08',
@@ -429,10 +414,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	0,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	2,
 	'Assistencia Social',
 	'Antonella Evelyn Amanda Vieira',
 	'956.437.018-39',
@@ -449,10 +434,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	0,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	3,
 	'Jurídico',
 	'Maya Joana Porto',
 	'058.873.368-70',
@@ -469,10 +454,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	1,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	1,
 	'Psicologico',
 	'Alessandra Elisa Barros',
 	'197.038.508-12',
@@ -489,10 +474,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	1,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	2,
 	'Assistencia Social',
 	'Maria Renata Aragão',
 	'266.195.968-86',
@@ -509,10 +494,10 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	1,
-	'123456'
+	'123456',
+    ''
 ),
 (
-	3,
 	'Jurídico',
 	'Yasmin Lara Isis Sales',
 	'730.683.568-81',
@@ -529,7 +514,8 @@ INSERT INTO Voluntario (
 	'05/04/2022',
 	'',
 	1,
-	'123456'
+	'123456',
+    ''
 )
 
 INSERT INTO Funcionario (
@@ -632,10 +618,13 @@ INSERT INTO Funcionario (
 	'123456'
 )
 
-INSERT INTO Servico(Nome_Serviço,Duracao, Status_Servico) VALUES ('Atendimento Psicológico', '01:00', 1),('Assistência Social', '01:00', 1),('Atendimento Jurídico', '01:00', 1);
+INSERT INTO Servico(ID_Voluntario, Nome_Servico, Dia_Disponivel, Horario_Inicio, Horario_Termino, Status_Servico) 
+	VALUES 
+	(1, 'Psicológico', GetDate(), GetDate(), GetDate(), 1), 
+	(2, 'Assistência social', GetDate(), GetDate(), GetDate(), 1)
 
-INSERT INTO Servico_Solicitado(ID_Servico, ID_User, ID_Voluntario, Data_Solicitacao, Data_Inicio, Data_Termino, Hora_Solicitacao) VALUES(1, 1, 1, '01/01/2022', '10/01/2022', NULL, '10:00'), 
-(2, 2, 2, '01/01/2022', '10/01/2022', NULL, '12:00'), (3, 3, 3, '01/01/2022', '10/01/2022', NULL, '13:00')
+INSERT INTO Servico_Solicitado(ID_User, ID_Voluntario, Data_Solicitacao, Data_Inicio, Data_Termino) VALUES(1, 1, 2022-05-01, 2022-06-01, NULL), 
+(2, 2, 2022-01-01, 2022-06-19, NULL), (3, 3, 2022-03-10, 2022-06-02, NULL)
 
 /*
 ID SERVICO: 
@@ -672,3 +661,4 @@ SELECT * FROM Servico
 SELECT * FROM Servico_Solicitado
 SELECT * FROM Suporte
 SELECT * FROM Suporte_Solicitado
+

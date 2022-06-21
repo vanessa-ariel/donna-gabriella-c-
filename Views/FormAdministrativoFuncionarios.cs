@@ -35,8 +35,10 @@ namespace DonnaGabriela.Views
                 btnEditar.Visible = true;
                 btnDesativarCadastro.Visible = true;
                 dataGridFuncionarios.DataSource = dt;
-                dataGridFuncionarios.Columns[0].Width = 100;
-                dataGridFuncionarios.Columns[1].Width = 500;
+                dataGridFuncionarios.Columns[0].Width = 250;
+                dataGridFuncionarios.Columns[1].Width = 100;
+                dataGridFuncionarios.Columns[2].Width = 200;
+                dataGridFuncionarios.Columns[3].Width = 260;
 
                 dataGridFuncionarios.MultiSelect = false;
                 this.dataGridFuncionarios.RowsDefaultCellStyle.BackColor = Color.FromArgb(224, 205, 241);
@@ -75,7 +77,7 @@ namespace DonnaGabriela.Views
         }
         private int getSelectedId()
         {
-            return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
+            return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[1].Value.ToString());
         }
 
         private void iconButtonNovo_Click(object sender, EventArgs e)

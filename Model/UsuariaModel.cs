@@ -75,8 +75,8 @@ namespace DonnaGabriela.Model
                     usuaria.Complemento_User = reader["Complemento_User"].ToString();
                     usuaria.Data_Nasci_User = reader["Data_Nasci_User"].ToString();
                     usuaria.Data_Cadastro = reader["Data_Cadastro"].ToString();
-                    usuaria.Data_Desligamento = reader["Data_Desligamento"].ToString();
-                    usuaria.Data_Admissao = reader["Data_Admissao"].ToString();
+                    //usuaria.Data_Desligamento = reader["Data_Desligamento"].ToString();
+                    //usuaria.Data_Admissao = reader["Data_Admissao"].ToString();
                     usuaria.Status_Conta = reader["Status_Conta"].ToString();
                     usuaria.Senha_User = reader["Senha_User"].ToString();
 

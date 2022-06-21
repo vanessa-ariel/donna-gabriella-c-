@@ -50,7 +50,7 @@ namespace DonnaGabriela.Model
 
         public SqlDataAdapter getFuncionariosByStatus(String status)
         {
-            string query = "SELECT ID_Func, Nome_Func, Telefone_Func FROM Funcionario WHERE Status_Conta = '" + status + "'";
+            string query = "SELECT Nome_Func, ID_Func, CPF_Func, Telefone_Func FROM Funcionario WHERE Status_Conta = '" + status + "'";
 
             databaseUtils.openConnection();
             return databaseUtils.ExecuteAdapter(query);

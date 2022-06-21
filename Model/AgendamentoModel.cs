@@ -10,13 +10,13 @@ namespace DonnaGabriela.Model
         public SqlDataAdapter getAgendamentos()
         {
             string query = "SELECT " +
-                                "Data_Solicitacao, " +
-                                "Hora_Solicitacao, " +
+                                "Data_Inicio, " +
+                                //"Data_Inicio AS Hora_Inicio, " +
                                 "Voluntario.Nome_Voluntario AS Nome_Voluntario, " +
                                 "Usuario.Nome_User AS Nome_User, " +
-                                "Servico.Nome_Serviço AS Nome_Serviço " +
+                                "Servico.Nome_Servico AS Nome_Servico " +
                             "FROM Servico_Solicitado " +
-                            "INNER JOIN Servico ON Servico_Solicitado.ID_Servico = Servico.ID_Servico " +
+                            "INNER JOIN Servico ON Servico_Solicitado.ID_Serv_Solicitado = Servico.ID_Servico " +
                             "INNER JOIN Usuario ON Servico_Solicitado.ID_User = Usuario.ID_User " +
                             "INNER JOIN Voluntario ON Servico_Solicitado.ID_Voluntario = Voluntario.ID_Voluntario";
 
