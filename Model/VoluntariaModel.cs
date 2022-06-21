@@ -20,7 +20,7 @@ namespace DonnaGabriela.Model
             {
                 reader.Read();
                 voluntaria.ID_Voluntario = int.Parse(reader["ID_Voluntario"].ToString());
-                voluntaria.ID_Servico = reader["ID_Servico"].ToString();
+                //voluntaria.ID_Servico = reader["ID_Servico"].ToString();
                 voluntaria.Nome_Servico = reader["Nome_Servico"].ToString();
                 voluntaria.Nome_Voluntario = reader["Nome_Voluntario"].ToString();
                 voluntaria.Cpf_Voluntario = reader["CPF_Voluntario"].ToString();
@@ -45,7 +45,7 @@ namespace DonnaGabriela.Model
 
         public SqlDataAdapter getVoluntariasByStatus(String status)
         {
-            string query = "SELECT Nome_Voluntario, Nome_Servico, CPF_Voluntario FROM Voluntario WHERE Status_Conta = " + status;
+            string query = "SELECT Nome_Voluntario,ID_Voluntario, CPF_Voluntario, Nome_Servico FROM Voluntario WHERE Status_Conta = " + status;
 
             databaseUtils.openConnection();
             return databaseUtils.ExecuteAdapter(query);

@@ -77,7 +77,7 @@ namespace DonnaGabriela.Views
         }
         private int getSelectedId()
         {
-            return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[0].Value.ToString());
+            return int.Parse(this.dataGridFuncionarios.SelectedRows[0].Cells[1].Value.ToString());
         }
 
         private void iconButtonNovo_Click(object sender, EventArgs e)
