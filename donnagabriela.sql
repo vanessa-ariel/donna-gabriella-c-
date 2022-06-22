@@ -147,7 +147,7 @@ INSERT INTO Usuario (
 	Recuperar_Senha
 ) 
 VALUES (
-	'Lilian Barsosa Hall', 
+	'Lilian Alves Hall', 
 	'414.774.318-88', 
 	'(12) 98171-4569', 
 	'lilian.hall@email.com.br', 
