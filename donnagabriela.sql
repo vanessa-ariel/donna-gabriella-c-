@@ -147,7 +147,7 @@ INSERT INTO Usuario (
 	Recuperar_Senha
 ) 
 VALUES (
-	'Lilian Alves Hall', 
+	'Lilian Barsosa Hall', 
 	'414.774.318-88', 
 	'(12) 98171-4569', 
 	'lilian.hall@email.com.br', 
@@ -660,4 +660,3 @@ SELECT * FROM Servico
 SELECT * FROM Servico_Solicitado
 SELECT * FROM Suporte
 SELECT * FROM Suporte_Solicitado
-
