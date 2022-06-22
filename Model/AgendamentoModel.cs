@@ -9,16 +9,11 @@ namespace DonnaGabriela.Model
         DatabaseUtils databaseUtils = new DatabaseUtils();
         public SqlDataAdapter getAgendamentos()
         {
-            string query = "SELECT " +
-                                "Data_Inicio, " +
-                                //"Data_Inicio AS Hora_Inicio, " +
-                                "Voluntario.Nome_Voluntario AS Nome_Voluntario, " +
-                                "Usuario.Nome_User AS Nome_User, " +
-                                "Servico.Nome_Servico AS Nome_Servico " +
-                            "FROM Servico_Solicitado " +
-                            "INNER JOIN Servico ON Servico_Solicitado.ID_Serv_Solicitado = Servico.ID_Servico " +
-                            "INNER JOIN Usuario ON Servico_Solicitado.ID_User = Usuario.ID_User " +
-                            "INNER JOIN Voluntario ON Servico_Solicitado.ID_Voluntario = Voluntario.ID_Voluntario";
+                string query = "SELECT DISTINCT S.Dia_Disponivel, format(S.Horario_Inicio, 'hh:mm'), format(S.Horario_Termino, 'hh:mm'), V.Nome_Voluntario, U.Nome_User, S.Nome_Servico " +
+            "FROM Servico_Solicitado AS So  " +
+            "INNER JOIN Servico S ON So.ID_Voluntario = S.ID_Voluntario AND Status_Servico = 0 " +
+            "INNER JOIN Voluntario V  ON So.ID_Voluntario = V.ID_Voluntario " +
+            "INNER JOIN Usuario U ON So.ID_User = U.ID_User";
 
             databaseUtils.openConnection();
             return databaseUtils.ExecuteAdapter(query);

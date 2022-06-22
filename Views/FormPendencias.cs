@@ -80,7 +80,7 @@ namespace DonnaGabriela
             Voluntaria current = voluntarias.First();
             string id = current.ID_Voluntario.ToString();
 
-            string target = "http://localhost:8080/donnagabriela.com.br/usuario?id=" + id;
+            string target = "http://localhost:8080/donnagabriela.com.br/aprovacao-voluntaria?id=" + id;
             try
             {
                 System.Diagnostics.Process.Start(target);
@@ -183,7 +183,7 @@ namespace DonnaGabriela
 
             Usuaria current = usuarias.First();
             String id = current.ID_User.ToString();
-            string target = "http://localhost:8080/donnagabriela.com.br/usuario?id=" + id;
+            string target = "http://localhost:8080/donnagabriela.com.br/aprovacao-usuario?id=" + id;
             try
             {
                 System.Diagnostics.Process.Start(target);

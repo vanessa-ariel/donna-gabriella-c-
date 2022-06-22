@@ -29,7 +29,7 @@ namespace DonnaGabriela.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,30 +37,30 @@ namespace DonnaGabriela.Views
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.dataGridFuncionarios = new System.Windows.Forms.DataGridView();
             this.tableHeader = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.iconButtonNovo = new FontAwesome.Sharp.IconButton();
             this.lblError = new System.Windows.Forms.Label();
             this.panelModal = new System.Windows.Forms.Panel();
-            this.lblModalTitle = new System.Windows.Forms.Label();
-            this.btnModal = new System.Windows.Forms.Button();
-            this.btnSim = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnNao = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnSim = new System.Windows.Forms.Button();
+            this.btnModal = new System.Windows.Forms.Button();
+            this.lblModalTitle = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFuncionarios)).BeginInit();
             this.tableHeader.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panelModal.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +109,7 @@ namespace DonnaGabriela.Views
             this.btnDesativarCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDesativarCadastro.IconSize = 20;
             this.btnDesativarCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 364);
+            this.btnDesativarCadastro.Location = new System.Drawing.Point(36, 357);
             this.btnDesativarCadastro.Name = "btnDesativarCadastro";
             this.btnDesativarCadastro.Size = new System.Drawing.Size(182, 36);
             this.btnDesativarCadastro.TabIndex = 220;
@@ -164,13 +164,13 @@ namespace DonnaGabriela.Views
             this.dataGridFuncionarios.ReadOnly = true;
             this.dataGridFuncionarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridFuncionarios.RowHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridFuncionarios.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(103)))), ((int)(((byte)(103)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridFuncionarios.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridFuncionarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridFuncionarios.ShowCellErrors = false;
             this.dataGridFuncionarios.ShowCellToolTips = false;
@@ -192,43 +192,24 @@ namespace DonnaGabriela.Views
             this.tableHeader.TabIndex = 228;
             this.tableHeader.Visible = false;
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(3, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(291, 20);
-            this.panel2.TabIndex = 226;
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Location = new System.Drawing.Point(300, 6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(129, 20);
+            this.panel4.TabIndex = 229;
             // 
-            // label3
+            // label6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(129, -1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 21);
-            this.label3.TabIndex = 224;
-            this.label3.Text = "Nome";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(632, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(206, 20);
-            this.panel3.TabIndex = 227;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(76, -1);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 21);
-            this.label4.TabIndex = 225;
-            this.label4.Text = "Telefone";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.label6.Location = new System.Drawing.Point(65, -1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 21);
+            this.label6.TabIndex = 224;
+            this.label6.Text = "Id";
             // 
             // panel1
             // 
@@ -249,24 +230,43 @@ namespace DonnaGabriela.Views
             this.label2.TabIndex = 223;
             this.label2.Text = "CPF";
             // 
-            // panel4
+            // panel3
             // 
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(300, 6);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(129, 20);
-            this.panel4.TabIndex = 229;
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(632, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(206, 20);
+            this.panel3.TabIndex = 227;
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(65, -1);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 21);
-            this.label6.TabIndex = 224;
-            this.label6.Text = "Id";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(76, -1);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 21);
+            this.label4.TabIndex = 225;
+            this.label4.Text = "Telefone";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(3, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(291, 20);
+            this.panel2.TabIndex = 226;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(129, -1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 21);
+            this.label3.TabIndex = 224;
+            this.label3.Text = "Nome";
             // 
             // iconButtonNovo
             // 
@@ -323,28 +323,32 @@ namespace DonnaGabriela.Views
             this.panelModal.TabIndex = 230;
             this.panelModal.Visible = false;
             // 
-            // lblModalTitle
+            // btnNao
             // 
-            this.lblModalTitle.AutoSize = true;
-            this.lblModalTitle.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModalTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.lblModalTitle.Location = new System.Drawing.Point(15, 14);
-            this.lblModalTitle.Name = "lblModalTitle";
-            this.lblModalTitle.Size = new System.Drawing.Size(138, 25);
-            this.lblModalTitle.TabIndex = 0;
-            this.lblModalTitle.Text = "Desativar item";
+            this.btnNao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            this.btnNao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNao.ForeColor = System.Drawing.Color.White;
+            this.btnNao.Location = new System.Drawing.Point(244, 173);
+            this.btnNao.Name = "btnNao";
+            this.btnNao.Size = new System.Drawing.Size(76, 36);
+            this.btnNao.TabIndex = 6;
+            this.btnNao.Text = "Não";
+            this.btnNao.UseVisualStyleBackColor = false;
+            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
             // 
-            // btnModal
+            // richTextBox1
             // 
-            this.btnModal.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModal.Location = new System.Drawing.Point(303, -1);
-            this.btnModal.Name = "btnModal";
-            this.btnModal.Size = new System.Drawing.Size(36, 38);
-            this.btnModal.TabIndex = 7;
-            this.btnModal.Text = "x";
-            this.btnModal.Click += new System.EventHandler(this.btnModal_Click);
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.richTextBox1.Location = new System.Drawing.Point(19, 62);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(284, 96);
+            this.richTextBox1.TabIndex = 5;
+            this.richTextBox1.TabStop = false;
+            this.richTextBox1.Text = "Tem certeza que deseja desativar o item cadastrado?";
             // 
             // btnSim
             // 
@@ -361,32 +365,28 @@ namespace DonnaGabriela.Views
             this.btnSim.UseVisualStyleBackColor = false;
             this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
             // 
-            // richTextBox1
+            // btnModal
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.richTextBox1.Location = new System.Drawing.Point(19, 62);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(284, 96);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.TabStop = false;
-            this.richTextBox1.Text = "Tem certeza que deseja desativar o item cadastrado?";
+            this.btnModal.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModal.Location = new System.Drawing.Point(303, -1);
+            this.btnModal.Name = "btnModal";
+            this.btnModal.Size = new System.Drawing.Size(36, 38);
+            this.btnModal.TabIndex = 7;
+            this.btnModal.Text = "x";
+            this.btnModal.Click += new System.EventHandler(this.btnModal_Click);
             // 
-            // btnNao
+            // lblModalTitle
             // 
-            this.btnNao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.btnNao.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnNao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNao.ForeColor = System.Drawing.Color.White;
-            this.btnNao.Location = new System.Drawing.Point(244, 173);
-            this.btnNao.Name = "btnNao";
-            this.btnNao.Size = new System.Drawing.Size(76, 36);
-            this.btnNao.TabIndex = 6;
-            this.btnNao.Text = "Não";
-            this.btnNao.UseVisualStyleBackColor = false;
-            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
+            this.lblModalTitle.AutoSize = true;
+            this.lblModalTitle.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModalTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.lblModalTitle.Location = new System.Drawing.Point(15, 14);
+            this.lblModalTitle.Name = "lblModalTitle";
+            this.lblModalTitle.Size = new System.Drawing.Size(138, 25);
+            this.lblModalTitle.TabIndex = 0;
+            this.lblModalTitle.Text = "Desativar item";
             // 
             // panel5
             // 
@@ -420,14 +420,14 @@ namespace DonnaGabriela.Views
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFuncionarios)).EndInit();
             this.tableHeader.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panelModal.ResumeLayout(false);
             this.panelModal.PerformLayout();
             this.panel5.ResumeLayout(false);

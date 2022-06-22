@@ -21,8 +21,24 @@ namespace DonnaGabriela
             InitializeComponent();
             populateCargoField();
             funcionario = new Funcionario();
+            PreventTxtInputResize();
         }
-
+        
+        public void PreventTxtInputResize() {
+            txtNome.AutoSize = false;
+            txtTelefone.AutoSize = false;
+            txtEmail.AutoSize = false;
+            txtCpf.AutoSize = false;
+            txtRg.AutoSize = false;
+            txtAdmissao.AutoSize = false;
+            cmbCargo.AutoSize = false;
+            txtcep.AutoSize = false;
+            txtRua.AutoSize = false;
+            txtNumeroRua.AutoSize = false;
+            txtBairro.AutoSize = false;
+            txtCidade.AutoSize = false;
+            txtComplemento.AutoSize = false;
+        }
         public FormNovoCadastroFuncionario(int id)
         {
             InitializeComponent();

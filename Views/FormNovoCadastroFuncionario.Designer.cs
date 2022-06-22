@@ -30,6 +30,7 @@ namespace DonnaGabriela
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.txtAdmissao = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -54,11 +55,8 @@ namespace DonnaGabriela
             this.label18 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblRequiredFields = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnCadastrarFunc = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.passwordPanel = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
@@ -67,15 +65,20 @@ namespace DonnaGabriela
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblRequiredFields = new System.Windows.Forms.Label();
+            this.btnCadastrarFunc = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.passwordPanel.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cmbCargo);
             this.panel1.Controls.Add(this.txtAdmissao);
@@ -88,17 +91,28 @@ namespace DonnaGabriela
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.lblRequiredFields);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.btnCadastrarFunc);
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.passwordPanel);
             this.panel1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(236, -2);
+            this.panel1.Location = new System.Drawing.Point(236, 9);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(932, 815);
             this.panel1.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(46, 70);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(259, 21);
+            this.label5.TabIndex = 194;
+            this.label5.Text = "Nome completo do funcionário *";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // cmbCargo
             // 
@@ -321,6 +335,7 @@ namespace DonnaGabriela
             this.txtRua.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtRua.Location = new System.Drawing.Point(37, 59);
             this.txtRua.MaxLength = 250;
+            this.txtRua.MinimumSize = new System.Drawing.Size(0, 50);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(338, 32);
             this.txtRua.TabIndex = 265;
@@ -398,18 +413,6 @@ namespace DonnaGabriela
             this.label3.TabIndex = 208;
             this.label3.Text = "RG *";
             // 
-            // lblRequiredFields
-            // 
-            this.lblRequiredFields.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblRequiredFields.AutoSize = true;
-            this.lblRequiredFields.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRequiredFields.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRequiredFields.Location = new System.Drawing.Point(44, 721);
-            this.lblRequiredFields.Name = "lblRequiredFields";
-            this.lblRequiredFields.Size = new System.Drawing.Size(254, 17);
-            this.lblRequiredFields.TabIndex = 205;
-            this.lblRequiredFields.Text = "* Campos de preenchimento obrigatório";
-            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -434,35 +437,6 @@ namespace DonnaGabriela
             this.label6.TabIndex = 195;
             this.label6.Text = "E-mail *";
             // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(46, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(259, 21);
-            this.label5.TabIndex = 194;
-            this.label5.Text = "Nome completo do funcionário *";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // btnCadastrarFunc
-            // 
-            this.btnCadastrarFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCadastrarFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
-            this.btnCadastrarFunc.FlatAppearance.BorderSize = 0;
-            this.btnCadastrarFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrarFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnCadastrarFunc.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarFunc.Location = new System.Drawing.Point(46, 747);
-            this.btnCadastrarFunc.Name = "btnCadastrarFunc";
-            this.btnCadastrarFunc.Size = new System.Drawing.Size(253, 35);
-            this.btnCadastrarFunc.TabIndex = 190;
-            this.btnCadastrarFunc.Text = "Cadastrar Funcionário";
-            this.btnCadastrarFunc.UseVisualStyleBackColor = false;
-            this.btnCadastrarFunc.Click += new System.EventHandler(this.btnCadastrarFunc_Click);
-            // 
             // txtNome
             // 
             this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -481,7 +455,7 @@ namespace DonnaGabriela
             this.passwordPanel.Controls.Add(this.label15);
             this.passwordPanel.Controls.Add(this.txtConfirmacaoSenha);
             this.passwordPanel.Controls.Add(this.txtSenha);
-            this.passwordPanel.Location = new System.Drawing.Point(10, 592);
+            this.passwordPanel.Location = new System.Drawing.Point(10, 567);
             this.passwordPanel.Name = "passwordPanel";
             this.passwordPanel.Size = new System.Drawing.Size(545, 100);
             this.passwordPanel.TabIndex = 219;
@@ -556,6 +530,42 @@ namespace DonnaGabriela
             this.label1.TabIndex = 218;
             this.label1.Text = "Cadastro de Funcionários";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lblRequiredFields);
+            this.panel2.Controls.Add(this.btnCadastrarFunc);
+            this.panel2.Location = new System.Drawing.Point(14, 689);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(541, 84);
+            this.panel2.TabIndex = 231;
+            // 
+            // lblRequiredFields
+            // 
+            this.lblRequiredFields.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblRequiredFields.AutoSize = true;
+            this.lblRequiredFields.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredFields.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblRequiredFields.Location = new System.Drawing.Point(31, 12);
+            this.lblRequiredFields.Name = "lblRequiredFields";
+            this.lblRequiredFields.Size = new System.Drawing.Size(254, 17);
+            this.lblRequiredFields.TabIndex = 207;
+            this.lblRequiredFields.Text = "* Campos de preenchimento obrigatório";
+            // 
+            // btnCadastrarFunc
+            // 
+            this.btnCadastrarFunc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCadastrarFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(112)))), ((int)(((byte)(224)))));
+            this.btnCadastrarFunc.FlatAppearance.BorderSize = 0;
+            this.btnCadastrarFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrarFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnCadastrarFunc.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrarFunc.Location = new System.Drawing.Point(33, 38);
+            this.btnCadastrarFunc.Name = "btnCadastrarFunc";
+            this.btnCadastrarFunc.Size = new System.Drawing.Size(253, 35);
+            this.btnCadastrarFunc.TabIndex = 206;
+            this.btnCadastrarFunc.Text = "Cadastrar Funcionário";
+            this.btnCadastrarFunc.UseVisualStyleBackColor = false;
+            // 
             // FormNovoCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -576,6 +586,8 @@ namespace DonnaGabriela
             this.passwordPanel.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -590,7 +602,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnCadastrarFunc;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
@@ -608,7 +619,6 @@ namespace DonnaGabriela
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblRequiredFields;
         private System.Windows.Forms.Panel passwordPanel;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -620,5 +630,8 @@ namespace DonnaGabriela
         private System.Windows.Forms.MaskedTextBox txtCpf;
         private System.Windows.Forms.MaskedTextBox txtcep;
         private System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblRequiredFields;
+        private System.Windows.Forms.Button btnCadastrarFunc;
     }
 }

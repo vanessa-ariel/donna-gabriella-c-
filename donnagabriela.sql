@@ -181,10 +181,10 @@ VALUES (
 	''
 ),
 (
-	'Helena Nigro Cordeiro', 
+	'Helena Fernandes Cordeiro', 
 	'669.394.863-48', 
 	'(86) 97531-5143', 
-	'helena.cordeiro@email.com.br', 
+	'helena.fernandes.us@gmail.com', 
 	'Rua Paulo Pessoa', 
 	'3821', 
 	'', 
@@ -342,7 +342,7 @@ INSERT INTO Voluntario (
 	'Julia Melissa Luiza Nogueira',
 	'356.697.548-67',
 	'(19) 99104-0743',
-	'julia_nogueira@email.com.br',
+	'julia.melissa.vol@gmail.com',
 	'Rua 16',
 	'963',
 	'Apto 101',
@@ -617,14 +617,12 @@ INSERT INTO Funcionario (
 	1,
 	'123456'
 )
-
-INSERT INTO Servico(ID_Voluntario, Nome_Servico, Dia_Disponivel, Horario_Inicio, Horario_Termino, Status_Servico) 
-	VALUES 
-	(1, 'Psicológico', GetDate(), GetDate(), GetDate(), 1), 
-	(2, 'Assistência social', GetDate(), GetDate(), GetDate(), 1)
-
-INSERT INTO Servico_Solicitado(ID_User, ID_Voluntario, Data_Solicitacao, Data_Inicio, Data_Termino) VALUES(1, 1, 2022-05-01, 2022-06-01, NULL), 
+/*
+INSERT INTO Servico(ID_Voluntario, Nome_Servico, Dia_Disponivel, Horario_Inicio, Horario_Termino, Status_Servico) VALUES (1, 'Psicológico', GetDate(), GetDate(), GetDate(), 1), (2, 'Assistência social', GetDate(), GetDate(), GetDate(), 1)
+*/
+/* INSERT INTO Servico_Solicitado(ID_User, ID_Voluntario, Data_Solicitacao, Data_Inicio, Data_Termino) VALUES(1, 1, 2022-05-01, 2022-06-01, NULL), 
 (2, 2, 2022-01-01, 2022-06-19, NULL), (3, 3, 2022-03-10, 2022-06-02, NULL)
+*/
 
 /*
 ID SERVICO: 
@@ -649,6 +647,7 @@ ID DEPTO
 */
 
 /*general queries*/
+
 use master
 drop database DonnaGabriela
 
